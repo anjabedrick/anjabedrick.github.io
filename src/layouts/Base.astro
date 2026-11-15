@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Connect from '../components/Connect.astro';
+import { SITE } from '../site';
+
+interface Props { title?: string; description?: string; image?: string }
+const { title, description = SITE.description, image } = Astro.props;
+const fullTitle = title ? `${title} – ${SITE.name}` : SITE.name;
+const ogImage = image ? new URL(image, Astro.site) : undefined;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <link rel="icon" href="/media/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Cactus+Classical+Serif&family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Connect />
+    <footer class="footer">© {new Date().getFullYear()} {SITE.name}</footer>
+    <script>
+      // Play videos only while they are on screen (saves data and battery).
+      const vids = document.querySelectorAll<HTMLVideoElement>('video[data-autoplay]');
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          const v = e.target as HTMLVideoElement;
+          if (e.isIntersecting) v.play().catch(() => {}); else v.pause();
+        }
+      }, { threshold: 0.15 });
+      vids.forEach((v) => io.observe(v));
+    </script>
+  </body>
+</html>

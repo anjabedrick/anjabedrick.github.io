@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const featured = projects
+  .filter((p) => p.data.featured !== undefined)
+  .sort((a, b) => a.data.featured! - b.data.featured!);
+
+const skills = [
+  ['After Effects animation', '/illustration-and-animation-gallery#animation'],
+  ['UI design', '/philips-telehealth-interface'],
+  ['UX design', '/philips-telehealth-interface'],
+  ['Branding', '/flexecharge-branding'],
+  ['Figma', '/philips-telehealth-interface'],
+  ['User research', '/philips-telehealth-interface'],
+  ['Speculative design', '/speculative-product-design'],
+  ['Motion design', '/illustration-and-animation-gallery#animation'],
+];
+
+const experience = [
+  ['UX Design', 'Laerdal Medical', '2025 – Present'],
+  ['Design and Communication', 'UNDP Sustainable Energy Hub', 'Summer 2025'],
+  ["Interaction Design Master's", 'Umeå Institute of Design', '2024 – Present'],
+  ['Creative Research', 'Rathenau Instituut x DSS', '2022 – 2023'],
+  ['Motion Design', 'AppLovin', '2020 – 2022'],
+];
+
+// The grid also has one card that links to the About page; it sits after the gallery.
+type Card = { href: string; img: string; label: string };
+const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cardLabel }));
+const galleryIdx = cards.findIndex((c) => c.href === '/illustration-and-animation-gallery');
+cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Anja' });
+---
+<Base>
+  <section class="hero">
+    <h1 class="hero-name">Anja Bedrick</h1>
+    <p class="hero-role">Motion + UX Design</p>
+    <a class="hero-jump" href="#all-projects">Jump to projects ↓</a>
+  </section>
+
+  <section class="featured" aria-label="Featured projects">
+    <p class="featured-intro">Select a featured project below or <a href="#all-projects">scroll all the way down</a> to see everything.</p>
+    <div class="featured-row">
+      {featured.map((p) => (
+        <a class="featured-card" href={`/${p.id}`}>
+          <img src={p.data.cover} alt="" loading="lazy" />
+          <span>{p.data.title}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="about-me" id="about-me">
+    <div class="about-me-inner">
+      <div>
+        <h2>Hej, I'm Anja.</h2>
+        <p class="lead">I'm an interaction designer with a background in motion graphics and UX design.</p>
+        <ul class="pills">
+          {skills.map(([s, href]) => <li><a href={href}>{s}</a></li>)}
+        </ul>
+        <table class="experience">
+          <tbody>
+            {experience.map(([role, org, when]) => (
+              <tr><td>{role}</td><td>{org}</td><td>{when}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <a href="/about-anja" class="about-me-photo"><img src="/media/DumLpsX1VQ7LIqi85QTJYYGo4.jpeg" alt="Anja Bedrick" loading="lazy" /></a>
+    </div>
+  </section>
+
+  <section class="all-projects" id="all-projects">
+    <h2 class="section-title">All projects</h2>
+    <div class="grid">
+      {cards.map((c) => (
+        <a class="card" href={c.href}>
+          <img src={c.img} alt="" loading="lazy" />
+          <span class="card-label">{c.label}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

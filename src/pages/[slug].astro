@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+  return projects.map((p, i) => ({
+    params: { slug: p.id },
+    props: { project: p, next: projects[(i + 1) % projects.length] },
+  }));
+}
+
+const { project, next } = Astro.props;
+const { Content } = await render(project);
+const d = project.data;
+---
+<Base title={d.title} description={d.summary} image={d.cover}>
+  <article class="project">
+    <header class="project-head">
+      <div class="project-intro">
+        {d.eyebrow && <p class="label">{d.eyebrow}</p>}
+        <h1>{d.title}</h1>
+        <p class="project-summary">{d.summary}</p>
+        {d.team && <p class="project-team">{d.team}</p>}
+        {d.tags.length > 0 && <ul class="pills pills-light">{d.tags.map((t) => <li>{t}</li>)}</ul>}
+      </div>
+      {d.hero && (
+        <div class="project-hero">
+          {d.heroType === 'video'
+            ? <video src={d.hero} muted loop playsinline preload="metadata" data-autoplay></video>
+            : <img src={d.hero} alt="" />}
+        </div>
+      )}
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <a class="next-project" href={`/${next.id}`}>
+      <span class="label">Next project</span>
+      <span class="next-title">{next.data.title} →</span>
+    </a>
+  </article>
+</Base>
