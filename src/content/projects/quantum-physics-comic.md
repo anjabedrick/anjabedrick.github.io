@@ -6,67 +6,90 @@ tags: ["Inter-Disciplinary Design", "Adobe Illustrator", "Storytelling", "Storyb
 hero: "/media/UlqSk0H4QzPexcJg3MbdLHdtkWw.jpg"
 heroType: img
 cover: "/media/wfYv1AHzZKAPpf17nJcTzKlO57I.png"
-cardLabel: "Quantum Physics Fellowship · Comic"
+cursorLabel: "Quantum Physics Comic Fellowship | Illustration"
 order: 8
 ---
 
-### At a Glance
+<section class="glance">
+<h3 class="glance-title">At a Glance</h3>
 
-<div class="media">
+<div class="glance-media">
 <img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
 </div>
 
-An original, illustrated comic designed to engage undergraduate students with a unique educational tool via visual learning and storytelling.
+<div class="prose-text">
+<p>An original, illustrated comic designed to engage undergraduate students with a unique educational tool via visual learning and storytelling.</p>
+</div>
+</section>
 
+<section class="sec">
 <div class="star">
-<div class="star-cell">
+<div class="star-card" data-k="situation">
 <h4>Situation</h4>
 <p>A fellowship between the science and comics departments at University of Oregon. Two design students per year pair up with a research team.</p>
 </div>
-<div class="star-cell">
+<div class="star-card" data-k="action">
 <h4>Action</h4>
 <p>Meeting in the lab every week to understand the research, and co-create our comic.</p>
 </div>
-<div class="star-cell">
+<div class="star-card" data-k="problem">
 <h4>Problem</h4>
 <p>How might a design undergraduate student co-create a comic about an ion trap experiment that is engaging, accessible, and educational?</p>
 </div>
-<div class="star-cell">
+<div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>A 10 page comic designed to explain the researchers&#x27; work with ion-trapping to undergraduate students in an engaging, accessible way.</p>
-<p>Design process</p>
+<p>A 10 page comic designed to explain the researchers' work with ion-trapping to undergraduate students in an engaging, accessible way.</p>
 </div>
 </div>
+</section>
 
-## Process
+<section class="sec">
+<header class="sec-head">
+<p class="pill pill-label">Design process</p>
+<h2>Process</h2>
+</header>
 
-"If I can understand what you guys are doing here, anybody can." - Anja
+<div class="prose-text">
+<p>"If I can understand what you guys are doing here, anybody can." - Anja</p>
+</div>
 
-### 01 Meeting the Researchers
-
-Meet the team. I joined David weekly in the lab to learn about the researchers' work, take notes, and sketch equipment.
-
-<div class="media-grid cols-2">
+<div class="step">
+<div class="step-text">
+<h3>01 Meeting the Researchers</h3>
+<p>Meet the team. I joined David weekly in the lab to learn about the researchers' work, take notes, and sketch equipment.</p>
+</div>
+<div class="step-media">
 <img src="/media/AI7ZmOwA40UPqNRm9ynYlabW7A.png" alt="" loading="lazy" />
 <img src="/media/uK7EBqtmUEmH0AmgCPVMwvG8cM.jpg" alt="" loading="lazy" />
 </div>
+</div>
 
-### 02 Co-Creation
+<div class="step step-solo">
+<div class="step-text">
+<h3>02 Co-Creation</h3>
+<p>Because the comic would be used as educational material, scientific accuracy was of top importance. We sketched ideas together, and everything I came up with would be reviewed by the team.</p>
+</div>
+</div>
 
-Because the comic would be used as educational material, scientific accuracy was of top importance. We sketched ideas together, and everything I came up with would be reviewed by the team.
+<div class="step step-solo">
+<div class="step-text">
+<h3>03 Illustration Iteration</h3>
+<p>Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
+</div>
+</div>
+</section>
 
-### 03 Illustration Iteration
-
-Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.
-
-<div class="media">
+<section class="sec">
+<div class="sec-split">
+<div class="sec-side">
 <img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
 </div>
-
-## Output
-
-Check out the final comic below!
-
-<div class="media">
+<div class="sec-main">
+<h2>Output</h2>
+<p class="sec-sub">Check out the final comic below!</p>
+</div>
+</div>
+<div class="gallery">
 <img src="/media/qrQJL5lOoIguX5AaUpJNYf557U.jpg" alt="" loading="lazy" />
 </div>
+</section>

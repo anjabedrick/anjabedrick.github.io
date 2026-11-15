@@ -6,6 +6,8 @@ const projects = (await getCollection('projects')).sort((a, b) => a.data.order -
 const featured = projects
   .filter((p) => p.data.featured !== undefined)
   .sort((a, b) => a.data.featured! - b.data.featured!);
+// the 3D stack shows the featured projects twice, ten cards in a loop
+const stackCards = [...featured, ...featured];
 
 const skills = [
   ['After Effects animation', '/illustration-and-animation-gallery#animation'],
@@ -28,35 +30,49 @@ const experience = [
 
 // The grid also has one card that links to the About page; it sits after the gallery.
 type Card = { href: string; img: string; label: string };
-const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cardLabel }));
+const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cursorLabel }));
 const galleryIdx = cards.findIndex((c) => c.href === '/illustration-and-animation-gallery');
-cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Anja' });
+cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Me' });
+// three columns, filled left to right like the Framer grid
+const columns: Card[][] = [[], [], []];
+cards.forEach((c, i) => columns[i % 3].push(c));
 ---
 <Base>
   <section class="hero">
-    <h1 class="hero-name">Anja Bedrick</h1>
-    <p class="hero-role">Motion + UX Design</p>
-    <a class="hero-jump" href="#all-projects">Jump to projects ↓</a>
-  </section>
+    <div class="hero-text">
+      <h1 class="hero-name" data-split aria-label="Anja Bedrick"><span class="line">Anja</span> <span class="line">Bedrick</span></h1>
+      <p class="hero-role">Motion + UX Design</p>
+      <a class="hero-hint" href="#all-projects">
+        <span>Select a featured project below or</span>
+        <span class="hero-hint-line"></span>
+        <svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true">
+          <rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <span class="hero-hint-line"></span>
+        <span>scroll all the way down to see everything.</span>
+      </a>
+    </div>
 
-  <section class="featured" aria-label="Featured projects">
-    <p class="featured-intro">Select a featured project below or <a href="#all-projects">scroll all the way down</a> to see everything.</p>
-    <div class="featured-row">
-      {featured.map((p) => (
-        <a class="featured-card" href={`/${p.id}`}>
-          <img src={p.data.cover} alt="" loading="lazy" />
-          <span>{p.data.title}</span>
-        </a>
-      ))}
+    <div class="stack-clip">
+    <div class="stack" aria-label="Featured projects">
+      <div class="stack-group">
+        {stackCards.map((p, i) => (
+          <a class="stack-card" href={`/${p.id}`} data-cursor={p.data.cursorLabel} tabindex={i < featured.length ? 0 : -1}>
+            <img src={p.data.cover} alt={p.data.title} loading="eager" draggable="false" />
+          </a>
+        ))}
+      </div>
+    </div>
     </div>
   </section>
 
-  <section class="about-me" id="about-me">
+  <section class="about-me" id="about-me" data-cursor-theme="light">
     <div class="about-me-inner">
-      <div>
+      <div class="about-me-text">
         <h2>Hej, I'm Anja.</h2>
         <p class="lead">I'm an interaction designer with a background in motion graphics and UX design.</p>
-        <ul class="pills">
+        <ul class="skills">
           {skills.map(([s, href]) => <li><a href={href}>{s}</a></li>)}
         </ul>
         <table class="experience">
@@ -67,18 +83,23 @@ cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVv
           </tbody>
         </table>
       </div>
-      <a href="/about-anja" class="about-me-photo"><img src="/media/DumLpsX1VQ7LIqi85QTJYYGo4.jpeg" alt="Anja Bedrick" loading="lazy" /></a>
+      <a href="/about-anja" class="about-me-photo" data-cursor="About Me">
+        <img src="/media/DumLpsX1VQ7LIqi85QTJYYGo4.jpeg" alt="Anja Bedrick" loading="lazy" />
+      </a>
     </div>
   </section>
 
   <section class="all-projects" id="all-projects">
     <h2 class="section-title">All projects</h2>
     <div class="grid">
-      {cards.map((c) => (
-        <a class="card" href={c.href}>
-          <img src={c.img} alt="" loading="lazy" />
-          <span class="card-label">{c.label}</span>
-        </a>
+      {columns.map((col) => (
+        <div class="grid-col">
+          {col.map((c) => (
+            <a class="card" href={c.href} data-cursor={c.label} aria-label={c.label}>
+              <img src={c.img} alt="" loading="lazy" />
+            </a>
+          ))}
+        </div>
       ))}
     </div>
   </section>

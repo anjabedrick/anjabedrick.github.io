@@ -18,11 +18,11 @@ const d = project.data;
   <article class="project">
     <header class="project-head">
       <div class="project-intro">
-        {d.eyebrow && <p class="label">{d.eyebrow}</p>}
+        {d.eyebrow && <p class="pill pill-school">{d.eyebrow}</p>}
         <h1>{d.title}</h1>
         <p class="project-summary">{d.summary}</p>
         {d.team && <p class="project-team">{d.team}</p>}
-        {d.tags.length > 0 && <ul class="pills pills-light">{d.tags.map((t) => <li>{t}</li>)}</ul>}
+        {d.tags.length > 0 && <ul class="tags">{d.tags.map((t) => <li>{t}</li>)}</ul>}
       </div>
       {d.hero && (
         <div class="project-hero">
@@ -33,13 +33,14 @@ const d = project.data;
       )}
     </header>
 
-    <div class="prose">
+    <div class="project-body">
       <Content />
     </div>
 
-    <a class="next-project" href={`/${next.id}`}>
-      <span class="label">Next project</span>
-      <span class="next-title">{next.data.title} →</span>
+    <a class="next-project" href={`/${next.id}`} data-cursor={next.data.cursorLabel}>
+      <span class="pill">Next project</span>
+      <span class="next-title">{next.data.title}</span>
+      <img src={next.data.cover} alt="" loading="lazy" />
     </a>
   </article>
 </Base>

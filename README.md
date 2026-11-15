@@ -29,13 +29,20 @@ npm run dev      # then open http://localhost:4321
 
 Copy an existing file in `src/content/projects/`, rename it, and edit the top section:
 
-- `cover` – image on the home page grid, `cardLabel` – text on that card
-- `order` – position in the grid, `featured` – position in the featured row (delete the line to leave it out)
+- `cover` – image on the home page (3D stack and grid), `cursorLabel` – text the cursor pill shows on hover
+- `order` – position in the grid, `featured` – position in the 3D stack (delete the line to leave it out)
 - `hero` – big image at the top of the project page
 
-Below the `---` line, write normally: `## Big heading`, `### Step heading`, paragraphs.
-Images: `<div class="media"><img src="/media/file.png" alt="" /></div>`; put several
-`<img>` or `<video>` tags in `<div class="media-grid cols-2">` (or `cols-3`) for a row.
+Below the `---` line the page is built from a few HTML blocks (copy them from another project):
+
+- `<section class="glance">` – the outlined "At a Glance" box
+- `<section class="sec">` – a section; start it with `<p class="pill pill-label">Label</p>` and `<h2>Title</h2>`
+- `<div class="sec-split">` – image on the left (sticky), heading + STAR cards on the right
+- `<div class="star-card" data-k="situation">` – a STAR card (`situation`, `problem`, `action`, `result` pick the icon)
+- `<div class="step">` – numbered step: `step-text` beside `step-media`; add `step-flip` to swap sides
+- `<div class="gallery gallery-2">` (or `-3`) – a row of images/videos
+
+Any element with `data-cursor="Some text"` makes the cursor show that text on hover.
 
 ## Publishing
 

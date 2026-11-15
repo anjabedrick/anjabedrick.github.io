@@ -6,77 +6,99 @@ tags: []
 hero: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 heroType: img
 cover: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
-cardLabel: "Illustration and Animation Gallery"
+cursorLabel: "Illustration and animation gallery"
 order: 6
 ---
 
-### Selected illustrated projects ☟
+<section class="sec">
+<h3 class="sub-head">Selected illustrated projects ☟</h3>
 
-<div class="media-grid cols-3">
+<div class="gallery gallery-3">
 <img src="/media/ZrS2xt5jlmfP0b1Vd43zvrnE.png" alt="" loading="lazy" />
 <img src="/media/ReadHHazXDSI0GRcFkui7BDlIuQ.png" alt="" loading="lazy" />
 <img src="/media/9iCnZ59Q340XVLoYUKRR97ehg50.png" alt="" loading="lazy" />
 </div>
 
-### 01 Crime noir playing cards
+<div class="step step-solo">
+<div class="step-text">
+<h3>01 Crime noir playing cards</h3>
+<p>A deck of playing cards illustrated and designed for the well known game, mafia.</p>
+</div>
+</div>
 
-A deck of playing cards illustrated and designed for the well known game, mafia.
-
-### 02 Digital painting
-
-A series of character designs painted in Photoshop for a short animation.
-
-<div class="media-grid cols-3">
+<div class="step step-flip">
+<div class="step-text">
+<h3>02 Digital painting</h3>
+<p>A series of character designs painted in Photoshop for a short animation.</p>
+</div>
+<div class="step-media">
 <img src="/media/3TGDWQBXlbGCHX6LVAmSF8hkTkk.png" alt="" loading="lazy" />
+</div>
+</div>
+
+<div class="gallery gallery-3">
 <img src="/media/ZUG3cItLuJCa60aJZgnmKFiDyqc.png" alt="" loading="lazy" />
 <img src="/media/5IgiR3UbczO6D0w4a099iUu1C0Y.png" alt="" loading="lazy" />
 <img src="/media/RFl7ermpwrLd8PQMQWRlD6V8.jpg" alt="" loading="lazy" />
 <img src="/media/WPw1RYOKG2S4hzpvkbIPsA07jm4.jpg" alt="" loading="lazy" />
 </div>
 
-### 03 Traditional life sketching
-
-Where it all started: traditional sketching as the foundation for a career in digital design.
+<div class="step step-solo">
+<div class="step-text">
+<h3>03 Traditional life sketching</h3>
+<p>Where it all started: traditional sketching as the foundation for a career in digital design.</p>
+</div>
+</div>
 
 <div id="animation"></div>
+<h3 class="sub-head">Selected animated projects ☟</h3>
 
-### Selected animated projects ☟
-
-<div class="media">
+<div class="gallery">
 <video src="/media/dTkA8wtCA2CnDTFJyd0B1Hit8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
-### 01 Kinetic posters
-
-A series of animated posters.
-
-<div class="media-grid cols-2">
+<div class="step step-flip">
+<div class="step-text">
+<h3>01 Kinetic posters</h3>
+<p>A series of animated posters.</p>
+</div>
+<div class="step-media">
 <img src="/media/8MRa9qcCvzqV5TeriZ6tsa4NXI.gif" alt="" loading="lazy" />
 <img src="/media/LRTrohxNw0ueo4ZYtFYFKhBv7io.gif" alt="" loading="lazy" />
 </div>
+</div>
 
-### 02 Rive vector animations
-
-Looping animations rigged, and animated in Rive using simple, tiny-file-size shapes.
-
-First, a simple loading screen animation completely illustrated and animated in Rive.
-
-Next, a more cinematic recreation of a scene from the short film Pear Cider and Cigarettes that I illustrated in Figma, and animated in Rive.
-
-<div class="media-grid cols-3">
+<div class="step">
+<div class="step-text">
+<h3>02 Rive vector animations</h3>
+<p>Looping animations rigged, and animated in Rive using simple, tiny-file-size shapes.</p>
+<p>First, a simple loading screen animation completely illustrated and animated in Rive.</p>
+<p>Next, a more cinematic recreation of a scene from the short film <em>Pear Cider and Cigarettes</em> that I illustrated in Figma, and animated in Rive.</p>
+</div>
+<div class="step-media">
 <video src="/media/CuOoE0UtHJQ5EEFx2nGVlZBhwo.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+</div>
+
+<div class="gallery gallery-2">
 <video src="/media/xeL6m1bQEjjFvGC82HRtdEoQjA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <img src="/media/qSgdobQZoKXEIblLe4CZCGqq6g.gif" alt="" loading="lazy" />
 </div>
 
-### 03 Adobe After Effects + Illustrator animations
-
-Concepts designed in Adobe Illustrator, and brought to life in After Effects
-
-<div class="media">
+<div class="step step-flip">
+<div class="step-text">
+<h3>03 Adobe After Effects + Illustrator animations</h3>
+<p>Concepts designed in Adobe Illustrator, and brought to life in After Effects</p>
+</div>
+<div class="step-media">
 <img src="/media/D67RBdjLQvJiw6BdSb8eCJDwHxo.gif" alt="" loading="lazy" />
 </div>
+</div>
 
-### 04 After Effects complex walk cycle
-
-A concept animatic drawn in Photoshop and animated in After Effects.
+<div class="step step-solo">
+<div class="step-text">
+<h3>04 After Effects complex walk cycle</h3>
+<p>A concept animatic drawn in Photoshop and animated in After Effects.</p>
+</div>
+</div>
+</section>

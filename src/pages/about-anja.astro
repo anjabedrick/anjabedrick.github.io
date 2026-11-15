@@ -2,29 +2,29 @@
 import Base from '../layouts/Base.astro';
 
 const star = [
-  ['Situation', "I'm Anja! I'm from the US, where I earned a double bachelor's in Art&Technology and Political Science and worked as a part-time motion designer. Now, I'm gaining industry experience in UX design before completing my final year of my master's in Sweden."],
-  ['Action', "A current Interaction Design Master's student at Umeå Institute of Design, I am on my internship gap year, building industry experience as a UX design intern at Laerdal Medical before I return to my thesis."],
-  ['Problem', 'Working to balance my interests in design, emerging technology, public health, and impactful policy.'],
-  ['Result', "The result of all of this? I can't wait to find out!"],
+  ['situation', 'Situation', "I'm Anja! I'm from the US, where I earned a double bachelor's in Art&Technology and Political Science and worked as a part-time motion designer. Now, I'm gaining industry experience in UX design before completing my final year of my master's in Sweden."],
+  ['problem', 'Problem', 'Working to balance my interests in design, emerging technology, public health, and impactful policy.'],
+  ['action', 'Action', "A current Interaction Design Master's student at Umeå Institute of Design, I am on my internship gap year, building industry experience as a UX design intern at Laerdal Medical before I return to my thesis."],
+  ['result', 'Result', "The result of all of this? I can't wait to find out!"],
 ];
 ---
 <Base title="About" description="Motion graphics in San Francisco to interaction design in Umeå.">
-  <article class="project">
-    <header class="project-head">
-      <div class="project-intro">
-        <p class="label">San Francisco → Amsterdam → Umeå → Stavanger...</p>
+  <article class="about-page">
+    <header class="about-head">
+      <div>
+        <p class="pill pill-label">San Francisco → Amsterdam → Umeå → Stavanger...</p>
         <h1>Anja Bedrick</h1>
         <p class="project-summary">Motion graphics in San Francisco to interaction design in Umeå.</p>
       </div>
-      <div class="project-hero about-art">
-        <img src="/media/dCXDWx8Hof5yj1O25qpGWs92l7A.svg" alt="" />
-      </div>
+      <img class="about-illustration" src="/media/dCXDWx8Hof5yj1O25qpGWs92l7A.svg" alt="Illustrated portrait of Anja" />
     </header>
-    <div class="prose">
-      <div class="star">
-        {star.map(([h, p]) => <div class="star-cell"><h4>{h}</h4><p>{p}</p></div>)}
-      </div>
-      <div class="media"><img src="/media/I5dK3UQ7x9yWguGRYNnJyUDuXqE.svg" alt="" loading="lazy" /></div>
+
+    <div class="timeline" data-scroll-x>
+      <img src="/media/I5dK3UQ7x9yWguGRYNnJyUDuXqE.svg" alt="Timeline: BA Art&Tech and Political Science, University of Oregon (2018–2022); Motion graphics designer, AppLovin (2020–2022); Motion graphics designer, FLEXeCHARGE (2021–2022); Creative researcher, Rathenau Instituut + DSS (2022–2023); UX design intern, SEED Studio (2023); Master's in Interaction Design, Umeå Institute of Design (2024–now); Design and communication, UNDP Sustainable Energy Hub (2025)." draggable="false" />
+    </div>
+
+    <div class="star about-star">
+      {star.map(([k, h, p]) => <div class="star-card" data-k={k}><h4>{h}</h4><p>{p}</p></div>)}
     </div>
   </article>
 </Base>
