@@ -46,5 +46,5 @@ Any element with `data-cursor="Some text"` makes the cursor show that text on ho
 
 ## Publishing
 
-Every push to `main` on GitHub builds and publishes the site to https://anjabedrick.github.io
+Every push to `main` on GitHub builds and publishes the site to https://anjabedrick.com
 (see `.github/workflows/deploy.yml`).

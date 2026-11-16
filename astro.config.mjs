@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 
-// Published at https://anjabedrick.github.io (repo: anjabedrick/anjabedrick.github.io).
-// If you use a custom domain later, change `site` to it.
+// Published at https://anjabedrick.com via GitHub Pages (repo: anjabedrick/anjabedrick.github.io).
+// The custom domain itself is set in the repo's Settings → Pages.
 export default defineConfig({
-  site: 'https://anjabedrick.github.io',
+  site: 'https://anjabedrick.com',
   trailingSlash: 'ignore',
 });
