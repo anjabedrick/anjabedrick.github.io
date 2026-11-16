@@ -6,6 +6,7 @@ tags: ["Motion Design", "Branding", "Illustration", "Infographics", "Visual iden
 hero: "/media/Q65cVrQY6w02VgKExQmY67Qds.png"
 heroType: img
 cover: "/media/thf5e8yDLjCiSXzOvo3q6HVNc.png"
+categories: ["Motion design", "Branding"]
 cursorLabel: "FLEXeCHARGE | EV Motion Branding"
 order: 9
 ---

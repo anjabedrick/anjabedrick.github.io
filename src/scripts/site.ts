@@ -106,12 +106,26 @@ if (stack) {
     if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
     if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
   });
+  // hovering a card: it grows a touch and the cards around it slide away along the stack,
+  // with a small springy overshoot (same feel as the grid tiles)
+  let hovered = -1;
+  const push = cards.map(() => ({ p: 0, v: 0, s: 1, sv: 0 }));
+  cards.forEach((card, i) => {
+    card.addEventListener('pointerenter', () => { hovered = i; });
+    card.addEventListener('pointerleave', () => { if (hovered === i) hovered = -1; });
+  });
   const render = () => {
     offset += (scrollY + manual - offset) * 0.12; // a little extra easing on top of the smooth scroll
+    const hz = hovered >= 0 ? wrap(HALF - STEP * hovered + offset) : 0;
     cards.forEach((card, i) => {
-      const z = wrap(HALF - STEP * i + offset);
+      const base = wrap(HALF - STEP * i + offset);
+      const k = push[i];
+      const target = hovered < 0 || i === hovered ? 0 : (base > hz ? 140 : -140);
+      k.v = (k.v + (target - k.p) * 0.12) * 0.78; k.p += k.v;
+      k.sv = (k.sv + ((i === hovered ? 1.06 : 1) - k.s) * 0.12) * 0.78; k.s += k.sv;
+      const z = base + k.p;
       const d = Math.abs(z);
-      const scale = 1 + z / 5000;
+      const scale = (1 + z / 5000) * k.s;
       let opacity = 1 - d / 3600;
       if (d > HALF - 300) opacity *= Math.max(0, (HALF - d) / 300); // fade out at the wrap point
       card.style.transform = `translate(-50%, -50%) translateZ(${z.toFixed(1)}px) scale(${scale.toFixed(4)}) translateY(var(--lift))`;
@@ -149,6 +163,38 @@ if (grid && finePointer) {
     });
   });
   grid.addEventListener('pointerleave', reset);
+}
+
+/* ---------------- filter chips above the grid ---------------- */
+const chips = [...document.querySelectorAll<HTMLButtonElement>('.filters .chip')];
+if (grid && chips.length) {
+  const cols = [...grid.querySelectorAll<HTMLElement>('.grid-col')];
+  const all = [...grid.querySelectorAll<HTMLElement>('.card')];
+  // the reading order (left to right, row by row) is the order the cards were dealt into the columns
+  const reading: HTMLElement[] = [];
+  const perCol = cols.map((c) => [...c.querySelectorAll<HTMLElement>('.card')]);
+  for (let r = 0; perCol.some((c) => c[r]); r++) perCol.forEach((c) => c[r] && reading.push(c[r]));
+
+  const apply = (filter: string) => {
+    all.forEach((t) => { t.style.transform = ''; });
+    const first = new Map(all.map((t) => [t, t.getBoundingClientRect()]));
+    const wasHidden = new Set(all.filter((t) => t.classList.contains('is-hidden')));
+    const show = reading.filter((t) => filter === '' ? true : (t.dataset.cats || '').split('|').includes(filter));
+    reading.forEach((t) => t.classList.toggle('is-hidden', !show.includes(t)));
+    show.forEach((t, i) => cols[i % cols.length].appendChild(t)); // deal the matches back into the columns
+    // FLIP: slide cards from where they were to where they are now, with the springy transition
+    for (const t of show) {
+      if (wasHidden.has(t)) { t.animate([{ opacity: 0, transform: 'scale(.9)' }, { opacity: 1, transform: 'none' }], { duration: 500, easing: 'cubic-bezier(.34,1.56,.64,1)' }); continue; }
+      const a = first.get(t)!, b = t.getBoundingClientRect();
+      const dx = a.left - b.left, dy = a.top - b.top;
+      if (!dx && !dy) continue;
+      t.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }], { duration: 700, easing: 'cubic-bezier(.34,1.56,.64,1)' });
+    }
+  };
+  chips.forEach((chip) => chip.addEventListener('click', () => {
+    chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+    apply(chip.dataset.filter || '');
+  }));
 }
 
 /* ---------------- stretchy page edges: overscrolling shows a strip of orange, then springs back ---------------- */

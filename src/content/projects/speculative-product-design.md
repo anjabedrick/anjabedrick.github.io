@@ -6,6 +6,7 @@ tags: ["UI", "UX", "Blender 3D", "Product Design", "Speculative Design", "Figma"
 hero: "/media/SZdZiHT7ss8QfhBSh0kZLxxvN0.png"
 heroType: img
 cover: "/media/KAJUbrnVx49dP47BXX8763Q83o.png"
+categories: ["UX design", "Speculative design", "Branding", "Experience design"]
 cursorLabel: "Umeå Institute of Design | Speculative Branding"
 order: 1
 ---

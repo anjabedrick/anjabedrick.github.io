@@ -7,6 +7,7 @@ tags: ["Motion Capture", "User Testing", "Political Science", "Figma Prototyping
 hero: "/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png"
 heroType: img
 cover: "/media/6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png"
+categories: ["Creative technology", "Physi-digital prototyping", "User research", "Experience design", "Process"]
 cursorLabel: "Rathenau Instituut | Motion Capture Prototype"
 order: 7
 featured: 4

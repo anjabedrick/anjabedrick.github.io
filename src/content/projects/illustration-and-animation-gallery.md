@@ -6,6 +6,7 @@ tags: []
 hero: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 heroType: img
 cover: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
+categories: ["Illustration", "Motion design"]
 cursorLabel: "Illustration and animation gallery"
 order: 6
 ---

@@ -6,6 +6,7 @@ tags: ["Inter-Disciplinary Design", "Adobe Illustrator", "Storytelling", "Storyb
 hero: "/media/UlqSk0H4QzPexcJg3MbdLHdtkWw.jpg"
 heroType: img
 cover: "/media/wfYv1AHzZKAPpf17nJcTzKlO57I.png"
+categories: ["Illustration"]
 cursorLabel: "Quantum Physics Comic Fellowship | Illustration"
 order: 8
 ---

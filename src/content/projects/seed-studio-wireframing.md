@@ -6,6 +6,7 @@ tags: ["Wireframing", "UX Design", "UI Design", "Figma", "Prototyping"]
 hero: "/media/5jC3Ri1Iev3zxmZIgZFWo8qzR1o.png"
 heroType: img
 cover: "/media/k1IswG1laMMkthqP9yoHnISj0.png"
+categories: ["UX design", "Process"]
 cursorLabel: "SEED Design Studio | Clickable Wireframing"
 order: 10
 featured: 3

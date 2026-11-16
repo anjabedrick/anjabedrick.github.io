@@ -6,6 +6,7 @@ tags: ["Motion Graphics", "A/B Testing", "Adobe Creative Suite", "After Effects"
 hero: "/media/UVWAYGDFHxjecpgn18yB2jUZiY.png"
 heroType: img
 cover: "/media/Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png"
+categories: ["Motion design", "Illustration"]
 cursorLabel: "AppLovin | Animated Mobile Game Ads"
 order: 5
 featured: 2

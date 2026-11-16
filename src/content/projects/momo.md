@@ -7,6 +7,7 @@ tags: ["Product Design", "Sound Design", "Interaction Design", "Arduino Electron
 hero: "/media/rpfb52k9yx4oRDpAK7GWBfkb3Kk.jpg"
 heroType: img
 cover: "/media/hTDPpoanNCXHMD2NdPIdzy1KGGU.png"
+categories: ["Physi-digital prototyping", "Creative technology", "Experience design", "Process"]
 cursorLabel: "Modular Physical Therapy | Arduino Coding"
 order: 0
 featured: 1

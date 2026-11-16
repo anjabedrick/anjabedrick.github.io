@@ -261,10 +261,33 @@ strong { font-weight: 600; }
 
 /* ---------- all projects grid ---------- */
 .all-projects { padding: clamp(72px, 10vw, 140px) var(--gutter) 0; max-width: 1440px; margin: 0 auto; }
-.section-title { font: 400 clamp(40px, 5vw, 72px)/1 var(--serif); text-align: center; margin-bottom: 56px; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px clamp(16px, 5vw, 64px); align-items: start; max-width: 1280px; margin: 0 auto; }
-.grid-col { display: flex; flex-direction: column; gap: 16px; }
+.section-title { font: 400 clamp(40px, 5vw, 72px)/1 var(--serif); text-align: center; margin-bottom: 32px; }
+
+/* filter chips */
+.filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin: 0 auto 48px; }
+.chip {
+  font: 400 15px/1.5 var(--sans); color: var(--orange-text); background: var(--cream);
+  padding: 8px 14px; border: 1px solid var(--orange); border-radius: 20px; cursor: pointer;
+  transition: transform .45s var(--spring), opacity .3s, background-color .25s, color .25s;
+}
+.chip:hover { transform: scale(1.06); opacity: .6; }
+.chip[aria-pressed="true"] { background: var(--orange-text); border-color: var(--orange-text); color: var(--cream); }
+.chip[aria-pressed="true"]:hover { opacity: 1; }
+.chip:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+/* same space between every tile, across and down */
+.grid { --gap: clamp(16px, 2.4vw, 32px); display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); align-items: start; max-width: 1280px; margin: 0 auto; }
+.grid-col { display: flex; flex-direction: column; gap: var(--gap); }
 .grid-col:nth-child(2) { margin-top: 96px; }
+.card.is-hidden { display: none; }
+/* project name under each tile: only shown on touch screens, where there's no hover cursor */
+.card-caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (hover: none) {
+  .card-caption {
+    position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal;
+    display: block; text-align: right; margin-top: 8px; font: 400 14px/1.4 var(--sans); color: var(--orange-text);
+  }
+}
 .card { display: block; text-decoration: none; position: relative; transition: transform .7s var(--spring); }
 .card:hover { z-index: 2; }
 .card img {

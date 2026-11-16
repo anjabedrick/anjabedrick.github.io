@@ -29,10 +29,10 @@ const experience = [
 ];
 
 // The grid also has one card that links to the About page; it sits after the gallery.
-type Card = { href: string; img: string; label: string; about?: boolean };
-const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cursorLabel }));
+type Card = { href: string; img: string; label: string; cats: string[]; about?: boolean };
+const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cursorLabel, cats: p.data.categories }));
 const galleryIdx = cards.findIndex((c) => c.href === '/illustration-and-animation-gallery');
-cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Me', about: true });
+cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Me', cats: [], about: true });
 // the About tile swaps places with FLEXeCHARGE so it ends up at the very bottom of the grid
 const aboutIdx = cards.findIndex((c) => c.about);
 const flexIdx = cards.findIndex((c) => c.href === '/flexecharge-branding');
@@ -40,6 +40,11 @@ const flexIdx = cards.findIndex((c) => c.href === '/flexecharge-branding');
 // three columns, filled left to right like the Framer grid
 const columns: Card[][] = [[], [], []];
 cards.forEach((c, i) => columns[i % 3].push(c));
+
+// filter chips, in this order; a chip only shows if at least one project uses it
+const FILTERS = ['UX design', 'Physi-digital prototyping', 'Experience design', 'Creative technology', 'Illustration',
+  'Motion design', 'Branding', 'Speculative design', 'Process', 'User research'];
+const filters = FILTERS.filter((f) => cards.some((c) => c.cats.includes(f)));
 ---
 <Base>
   <section class="hero">
@@ -101,12 +106,17 @@ cards.forEach((c, i) => columns[i % 3].push(c));
 
   <section class="all-projects" id="all-projects">
     <h2 class="section-title">All projects</h2>
-    <div class="grid">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" class="chip" aria-pressed="true" data-filter="">All</button>
+      {filters.map((f) => <button type="button" class="chip" aria-pressed="false" data-filter={f}>{f}</button>)}
+    </div>
+    <div class="grid" aria-live="polite">
       {columns.map((col) => (
         <div class="grid-col">
           {col.map((c) => (
-            <a class:list={["card", { "card-about": c.about }]} href={c.href} data-cursor={c.label} aria-label={c.label}>
+            <a class:list={["card", { "card-about": c.about }]} href={c.href} data-cursor={c.label} data-cats={c.cats.join('|')}>
               <img src={c.img} alt="" loading="lazy" />
+              <span class="card-caption">{c.label}</span>
             </a>
           ))}
         </div>

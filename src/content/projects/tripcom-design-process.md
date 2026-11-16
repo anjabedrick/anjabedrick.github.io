@@ -6,6 +6,7 @@ tags: ["CX", "Motion Graphics", "UX/UI", "Customer Journey", "User Personas", "S
 hero: "/media/haU4l95SvLKFS29MUCem3LPQYo.gif"
 heroType: img
 cover: "/media/O3Hv6ku6diOv3bqNOKXid6Ta5rM.png"
+categories: ["UX design", "Experience design", "Motion design", "Process"]
 cursorLabel: "Trip.com | CX Journey"
 order: 3
 ---

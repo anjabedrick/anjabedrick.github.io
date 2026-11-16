@@ -7,6 +7,7 @@ tags: ["UX", "UI", "Service Design", "Design Ethnography", "Design for Healthcar
 hero: "/media/FHXXIoTrVZtVBkVgylMAXcF4Cs.png"
 heroType: img
 cover: "/media/Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png"
+categories: ["UX design", "User research", "Experience design", "Process", "Speculative design"]
 cursorLabel: "PHILIPS Telehealth Interface | UX+UI"
 order: 4
 featured: 0

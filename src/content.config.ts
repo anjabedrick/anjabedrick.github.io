@@ -14,6 +14,7 @@ const projects = defineCollection({
     hero: z.string().optional(),         // main image or video at the top of the page
     heroType: z.enum(['img', 'video']).default('img'),
     cover: z.string(),                   // image used on the home page (stack and grid)
+    categories: z.array(z.string()).default([]), // used by the filter chips on the home page
     cursorLabel: z.string(),             // text the cursor shows when hovering the project
     order: z.number(),                   // position in the "All projects" grid
     featured: z.number().optional(),     // position in the 3D stack at the top (leave out to hide)
