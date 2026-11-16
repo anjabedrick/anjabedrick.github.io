@@ -261,7 +261,7 @@ strong { font-weight: 600; }
 
 /* ---------- all projects grid ---------- */
 .all-projects { padding: clamp(72px, 10vw, 140px) var(--gutter) 0; max-width: 1440px; margin: 0 auto; }
-.section-title { font: 400 clamp(40px, 5vw, 72px)/1 var(--serif); text-align: center; margin-bottom: 32px; }
+.section-title { font: 400 clamp(40px, 5vw, 72px)/1 var(--serif); text-align: center; margin-bottom: 56px; }
 
 /* filter chips */
 .filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin: 0 auto 48px; }
