@@ -155,6 +155,7 @@ if (grid && finePointer) {
 const page = document.querySelector<HTMLElement>('.page');
 if (page && lenis && !reducedMotion) {
   const MAX = 90;
+  const topNav = document.querySelector<HTMLElement>('.nav');
   let stretch = 0, velocity = 0, lastWheel = 0, gestureStart = 0;
   window.addEventListener('wheel', (e) => {
     const now = performance.now();
@@ -176,6 +177,8 @@ if (page && lenis && !reducedMotion) {
     stretch += velocity;
     if (Math.abs(stretch) < 0.3 && Math.abs(velocity) < 0.3) { stretch = 0; velocity = 0; }
     page.style.transform = stretch ? `translate3d(0, ${stretch.toFixed(1)}px, 0)` : '';
+    // at the top the navbar rides down with the page, so the orange shows above it, not behind it
+    if (topNav) topNav.style.transform = stretch > 0 ? `translate3d(0, ${stretch.toFixed(1)}px, 0)` : '';
     document.documentElement.classList.toggle('peek-bottom', stretch < 0);
   });
 }
