@@ -89,15 +89,32 @@ if (stack) {
   const STEP = 400, SPAN = STEP * cards.length, HALF = SPAN / 2;
   const wrap = (z: number) => ((((z + HALF) % SPAN) + SPAN) % SPAN) - HALF;
   let offset = 0;
+  let manual = 0; // extra movement from the arrows, sideways swipes and arrow keys
+  const go = (dir: number) => { manual = Math.round((manual + dir * STEP) / STEP) * STEP; };
+  stack.parentElement!.querySelectorAll<HTMLElement>('[data-stack-dir]').forEach((b) =>
+    b.addEventListener('click', () => go(Number(b.dataset.stackDir))));
+  // sideways trackpad scroll moves through the stack (vertical scroll still scrolls the page)
+  stack.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) { e.preventDefault(); manual += e.deltaX * 1.2; }
+  }, { passive: false });
+  // touch / pen: drag sideways
+  let dragX: number | null = null, dragStart = 0;
+  stack.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') { dragX = e.clientX; dragStart = manual; } });
+  window.addEventListener('pointermove', (e) => { if (dragX !== null) manual = dragStart - (e.clientX - dragX) * 2.5; });
+  window.addEventListener('pointerup', () => { if (dragX !== null) { dragX = null; go(0); } });
+  stack.parentElement!.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+  });
   const render = () => {
-    offset += (scrollY - offset) * 0.12; // a little extra easing on top of the smooth scroll
+    offset += (scrollY + manual - offset) * 0.12; // a little extra easing on top of the smooth scroll
     cards.forEach((card, i) => {
       const z = wrap(HALF - STEP * i + offset);
       const d = Math.abs(z);
       const scale = 1 + z / 5000;
       let opacity = 1 - d / 3600;
       if (d > HALF - 300) opacity *= Math.max(0, (HALF - d) / 300); // fade out at the wrap point
-      card.style.transform = `translate(-50%, -50%) translateZ(${z.toFixed(1)}px) scale(${scale.toFixed(4)})`;
+      card.style.transform = `translate(-50%, -50%) translateZ(${z.toFixed(1)}px) scale(${scale.toFixed(4)}) translateY(var(--lift))`;
       card.style.opacity = opacity.toFixed(3);
       card.style.setProperty('--blur', `${(d / 112.5).toFixed(2)}px`);
       card.style.zIndex = String(Math.round(z + HALF));
@@ -105,7 +122,73 @@ if (stack) {
     });
   };
   render();
-  if (!reducedMotion) frameCallbacks.push(render);
+  frameCallbacks.push(render);
+}
+
+/* ---------------- grid tiles: the hovered tile grows and nudges its neighbours aside ---------------- */
+const grid = document.querySelector<HTMLElement>('.grid');
+if (grid && finePointer) {
+  const GROW = 0.07;
+  const tiles = [...grid.querySelectorAll<HTMLElement>('.card')];
+  const reset = () => tiles.forEach((t) => { t.style.transform = ''; });
+  tiles.forEach((tile) => {
+    tile.addEventListener('pointerenter', () => {
+      const a = tile.getBoundingClientRect();
+      const dx = (a.width * GROW) / 2, dy = (a.height * GROW) / 2;
+      tile.style.transform = `scale(${1 + GROW})`;
+      for (const o of tiles) {
+        if (o === tile) continue;
+        const b = o.getBoundingClientRect();
+        const sameCol = Math.abs(b.left - a.left) < 10;
+        const overlapsY = b.bottom > a.top && b.top < a.bottom;
+        let x = 0, y = 0;
+        if (sameCol) y = b.top < a.top ? -dy : dy;
+        else if (overlapsY) x = b.left < a.left ? -dx : dx;
+        o.style.transform = x || y ? `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)` : '';
+      }
+    });
+  });
+  grid.addEventListener('pointerleave', reset);
+}
+
+/* ---------------- stretchy page edges: overscrolling shows a strip of orange, then springs back ---------------- */
+const page = document.querySelector<HTMLElement>('.page');
+if (page && lenis && !reducedMotion) {
+  const MAX = 90;
+  let stretch = 0, velocity = 0, lastWheel = 0, gestureStart = 0;
+  window.addEventListener('wheel', (e) => {
+    const now = performance.now();
+    if (now - lastWheel > 160) gestureStart = now; // a pause between events means a new swipe
+    lastWheel = now;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const atTop = window.scrollY <= 0 && e.deltaY < 0;
+    const atBottom = window.scrollY >= max - 1 && e.deltaY > 0;
+    if (!atTop && !atBottom) return;
+    // only the first moment of a swipe pulls the edge; trackpad "coasting" afterwards is ignored,
+    // so the orange strip never gets held open
+    if (now - gestureStart > 220) return;
+    const resistance = 1 - Math.min(Math.abs(stretch) / MAX, 0.95);
+    stretch = Math.max(-MAX, Math.min(MAX, stretch - e.deltaY * 0.3 * resistance));
+  }, { passive: true });
+  frameCallbacks.push(() => {
+    // the spring always pulls back, even while events arrive
+    velocity = (velocity - stretch * 0.16) * 0.7;
+    stretch += velocity;
+    if (Math.abs(stretch) < 0.3 && Math.abs(velocity) < 0.3) { stretch = 0; velocity = 0; }
+    page.style.transform = stretch ? `translate3d(0, ${stretch.toFixed(1)}px, 0)` : '';
+    document.documentElement.classList.toggle('peek-bottom', stretch < 0);
+  });
+}
+
+/* ---------------- navbar: switch to a more opaque glass over dark sections (keeps text readable) ---------------- */
+const nav = document.querySelector<HTMLElement>('.nav');
+const darkBands = [...document.querySelectorAll<HTMLElement>('[data-cursor-theme="light"]')];
+if (nav && darkBands.length) {
+  frameCallbacks.push(() => {
+    const navBottom = nav.offsetHeight;
+    const overDark = darkBands.some((d) => { const r = d.getBoundingClientRect(); return r.top < navBottom && r.bottom > 0; });
+    nav.classList.toggle('nav-on-dark', overDark);
+  });
 }
 
 /* ---------------- about page timeline: slides sideways as you scroll down ---------------- */

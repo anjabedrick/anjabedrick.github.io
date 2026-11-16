@@ -21,18 +21,22 @@ const skills = [
 ];
 
 const experience = [
-  ['UX Design', 'Laerdal Medical', '2025 – Present'],
-  ['Design and Communication', 'UNDP Sustainable Energy Hub', 'Summer 2025'],
-  ["Interaction Design Master's", 'Umeå Institute of Design', '2024 – Present'],
-  ['Creative Research', 'Rathenau Instituut x DSS', '2022 – 2023'],
-  ['Motion Design', 'AppLovin', '2020 – 2022'],
+  ['UX Design', 'Laerdal Medical', 'Sept 2025 – Aug 2026'],
+  ['Design and Communication Internship', 'UNDP Sustainable Energy Hub', 'Summer 2025'],
+  ["Interaction Design Master's", 'Umeå Institute of Design', 'Sept 2024 – June 2027'],
+  ['Creative Research', 'Rathenau Instituut x DSS', 'Sept 2022 – Jan 2023'],
+  ['Motion Design', 'AppLovin', 'June 2020 – Aug 2022'],
 ];
 
 // The grid also has one card that links to the About page; it sits after the gallery.
-type Card = { href: string; img: string; label: string };
+type Card = { href: string; img: string; label: string; about?: boolean };
 const cards: Card[] = projects.map((p) => ({ href: `/${p.id}`, img: p.data.cover, label: p.data.cursorLabel }));
 const galleryIdx = cards.findIndex((c) => c.href === '/illustration-and-animation-gallery');
-cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Me' });
+cards.splice(galleryIdx + 1, 0, { href: '/about-anja', img: '/media/mCNElRGQgNVvMvyA5qbj0E3Ws.gif', label: 'About Me', about: true });
+// the About tile swaps places with FLEXeCHARGE so it ends up at the very bottom of the grid
+const aboutIdx = cards.findIndex((c) => c.about);
+const flexIdx = cards.findIndex((c) => c.href === '/flexecharge-branding');
+[cards[aboutIdx], cards[flexIdx]] = [cards[flexIdx], cards[aboutIdx]];
 // three columns, filled left to right like the Framer grid
 const columns: Card[][] = [[], [], []];
 cards.forEach((c, i) => columns[i % 3].push(c));
@@ -41,7 +45,7 @@ cards.forEach((c, i) => columns[i % 3].push(c));
   <section class="hero">
     <div class="hero-text">
       <h1 class="hero-name" data-split aria-label="Anja Bedrick"><span class="line">Anja</span> <span class="line">Bedrick</span></h1>
-      <p class="hero-role">Motion + UX Design</p>
+      <p class="hero-role">Interaction designer</p>
       <a class="hero-hint" href="#all-projects">
         <span>Select a featured project below or</span>
         <span class="hero-hint-line"></span>
@@ -64,6 +68,12 @@ cards.forEach((c, i) => columns[i % 3].push(c));
         ))}
       </div>
     </div>
+    <button class="stack-arrow stack-prev" type="button" data-stack-dir="-1" aria-label="Previous project">
+      <svg viewBox="0 0 256 256" width="22" height="22" aria-hidden="true"><path d="M165.7 202.3a8 8 0 0 1-11.4 11.4l-80-80a8 8 0 0 1 0-11.4l80-80a8 8 0 0 1 11.4 11.4L91.3 128Z" fill="currentColor"/></svg>
+    </button>
+    <button class="stack-arrow stack-next" type="button" data-stack-dir="1" aria-label="Next project">
+      <svg viewBox="0 0 256 256" width="22" height="22" aria-hidden="true"><path d="m181.7 133.7-80 80a8 8 0 0 1-11.4-11.4L164.7 128 90.3 53.7a8 8 0 0 1 11.4-11.4l80 80a8 8 0 0 1 0 11.4Z" fill="currentColor"/></svg>
+    </button>
     </div>
   </section>
 
@@ -95,7 +105,7 @@ cards.forEach((c, i) => columns[i % 3].push(c));
       {columns.map((col) => (
         <div class="grid-col">
           {col.map((c) => (
-            <a class="card" href={c.href} data-cursor={c.label} aria-label={c.label}>
+            <a class:list={["card", { "card-about": c.about }]} href={c.href} data-cursor={c.label} aria-label={c.label}>
               <img src={c.img} alt="" loading="lazy" />
             </a>
           ))}

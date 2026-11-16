@@ -23,13 +23,13 @@ order: 3
 <h4>Situation</h4>
 <p>A third-round interview design task for a Visual Designer role at Trip.com. The company provided the problem based on real-life situations in a short design brief for a 24 hour sprint.</p>
 </div>
-<div class="star-card" data-k="action">
-<h4>Action</h4>
-<p>Spent one 24 hour sprint understanding Trip.com, getting to know the brand identity, empathising with the problem, conducting competitive analysis, sketching, designing a customer journey map with a user persona, and brainstorming metrics to measure impact.</p>
-</div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
 <p>KEY BUSINESS GOALS: Improve Revenue - Upsell the higher Flight Package rate (compared to what the user would have seen on the Meta sites - e.g. Skyscanner Increase Registration - Encourage users to register for free on Trip.com USP Awareness - Make users aware of Trip.com’s USP: 24x7 Customer Support and Flight Booking Guarantee Reduce Page Exit rate Improve Page Conversion rate.</p>
+</div>
+<div class="star-card" data-k="action">
+<h4>Action</h4>
+<p>Spent one 24 hour sprint understanding Trip.com, getting to know the brand identity, empathising with the problem, conducting competitive analysis, sketching, designing a customer journey map with a user persona, and brainstorming metrics to measure impact.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>

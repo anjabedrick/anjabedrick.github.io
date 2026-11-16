@@ -15,22 +15,16 @@ featured: 0
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="glance-media">
-<video src="/media/HKTLjv9EsE4Xt7IbBx3Et8tzHKU.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-</div>
-
 <div class="prose-text">
 <p>A speculative <strong>telehealth specialist's monitor</strong>, designed to support bedside nurses. To the right, the user can quickly switch between a single patient, focused care group, and all patients. The main screen prioritizes patients by scale in order of criticality.</p>
 <p>UI focus: attention prioritization</p>
+<p>A speculative <strong>bedside nurse's monitor</strong>, with adaptable ways to communicate quickly and intuitively with a telehealth specialist. The user can open the right panel to pull up a communication log with <strong>several modes of communication</strong>: voice notes, prewritten quick messages, calling, and an open text field. The soft blue animation assures that a telehealth specialist is present.</p>
+<p>UI focus: efficient, adaptable communication</p>
 </div>
 
 <div class="glance-media">
+<video src="/media/HKTLjv9EsE4Xt7IbBx3Et8tzHKU.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/JQh8DSrM2k911RCGkXP7z2eAA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-</div>
-
-<div class="prose-text">
-<p>A speculative <strong>bedside nurse's monitor</strong>, with adaptable ways to communicate quickly and intuitively with a telehealth specialist. The user can open the right panel to pull up a communication log with <strong>several modes of communication</strong>: voice notes, prewritten quick messages, calling, and an open text field. The soft blue animation assures that a telehealth specialist is present.</p>
-<p>UI focus: efficient, adaptable communication</p>
 </div>
 </section>
 
@@ -64,6 +58,7 @@ featured: 0
 </div>
 </div>
 
+
 </section>
 
 <section class="sec">
@@ -82,12 +77,7 @@ featured: 0
 </div>
 </div>
 
-<div class="gallery gallery-2">
-<img src="/media/r7lqxTYtYG4gziDlgBNADh2Eo.png" alt="" loading="lazy" />
-<video src="/media/tHeOE3eWNoA7BFq2Lb2T6oUv0xA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-</div>
-
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Processing qualitative data</h3>
 <p>We then distilled these qualitative stories into story cards, organized into themes: Alarms, years of experience, communication, and work environment.</p>
@@ -99,6 +89,9 @@ featured: 0
 <li>Work environment = equal partnership</li>
 </ul>
 </div>
+<div class="step-media">
+<video src="/media/tHeOE3eWNoA7BFq2Lb2T6oUv0xA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
 </div>
 
 <div class="step">
@@ -108,18 +101,17 @@ featured: 0
 </div>
 <div class="step-media">
 <img src="/media/aNuUZfBNPGSTob9Aoj6ZWn2bk.png" alt="" loading="lazy" />
-</div>
-</div>
-
-<div class="gallery gallery-2">
 <img src="/media/tbImMPNp5wuLUxSiqOJRA6RDhE.png" alt="" loading="lazy" />
-<img src="/media/mf1Z1zoQK04Qx2vMvH8ugUS6cQ.jpeg" alt="" loading="lazy" />
+</div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>04 Bodystorming</h3>
 <p>Physically moving through scenarios to pinpoint unforeseen issues.</p>
+</div>
+<div class="step-media">
+<img src="/media/mf1Z1zoQK04Qx2vMvH8ugUS6cQ.jpeg" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -131,18 +123,17 @@ featured: 0
 </div>
 <div class="step-media">
 <img src="/media/woGE89igqwVUnqGNSYiLubfFfCo.png" alt="" loading="lazy" />
-</div>
-</div>
-
-<div class="gallery gallery-2">
 <video src="/media/lB6GMc7kHU1KQ1swkVbzdxbDSc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<img src="/media/4o2mTcUI8zGbG2zlnJVTiltv8Y.jpeg" alt="" loading="lazy" />
+</div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>06 Prototyping</h3>
 <p>First iterations based on our research and principles.</p>
+</div>
+<div class="step-media">
+<img src="/media/4o2mTcUI8zGbG2zlnJVTiltv8Y.jpeg" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -153,23 +144,22 @@ featured: 0
 </div>
 <div class="step-media">
 <img src="/media/zHs3A6m4PdXO55NGJgXHkjGAQaM.png" alt="" loading="lazy" />
+<img src="/media/b6tDLmZ9mJOhkOn90vbXgefOb4.png" alt="" loading="lazy" />
+<video src="/media/dtJSfkU7VqBrcCz2pZFbWMIl4.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
-<div class="gallery gallery-3">
-<img src="/media/b6tDLmZ9mJOhkOn90vbXgefOb4.png" alt="" loading="lazy" />
-<video src="/media/dtJSfkU7VqBrcCz2pZFbWMIl4.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<div class="step step-flip">
+<div class="step-text">
+<h3>08 UI Focus: Communication</h3>
+<p>The bedside nurse and telehealth specialist have different needs for communication. The bedside nurse needs quick communication modes adaptable to different situations. Sometimes hands-free voice dictation is ideal, while other times, silent messaging is preferred.</p>
+</div>
+<div class="step-media">
 <img src="/media/ygqvENgUtnrHhsY2dZRUguI1A0.png" alt="" loading="lazy" />
 <img src="/media/dm5SqT9eC0FRHE47tSeihiVw3s.png" alt="" loading="lazy" />
 <img src="/media/jMYIVmHCxfgnCC4uFN89XgKcbk.png" alt="" loading="lazy" />
 <img src="/media/LZyNIjKax5OykniuyTyPKsVE.png" alt="" loading="lazy" />
 <img src="/media/MEhV4RKYwpzoUAfh082iijPtyOA.png" alt="" loading="lazy" />
-</div>
-
-<div class="step step-solo">
-<div class="step-text">
-<h3>08 UI Focus: Communication</h3>
-<p>The bedside nurse and telehealth specialist have different needs for communication. The bedside nurse needs quick communication modes adaptable to different situations. Sometimes hands-free voice dictation is ideal, while other times, silent messaging is preferred.</p>
 </div>
 </div>
 
@@ -179,35 +169,30 @@ featured: 0
 <p>Testing concepts with healthcare professionals and design experts to reground our work.</p>
 </div>
 <div class="step-media">
-<img src="/media/nYeb6UtfflXzn2iBllY7f9fSiI.png" alt="" loading="lazy" />
-</div>
-</div>
-
-<div class="gallery gallery-2">
-<video src="/media/MLWPbW1dUQawJLhhun3dBwpgJak.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/m2MmSkVbBmUVfGW16YGM2V3fQM.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
-
-<div class="step step-flip">
-<div class="step-text">
-<h3>10 Design system</h3>
-<p>Creating our design system with the principles we'd learned from the ICU at the forefront. Our priorities were: confident prioritization, strong support system, adaptable lines of communication, equal partnership.</p>
-</div>
-<div class="step-media">
-<img src="/media/K5R6G0NS0Q925jusDThNuRvWTQ.png" alt="" loading="lazy" />
-</div>
-</div>
-
-<div class="gallery gallery-3">
-<img src="/media/vpVUSw9RbBmMNcFeumCkbzXRGg.png" alt="" loading="lazy" />
-<img src="/media/Gwo5dikizQ1dMdru1FmYDxV3MeY.png" alt="" loading="lazy" />
-<img src="/media/9Dp97KwZLAIAGb2JBo2bFo1oY.png" alt="" loading="lazy" />
 </div>
 
 <div class="step step-solo">
 <div class="step-text">
+<h3>10 Design system</h3>
+<p>Creating our design system with the principles we'd learned from the ICU at the forefront. Our priorities were: confident prioritization, strong support system, adaptable lines of communication, equal partnership.</p>
+</div>
+</div>
+
+<div class="gallery">
+<img src="/media/K5R6G0NS0Q925jusDThNuRvWTQ.png" alt="" loading="lazy" />
+</div>
+
+<div class="step step-flip">
+<div class="step-text">
 <h3>11 Iteration</h3>
 <p>Prototype, feedback, refine, and repeat.</p>
+</div>
+<div class="step-media">
+<img src="/media/vpVUSw9RbBmMNcFeumCkbzXRGg.png" alt="" loading="lazy" />
+<img src="/media/Gwo5dikizQ1dMdru1FmYDxV3MeY.png" alt="" loading="lazy" />
+<img src="/media/9Dp97KwZLAIAGb2JBo2bFo1oY.png" alt="" loading="lazy" />
 </div>
 </div>
 </section>

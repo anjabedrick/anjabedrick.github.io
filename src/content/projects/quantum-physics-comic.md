@@ -13,12 +13,12 @@ order: 8
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="glance-media">
-<img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
-</div>
-
 <div class="prose-text">
 <p>An original, illustrated comic designed to engage undergraduate students with a unique educational tool via visual learning and storytelling.</p>
+</div>
+
+<div class="glance-media">
+<img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
 </div>
 </section>
 
@@ -28,13 +28,13 @@ order: 8
 <h4>Situation</h4>
 <p>A fellowship between the science and comics departments at University of Oregon. Two design students per year pair up with a research team.</p>
 </div>
-<div class="star-card" data-k="action">
-<h4>Action</h4>
-<p>Meeting in the lab every week to understand the research, and co-create our comic.</p>
-</div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
 <p>How might a design undergraduate student co-create a comic about an ion trap experiment that is engaging, accessible, and educational?</p>
+</div>
+<div class="star-card" data-k="action">
+<h4>Action</h4>
+<p>Meeting in the lab every week to understand the research, and co-create our comic.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
@@ -60,36 +60,31 @@ order: 8
 </div>
 <div class="step-media">
 <img src="/media/AI7ZmOwA40UPqNRm9ynYlabW7A.png" alt="" loading="lazy" />
-<img src="/media/uK7EBqtmUEmH0AmgCPVMwvG8cM.jpg" alt="" loading="lazy" />
 </div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Co-Creation</h3>
 <p>Because the comic would be used as educational material, scientific accuracy was of top importance. We sketched ideas together, and everything I came up with would be reviewed by the team.</p>
 </div>
+<div class="step-media">
+<img src="/media/uK7EBqtmUEmH0AmgCPVMwvG8cM.jpg" alt="" loading="lazy" />
+</div>
 </div>
 
-<div class="step step-solo">
-<div class="step-text">
-<h3>03 Illustration Iteration</h3>
-<p>Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
-</div>
-</div>
+<h3 class="sub-head">03 Illustration Iteration</h3>
 </section>
 
 <section class="sec">
-<div class="sec-split">
-<div class="sec-side">
-<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
-</div>
-<div class="sec-main">
+<header class="sec-head">
+<p class="pill pill-label">Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
 <h2>Output</h2>
 <p class="sec-sub">Check out the final comic below!</p>
-</div>
-</div>
+</header>
+
 <div class="gallery">
+<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
 <img src="/media/qrQJL5lOoIguX5AaUpJNYf557U.jpg" alt="" loading="lazy" />
 </div>
 </section>

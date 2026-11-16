@@ -39,6 +39,7 @@ featured: 2
 </div>
 </div>
 </div>
+
 <div class="prose-text">
 <p>Rapid ideation, animation, and iteration using A/B testing. Check out a storyboard I made to the left to convey a concept to the team.</p>
 </div>
@@ -58,28 +59,27 @@ featured: 2
 </div>
 <div class="step-media">
 <img src="/media/ilWud95UJAbqIXsf1bc7v9Uf98.gif" alt="" loading="lazy" />
-<img src="/media/dk5mEydXvoBG9sPMANRlaKD98Hw.gif" alt="" loading="lazy" />
 </div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Advanced After Effects</h3>
 <p>While some ads required little editing of screenrecorded gameplay, other concepts required more advanced editing, such as the smoke particles and explosion effects on this truck.</p>
 </div>
+<div class="step-media">
+<img src="/media/dk5mEydXvoBG9sPMANRlaKD98Hw.gif" alt="" loading="lazy" />
+</div>
 </div>
 
-<h3 class="sub-head">03 Asset Illustration</h3>
-
-<div class="gallery">
-<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />
-</div>
-
-<div class="prose-text">
+<div class="step">
+<div class="step-text">
+<h3>03 Asset Illustration</h3>
 <p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of an such asset and animation.</p>
 </div>
-
-<div class="gallery">
+<div class="step-media">
+<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />
 <img src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo.gif" alt="" loading="lazy" />
+</div>
 </div>
 </section>

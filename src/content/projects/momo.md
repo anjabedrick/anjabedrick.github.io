@@ -40,6 +40,7 @@ featured: 1
 </div>
 </div>
 </div>
+
 <div class="gallery">
 <img src="/media/Fsu9vTAUivDiDD5KGdYii0TlMg8.gif" alt="" loading="lazy" />
 </div>
@@ -54,15 +55,14 @@ featured: 1
 </div>
 </div>
 
-<div class="gallery gallery-2">
-<img src="/media/tS4VMDiwePpv0KiwRq3eS1LRS8.png" alt="" loading="lazy" />
-<img src="/media/6PuRsbg9gfUGfWYlhWhWYf40.png" alt="" loading="lazy" />
-</div>
-
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Physical prototyping</h3>
 <p>Our concept was to take existing fine motor skill physiotherapy treatments, and make them adaptable, gamified, and portable. 3D printing multiple slightly varied options for the physical product to test practical usability.</p>
+</div>
+<div class="step-media">
+<img src="/media/tS4VMDiwePpv0KiwRq3eS1LRS8.png" alt="" loading="lazy" />
+<img src="/media/6PuRsbg9gfUGfWYlhWhWYf40.png" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -73,18 +73,17 @@ featured: 1
 </div>
 <div class="step-media">
 <img src="/media/AKS2aOwid9JmY5ISNNGgvuuIpW8.png" alt="" loading="lazy" />
-</div>
-</div>
-
-<div class="gallery gallery-2">
 <img src="/media/W9xr6o31vBQlBfcdzqxJn2RrIo.png" alt="" loading="lazy" />
-<video src="/media/aVQMgObe4so5GgYUL767vkWiVE.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>04 Electronics + Wizard of Oz</h3>
 <p>Encoding light feedback to test our gamified feedback hypothesis: can simple, positive feedback change our users' behavior?</p>
+</div>
+<div class="step-media">
+<video src="/media/aVQMgObe4so5GgYUL767vkWiVE.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -96,16 +95,6 @@ featured: 1
 <div class="step-media">
 <img src="/media/wSIFK1n1ea5oi1fbtLzCvYBmaI.png" alt="" loading="lazy" />
 </div>
-</div>
-
-<div class="gallery gallery-3">
-<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <h3 class="sub-head">04 Modules</h3>
@@ -121,7 +110,14 @@ featured: 1
 <p>MoMo is a modular physiotherapy tool that adjusts to suit patients' needs, rather than the other way around. Built on real tools and research, this prototype employs gamified light and sound feedback to address low treatment-adherence.</p>
 </div>
 
-<div class="gallery gallery-3">
+<div class="gallery">
+<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/xAJ5UVRZcZfvTTZZoKsAgu0cUQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/DzYxT6NmXFZXVBUUVNSLpcJOQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/NzW0Lf13YoabemtgwTlQS1gazQQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>

@@ -26,10 +26,14 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   </head>
   <body>
     <Nav />
-    <main id="main">
-      <slot />
-    </main>
-    <Connect />
+    <div class="page">
+      <main id="main">
+        <slot />
+      </main>
+      <Connect />
+    </div>
+    <!-- very faint film grain over everything -->
+    <div class="noise" aria-hidden="true"></div>
 
     <!-- custom cursor: a dot that becomes a labelled pill over projects -->
     <div class="cursor" aria-hidden="true">

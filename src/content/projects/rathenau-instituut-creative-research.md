@@ -15,12 +15,12 @@ featured: 4
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="glance-media">
-<img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" loading="lazy" />
-</div>
-
 <div class="prose-text">
 <p>Emerging immersive technology is evolving rapidly. Policy-making systems are not designed to accommodate the speed of this evolution. This widely accessible personal tech massively impacts the average citizen, and on a larger scale, shapes societies. How might we rethink the way we democratically shape the evolution of this technology?</p>
+</div>
+
+<div class="glance-media">
+<img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" loading="lazy" />
 </div>
 </section>
 
@@ -30,10 +30,6 @@ featured: 4
 <h4>Situation</h4>
 <p>The Rathenau Instituut is an EU-founded political science thinktank in the Netherland to conduct research into the way technology impacts society. They approached Digital Society School with this problem. DSS was founded to bring design talent to the Netherlands to address complex problems, parntnered with Dutch organizations. Myself, together with a team of 3 other researchers, spent 5 months working with this problem.</p>
 </div>
-<div class="star-card" data-k="action">
-<h4>Action</h4>
-<p>We began by understanding the problem proposed by our partner by conducting a workshop together to define the problem statement and scope of the project. We then visited Cybersoek, a non-profit set up to support adults to become technologically fluent, and conducted interviews with the experts there, both teachers and learners. From this understanding, we prototyped, tested, and iterated until our final result.</p>
-</div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
 <p>Emerging immersive technology is evolving rapidly. Policy-making systems of yesterday are not designed to accommodate the rate of this evolution. This widely accessible personal tech massively impacts the average citizen, and on a larger scale, shapes societies. How might we rethink the way the public engages democratically with the development of such tech?</p>
@@ -41,6 +37,10 @@ featured: 4
 <div class="star-card" data-k="result">
 <h4>Result</h4>
 <p>From our user research, we defined our constraints: our prototype would be accessible, engaging, low-barrier-to-entry, interactive, and story-based. The final product was an interactive choose-your-own-adventure story implemented with Teachable Machine. This meant that all a user would need was a webcam and our URL to go through the story.</p>
+</div>
+<div class="star-card" data-k="action">
+<h4>Action</h4>
+<p>We began by understanding the problem proposed by our partner by conducting a workshop together to define the problem statement and scope of the project. We then visited Cybersoek, a non-profit set up to support adults to become technologically fluent, and conducted interviews with the experts there, both teachers and learners. From this understanding, we prototyped, tested, and iterated until our final result.</p>
 </div>
 </div>
 
@@ -51,14 +51,16 @@ featured: 4
 </div>
 <div class="step-media">
 <img src="/media/rJD25thcdkTsiotGnEpUZrnXfUQ.png" alt="" loading="lazy" />
-<img src="/media/lS6RhpHDzC6ojQQr7qe9FBqhO0I.png" alt="" loading="lazy" />
 </div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Expert interviews</h3>
 <p>Meeting with a local nonprofit, Cybersoek, which specializes in engaging community members in learning about technology.</p>
+</div>
+<div class="step-media">
+<img src="/media/lS6RhpHDzC6ojQQr7qe9FBqhO0I.png" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -69,14 +71,16 @@ featured: 4
 </div>
 <div class="step-media">
 <img src="/media/dVCIjVML1QgLbNOGzGK2WcfKKfw.png" alt="" loading="lazy" />
-<img src="/media/xqJ0Uaq7ypVkzOFbEJSWR5oh4.png" alt="" loading="lazy" />
 </div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>04 Prototyping</h3>
 <p>From storyboard to Figma prototype to Google's Teachable Machine.</p>
+</div>
+<div class="step-media">
+<img src="/media/xqJ0Uaq7ypVkzOFbEJSWR5oh4.png" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -87,7 +91,6 @@ featured: 4
 </div>
 <div class="step-media">
 <img src="/media/0mgbNittTqXF3yr5EPzLWF59g.png" alt="" loading="lazy" />
-<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -105,6 +108,7 @@ featured: 4
 </div>
 
 <div class="gallery">
+<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" loading="lazy" />
 <img src="/media/NrK0d5t7Yn74wyXzSU6EnFDcxk.png" alt="" loading="lazy" />
 </div>
 </section>

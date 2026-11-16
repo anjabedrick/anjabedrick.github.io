@@ -19,12 +19,12 @@ featured: 3
 
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="glance-media">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
-</div>
-
 <div class="prose-text">
 <p>A client communicated their wishes for a new website to SEED Studio, which was then turned into a detailed UX document, which I then turned into a clickable wireframe in Figma, and finally a high-fidelity prototype of their new website.</p>
+</div>
+
+<div class="glance-media">
+<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
 </div>
 </section>
 
@@ -34,13 +34,13 @@ featured: 3
 <h4>Situation</h4>
 <p>My first UX internship was with a small design agency in Amsterdam. Moon Gallery was one of their clients during my time. Their request was an original website.</p>
 </div>
-<div class="star-card" data-k="action">
-<h4>Action</h4>
-<p>First combing through UX document and taking note of unknowns and design opportunities. Sketching, wireframing, and iterating with the design team.</p>
-</div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
 <p>How might a design undergraduate student co-create a comic about an ion trap experiment that is engaging, accessible, and educational?</p>
+</div>
+<div class="star-card" data-k="action">
+<h4>Action</h4>
+<p>First combing through UX document and taking note of unknowns and design opportunities. Sketching, wireframing, and iterating with the design team.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
@@ -63,36 +63,34 @@ featured: 3
 </div>
 <div class="step-media">
 <img src="/media/Gc46HILRWtZqDECV2vcx4rXPR4.png" alt="" loading="lazy" />
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
 </div>
 </div>
 
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>02 Wireframing</h3>
 <p>Taking the refined document into Figma to make the flow clickable, and refine the layout further.</p>
 </div>
+<div class="step-media">
+<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+</div>
 </div>
 
-<div class="step step-solo">
-<div class="step-text">
-<h3>03 UI Design</h3>
-<p>Satisfied with the layout and flow, now it was time to work with the visual style. Working with Moon Gallery's visual identity and images, we designed a high-fidelity prototype that worked for the client.</p>
-</div>
-</div>
+<h3 class="sub-head">03 UI Design</h3>
 </section>
 
 <section class="sec">
-<div class="sec-split">
-<div class="sec-side">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
-</div>
-<div class="sec-main">
+<header class="sec-head">
+<p class="pill pill-label">Satisfied with the layout and flow, now it was time to work with the visual style. Working with Moon Gallery's visual identity and images, we designed a high-fidelity prototype that worked for the client.</p>
 <h2>Output</h2>
 <p class="sec-sub">Check out the clickable wireframe and higher-fidelity prototype here:</p>
-</div>
-</div>
+</header>
+
 <div class="prose-text">
 <p>[Prototypes may take longer to load.]</p>
+</div>
+
+<div class="gallery">
+<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
 </div>
 </section>
