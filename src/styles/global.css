@@ -183,7 +183,11 @@ strong { font-weight: 600; }
 @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 /* ---------- 3D featured stack ---------- */
-.stack-clip { position: relative; overflow: hidden; margin-top: 120px; }
+.stack-clip {
+  position: relative; margin-top: 120px;
+  /* clip the sides and bottom, but let the cards rise up to the hero text so their tops aren't cut */
+  clip-path: inset(-260px 0 0 0);
+}
 .stack {
   position: relative; height: 674px; perspective: 1700px;
   transform-style: preserve-3d; --card: 400px;
@@ -340,6 +344,19 @@ strong { font-weight: 600; }
 .step-solo { grid-template-columns: minmax(0, 680px); }
 .sub-head { text-align: center; }
 .prose-text { max-width: 680px; }
+
+/* a small, pixel-art style image shown near its real size so it stays crisp */
+.project-body img.media-small { width: auto; max-width: min(100%, 220px); margin: 0 auto; image-rendering: pixelated; border-radius: 0; }
+
+/* dark band inside a project page (the gallery's animation section) */
+.sec-dark {
+  position: relative; color: rgba(253, 246, 238, .88);
+  padding: clamp(72px, 9vw, 120px) 0;
+  /* full-width black background behind a centred column */
+  border-image: linear-gradient(#000, #000) fill 0 / / 0 100vmax;
+}
+.project-body .sec-dark h3 { color: #fff; }
+.sec-dark .step-media img, .sec-dark .step-media video { border: 1px solid rgba(255, 255, 255, .14); }
 
 /* reveal on scroll */
 @supports (animation-timeline: view()) {

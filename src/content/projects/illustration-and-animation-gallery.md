@@ -13,10 +13,6 @@ order: 6
 <section class="sec">
 <h3 class="sub-head">Selected illustrated projects ☟</h3>
 
-<div class="gallery">
-<img src="/media/ZrS2xt5jlmfP0b1Vd43zvrnE.png" alt="" loading="lazy" />
-</div>
-
 <div class="step step-flip">
 <div class="step-text">
 <h3>01 Crime noir playing cards</h3>
@@ -25,6 +21,7 @@ order: 6
 <div class="step-media">
 <img src="/media/ReadHHazXDSI0GRcFkui7BDlIuQ.png" alt="" loading="lazy" />
 <img src="/media/9iCnZ59Q340XVLoYUKRR97ehg50.png" alt="" loading="lazy" />
+<img src="/media/ZrS2xt5jlmfP0b1Vd43zvrnE.png" alt="" loading="lazy" />
 </div>
 </div>
 
@@ -51,17 +48,18 @@ order: 6
 </div>
 </div>
 
-<div id="animation"></div>
+</section>
+
+<section class="sec sec-dark" id="animation" data-cursor-theme="light">
 <h3 class="sub-head">Selected animated projects ☟</h3>
 
-<div class="gallery">
-<video src="/media/dTkA8wtCA2CnDTFJyd0B1Hit8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-</div>
-
-<div class="step step-solo">
+<div class="step step-flip">
 <div class="step-text">
 <h3>01 Kinetic posters</h3>
 <p>A series of animated posters.</p>
+</div>
+<div class="step-media">
+<video src="/media/dTkA8wtCA2CnDTFJyd0B1Hit8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -69,7 +67,6 @@ order: 6
 <div class="step-text">
 <h3>02 Rive vector animations</h3>
 <p>Looping animations rigged, and animated in Rive using simple, tiny-file-size shapes.</p>
-<p><br></p>
 <p>First, a simple loading screen animation completely illustrated and animated in Rive.</p>
 <p>Next, a more cinematic recreation of a scene from the short film <em>Pear Cider and Cigarettes</em> that I illustrated in Figma, and animated in Rive.</p>
 </div>
@@ -79,7 +76,7 @@ order: 6
 </div>
 </div>
 
-<div class="step">
+<div class="step step-flip">
 <div class="step-text">
 <h3>03 Adobe After Effects + Illustrator animations</h3>
 <p>Concepts designed in Adobe Illustrator, and brought to life in After Effects</p>

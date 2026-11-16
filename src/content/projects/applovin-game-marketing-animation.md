@@ -41,7 +41,7 @@ featured: 2
 </div>
 
 <div class="prose-text">
-<p>Rapid ideation, animation, and iteration using A/B testing. Check out a storyboard I made to the left to convey a concept to the team.</p>
+<p>Rapid ideation, animation, and iteration using A/B testing. Check out this storyboard I put together to convey a new concept to the team.</p>
 </div>
 </section>
 
@@ -78,7 +78,7 @@ featured: 2
 <p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of an such asset and animation.</p>
 </div>
 <div class="step-media">
-<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />
+<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />
 <img src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo.gif" alt="" loading="lazy" />
 </div>
 </div>
