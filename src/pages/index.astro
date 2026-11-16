@@ -42,8 +42,8 @@ const columns: Card[][] = [[], [], []];
 cards.forEach((c, i) => columns[i % 3].push(c));
 
 // filter chips, in this order; a chip only shows if at least one project uses it
-const FILTERS = ['UX design', 'Physi-digital prototyping', 'Experience design', 'Creative technology', 'Illustration',
-  'Motion design', 'Branding', 'Speculative design', 'Process', 'User research'];
+const FILTERS = ['UX design', 'Digital product design', 'Visual design', 'Experience design', 'Creative technology',
+  'Illustration', 'Motion design', 'Branding', 'Speculative design', 'Process', 'User research'];
 const filters = FILTERS.filter((f) => cards.some((c) => c.cats.includes(f)));
 ---
 <Base>
@@ -69,6 +69,7 @@ const filters = FILTERS.filter((f) => cards.some((c) => c.cats.includes(f)));
         {stackCards.map((p, i) => (
           <a class="stack-card" href={`/${p.id}`} data-cursor={p.data.cursorLabel} tabindex={i < featured.length ? 0 : -1}>
             <img src={p.data.cover} alt={p.data.title} loading="eager" draggable="false" />
+            <span class="stack-caption" aria-hidden="true">{p.data.cursorLabel}</span>
           </a>
         ))}
       </div>

@@ -6,7 +6,7 @@ tags: ["Visual Design", "Motion Graphics", "Type Design", "Logo Design", "Graphi
 hero: "/media/ObxAQt3taQcg22O2gcFIEZ9DPM.png"
 heroType: img
 cover: "/media/ObxAQt3taQcg22O2gcFIEZ9DPM.png"
-categories: ["Branding", "Motion design", "Process"]
+categories: ["Visual design", "Branding", "Motion design", "Process"]
 cursorLabel: "SNM Copenhagen | Museum Brand Identity"
 order: 2
 ---

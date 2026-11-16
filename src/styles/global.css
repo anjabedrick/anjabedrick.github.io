@@ -285,7 +285,15 @@ strong { font-weight: 600; }
 @media (hover: none) {
   .card-caption {
     position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal;
-    display: block; text-align: right; margin-top: 8px; font: 400 14px/1.4 var(--sans); color: var(--orange-text);
+    display: block; text-align: left; margin-top: 8px; font: 400 14px/1.4 var(--sans); color: var(--orange-text);
+  }
+}
+/* 3D stack cards get the same label on touch screens, sitting just under each card */
+.stack-caption { display: none; }
+@media (hover: none) {
+  .stack-caption {
+    display: block; position: absolute; left: 0; right: 0; top: calc(100% + 10px);
+    text-align: left; font: 400 15px/1.35 var(--sans); color: var(--orange-text);
   }
 }
 .card { display: block; text-decoration: none; position: relative; transition: transform .7s var(--spring); }
