@@ -2,7 +2,7 @@
 title: "AppLovin: Animation for Game Marketing"
 eyebrow: "AppLovin"
 summary: "Data driven animated mobile game advertisements. Animating one to two ads per week for two years = an eye for successful concepts."
-tags: ["Motion Graphics", "A/B Testing", "Adobe Creative Suite", "After Effects", "Storyboarding", "Illustration"]
+tags: ["Motion graphics", "A/B testing", "Adobe Creative Suite", "After Effects", "Storyboarding", "Illustration"]
 hero: "/media/UVWAYGDFHxjecpgn18yB2jUZiY.png"
 heroType: img
 cover: "/media/Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png"
@@ -12,6 +12,8 @@ order: 5
 featured: 2
 ---
 
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the work</span></a></div>
+
 <section class="sec">
 <div class="sec-split">
 <div class="sec-side">
@@ -19,7 +21,7 @@ featured: 2
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
-<h2>The Challenge</h2>
+<h2>The challenge</h2>
 <p class="sec-sub">Rapid ideation, animation, and iteration using A/B testing. Check out this storyboard I put together to convey a new concept to the team.</p>
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
@@ -36,7 +38,7 @@ featured: 2
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>Years of refining this process menas that AppLovin is one of the top game advertising platforms in the world. I am still impressed by the efficiency in which we had to, and were able to implement new data in real time. This efficient data-driven workflow is something I've brought with me into each new chapter.</p>
+<p>Years of refining this process means that AppLovin is one of the top game advertising platforms in the world. I am still impressed by the efficiency in which we had to, and were able to implement new data in real time. This efficient data-driven workflow is something I've brought with me into each new chapter.</p>
 </div>
 </div>
 </div>
@@ -45,9 +47,9 @@ featured: 2
 
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">Design Work</p>
+<p class="pill pill-label">Design process</p>
 <h2>Process</h2>
 <p class="sec-sub">Limited selection of work.</p>
 </header>
@@ -74,8 +76,8 @@ featured: 2
 
 <div class="step">
 <div class="step-text">
-<h3>03 Asset Illustration</h3>
-<p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of an such asset and animation.</p>
+<h3>03 Asset illustration</h3>
+<p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of such an asset and animation.</p>
 <img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />
 </div>
 <div class="step-media">

@@ -3,18 +3,20 @@ title: "Philips Telehealth Interface"
 eyebrow: "Umeå Institute of Design"
 summary: "Connecting frontline healthcare workers with telehealth specialists to ease the strain on understaffed hospitals."
 team: "Team: Anja Bedrick, Chenxi Li, Henning Birgersson, Irma Svenningsson"
-tags: ["UX", "UI", "Service Design", "Design Ethnography", "Design for Healthcare", "Co-Creation", "UX field research"]
+tags: ["UX design", "UI design", "Service design", "Design ethnography", "Design for healthcare", "Co-creation", "UX field research"]
 hero: "/media/FHXXIoTrVZtVBkVgylMAXcF4Cs.png"
 heroType: img
 cover: "/media/Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png"
 categories: ["UX design", "Digital product design", "User research", "Experience design", "Process", "Speculative design"]
-cursorLabel: "PHILIPS Telehealth Interface | UX+UI"
+cursorLabel: "Philips Telehealth Interface | UX+UI"
 order: 4
 featured: 0
 ---
 
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final interfaces</span></a></div>
+
 <section class="glance">
-<h3 class="glance-title">At a Glance</h3>
+<h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
 <video src="/media/HKTLjv9EsE4Xt7IbBx3Et8tzHKU.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
@@ -39,7 +41,7 @@ featured: 0
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
-<h2>The Challenge</h2>
+<h2>The challenge</h2>
 <p class="sec-sub">Shadowing ICU nurses</p>
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
@@ -67,7 +69,7 @@ featured: 0
 
 <section class="sec">
 <header class="sec-head">
-<p class="pill pill-label">Design Process</p>
+<p class="pill pill-label">Design process</p>
 <h2>Process</h2>
 </header>
 
@@ -143,7 +145,7 @@ featured: 0
 
 <div class="step">
 <div class="step-text">
-<h3>07 UI Focus: Prioritization</h3>
+<h3>07 UI focus: prioritization</h3>
 <p>Prioritization of urgent situations is of the utmost importance when designing for healthcare. What is the best way to tackle this issue from a UI perspective?</p>
 </div>
 <div class="step-media">
@@ -155,7 +157,7 @@ featured: 0
 
 <div class="step step-flip">
 <div class="step-text">
-<h3>08 UI Focus: Communication</h3>
+<h3>08 UI focus: communication</h3>
 <p>The bedside nurse and telehealth specialist have different needs for communication. The bedside nurse needs quick communication modes adaptable to different situations. Sometimes hands-free voice dictation is ideal, while other times, silent messaging is preferred.</p>
 </div>
 <div class="step-media">
@@ -169,7 +171,7 @@ featured: 0
 
 <div class="step">
 <div class="step-text">
-<h3>09 Feedback Session</h3>
+<h3>09 Feedback session</h3>
 <p>Testing concepts with healthcare professionals and design experts to reground our work.</p>
 </div>
 <div class="step-media">
@@ -206,7 +208,6 @@ featured: 0
 
 <section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">Documentation</p>
 <h2>Output</h2>
 </header>
 

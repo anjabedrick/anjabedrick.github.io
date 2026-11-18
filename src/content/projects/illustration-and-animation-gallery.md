@@ -1,5 +1,5 @@
 ---
-title: "Illustration and animation gallery"
+title: "Illustration and Animation Gallery"
 eyebrow: ""
 summary: "A collection of fun visual projects that don't quite fit in any other page."
 tags: []
@@ -7,7 +7,7 @@ hero: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 heroType: img
 cover: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 categories: ["Illustration", "Motion design"]
-cursorLabel: "Illustration and animation gallery"
+cursorLabel: "Illustration and Animation Gallery"
 order: 6
 ---
 

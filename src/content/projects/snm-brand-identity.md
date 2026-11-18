@@ -2,7 +2,7 @@
 title: "SNM Visual Identity"
 eyebrow: "DIS Copenhagen"
 summary: "A holistic visual identity for a Danish natural history museum."
-tags: ["Visual Design", "Motion Graphics", "Type Design", "Logo Design", "Graphic Design", "Branding", "Design System"]
+tags: ["Visual design", "Motion graphics", "Type design", "Logo design", "Graphic design", "Branding", "Design system"]
 hero: "/media/ObxAQt3taQcg22O2gcFIEZ9DPM.png"
 heroType: img
 cover: "/media/ObxAQt3taQcg22O2gcFIEZ9DPM.png"
@@ -11,10 +11,10 @@ cursorLabel: "SNM Copenhagen | Museum Brand Identity"
 order: 2
 ---
 
-<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to see the final product</span></a>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final product</span></a></div>
 
 <section class="glance">
-<h3 class="glance-title">At a Glance</h3>
+<h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
 <img src="/media/3OL1ni471LGJgodG1x9pqMabeBw.gif" alt="" loading="lazy" />
@@ -65,7 +65,7 @@ order: 2
 
 <div class="step step-flip">
 <div class="step-text">
-<h3>02 Hand Sketches</h3>
+<h3>02 Hand sketches</h3>
 <p>A peek at some early sketches, the signature arcs inspired by the new architecture of the renovated SNM botanical garden.</p>
 </div>
 <div class="step-media">

@@ -2,7 +2,7 @@
 title: "Quantum Physics Comic"
 eyebrow: "Science and Comics Fellowship | University of Oregon"
 summary: "How to engage undergraduate physics students using a non-traditional medium?"
-tags: ["Inter-Disciplinary Design", "Adobe Illustrator", "Storytelling", "Storyboarding", "Illustration", "Infographics", "Comics"]
+tags: ["Interdisciplinary design", "Adobe Illustrator", "Storytelling", "Storyboarding", "Illustration", "Infographics", "Comics"]
 hero: "/media/UlqSk0H4QzPexcJg3MbdLHdtkWw.jpg"
 heroType: img
 cover: "/media/wfYv1AHzZKAPpf17nJcTzKlO57I.png"
@@ -11,10 +11,10 @@ cursorLabel: "Quantum Physics Comic Fellowship | Illustration"
 order: 8
 ---
 
-<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to read the whole comic</span></a>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to read the whole comic</span></a></div>
 
 <section class="glance">
-<h3 class="glance-title">At a Glance</h3>
+<h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
 <img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
@@ -55,7 +55,7 @@ order: 8
 
 <div class="step">
 <div class="step-text">
-<h3>01 Meeting the Researchers</h3>
+<h3>01 Meeting the researchers</h3>
 <p>Meet the team. I joined David weekly in the lab to learn about the researchers' work, take notes, and sketch equipment.</p>
 </div>
 <div class="step-media">
@@ -65,7 +65,7 @@ order: 8
 
 <div class="step step-flip">
 <div class="step-text">
-<h3>02 Co-Creation</h3>
+<h3>02 Co-creation</h3>
 <p>Because the comic would be used as educational material, scientific accuracy was of top importance. We sketched ideas together, and everything I came up with would be reviewed by the team.</p>
 </div>
 <div class="step-media">
@@ -75,7 +75,7 @@ order: 8
 
 <div class="step">
 <div class="step-text">
-<h3>03 Illustration Iteration</h3>
+<h3>03 Illustration iteration</h3>
 <p>Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
 </div>
 <div class="step-media">

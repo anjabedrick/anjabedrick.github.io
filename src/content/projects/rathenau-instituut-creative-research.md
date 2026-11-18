@@ -3,7 +3,7 @@ title: "Hybrid Democracy: Technological Citizenship"
 eyebrow: "Rathenau Instituut x DSS"
 summary: "An interactive motion-capture story exploring the role the public has in shaping the development of emerging technology through a democratic lens."
 team: "Team: Anja Bedrick, Giulia Lenzi, Ruth Abena, Samar Jubran"
-tags: ["Motion Capture", "User Testing", "Political Science", "Figma Prototyping", "AI", "Teachable Machine"]
+tags: ["Motion capture", "User testing", "Political science", "Figma prototyping", "AI", "Teachable Machine"]
 hero: "/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png"
 heroType: img
 cover: "/media/6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png"
@@ -13,8 +13,10 @@ order: 7
 featured: 4
 ---
 
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final experience</span></a></div>
+
 <section class="glance">
-<h3 class="glance-title">At a Glance</h3>
+<h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
 <img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" loading="lazy" />
@@ -44,6 +46,14 @@ featured: 4
 <p>We began by understanding the problem proposed by our partner by conducting a workshop together to define the problem statement and scope of the project. We then visited Cybersoek, a non-profit set up to support adults to become technologically fluent, and conducted interviews with the experts there, both teachers and learners. From this understanding, we prototyped, tested, and iterated until our final result.</p>
 </div>
 </div>
+
+</section>
+
+<section class="sec">
+<header class="sec-head">
+<p class="pill pill-label">Design process</p>
+<h2>Process</h2>
+</header>
 
 <div class="step">
 <div class="step-text">

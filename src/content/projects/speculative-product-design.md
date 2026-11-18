@@ -2,7 +2,7 @@
 title: "Modus: Speculative System Design"
 eyebrow: "Umeå Institute of Design"
 summary: "What would a truly decentralized future economy look like?"
-tags: ["UI", "UX", "Blender 3D", "Product Design", "Speculative Design", "Figma", "Design system"]
+tags: ["UI design", "UX design", "Blender 3D", "Product design", "Speculative design", "Figma", "Design system"]
 hero: "/media/SZdZiHT7ss8QfhBSh0kZLxxvN0.png"
 heroType: img
 cover: "/media/KAJUbrnVx49dP47BXX8763Q83o.png"
@@ -11,10 +11,10 @@ cursorLabel: "Umeå Institute of Design | Speculative Branding"
 order: 1
 ---
 
-<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to see how the ticketer works!</span></a>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see how the ticketer works</span></a></div>
 
 <section class="glance">
-<h3 class="glance-title">At a Glance</h3>
+<h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
 <img src="/media/SXLKK0xY68VVJvHyuVOEqxr7JpA.png" alt="" loading="lazy" />

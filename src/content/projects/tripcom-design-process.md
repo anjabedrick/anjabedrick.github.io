@@ -1,8 +1,8 @@
 ---
 title: "Trip.com CX Design Process"
-eyebrow: "Trip.com Interview Task"
+eyebrow: "Trip.com interview task"
 summary: "To what extent can a UX refresh influence customer actions?"
-tags: ["CX", "Motion Graphics", "UX/UI", "Customer Journey", "User Personas", "Success Metrics", "Design Hypotheses"]
+tags: ["CX design", "Motion graphics", "UX design", "UI design", "Customer journey", "User personas", "Success metrics", "Design hypotheses"]
 hero: "/media/haU4l95SvLKFS29MUCem3LPQYo.gif"
 heroType: img
 cover: "/media/O3Hv6ku6diOv3bqNOKXid6Ta5rM.png"
@@ -11,7 +11,7 @@ cursorLabel: "Trip.com | CX Journey"
 order: 3
 ---
 
-<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>don&#x27;t worry, the final product is right here!</span></a>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final product</span></a></div>
 
 <section class="sec">
 <div class="star">

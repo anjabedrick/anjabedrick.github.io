@@ -3,15 +3,17 @@ title: "Modular Movement"
 eyebrow: "Umeå Institute of Design"
 summary: "MoMo is a modular physiotherapy tool that adapts to suit patients' needs, rather than the other way around."
 team: "Team: Anja Bedrick, Eskil Sverreson, Leonie Schüttler, Selin Bakış"
-tags: ["Product Design", "Sound Design", "Interaction Design", "Arduino Electronics", "Design for Healthcare"]
+tags: ["Product design", "Sound design", "Interaction design", "Arduino electronics", "Design for healthcare"]
 hero: "/media/rpfb52k9yx4oRDpAK7GWBfkb3Kk.jpg"
 heroType: img
-cover: "/media/hTDPpoanNCXHMD2NdPIdzy1KGGU.png"
+cover: "/media/momo-if-award.jpg"
 categories: ["Creative technology", "Experience design", "Process"]
 cursorLabel: "Modular Physical Therapy | Arduino Coding"
 order: 0
 featured: 1
 ---
+
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final prototype</span></a></div>
 
 <section class="sec">
 <div class="sec-split">
@@ -20,11 +22,11 @@ featured: 1
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
-<h2>Challenge</h2>
+<h2>The challenge</h2>
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
-<p>A collaboration between interactions design and product design master's programs with a focus on auditory feedback.</p>
+<p>A collaboration between interaction design and product design master's programs with a focus on auditory feedback.</p>
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
@@ -32,7 +34,7 @@ featured: 1
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>Building on the experience of our two teammembers who are engaged in long-term physiotherapy, we prototyped quickly using 3D printed shells and Arduino electronics to iterate rapidly.</p>
+<p>Building on the experience of our two team members who are engaged in long-term physiotherapy, we prototyped quickly using 3D printed shells and Arduino electronics to iterate rapidly.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
@@ -45,6 +47,14 @@ featured: 1
 <div class="gallery">
 <img src="/media/Fsu9vTAUivDiDD5KGdYii0TlMg8.gif" alt="" loading="lazy" />
 </div>
+
+</section>
+
+<section class="sec">
+<header class="sec-head">
+<p class="pill pill-label">Design process</p>
+<h2>Process</h2>
+</header>
 
 <div class="step">
 <div class="step-text">
@@ -100,7 +110,7 @@ featured: 1
 
 <div class="step step-flip">
 <div class="step-text">
-<h3>04 Modules</h3>
+<h3>06 Modules</h3>
 <p>The brain, wrist rotation, finger strength, and dexterity are a few modules based on real fine motor skill tuning exercises that we brought to MoMo.</p>
 </div>
 <div class="step-media">

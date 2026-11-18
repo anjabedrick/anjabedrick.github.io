@@ -21,7 +21,7 @@ REMOVE = {
 
 # slug, grid cover, cursor label, filter categories
 CARDS = [
- ("momo", "hTDPpoanNCXHMD2NdPIdzy1KGGU.png", "Modular Physical Therapy | Arduino Coding",
+ ("momo", "momo-if-award.jpg", "Modular Physical Therapy | Arduino Coding",
   ["Creative technology", "Experience design", "Process"]),
  ("speculative-product-design", "KAJUbrnVx49dP47BXX8763Q83o.png", "Umeå Institute of Design | Speculative Branding",
   ["UX design", "Digital product design", "Visual design", "Speculative design", "Branding", "Experience design"]),
@@ -29,11 +29,11 @@ CARDS = [
   ["Visual design", "Branding", "Motion design", "Process"]),
  ("tripcom-design-process", "O3Hv6ku6diOv3bqNOKXid6Ta5rM.png", "Trip.com | CX Journey",
   ["UX design", "Digital product design", "Visual design", "Experience design", "Motion design", "Process"]),
- ("philips-telehealth-interface", "Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png", "PHILIPS Telehealth Interface | UX+UI",
+ ("philips-telehealth-interface", "Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png", "Philips Telehealth Interface | UX+UI",
   ["UX design", "Digital product design", "User research", "Experience design", "Process", "Speculative design"]),
  ("applovin-game-marketing-animation", "Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png", "AppLovin | Animated Mobile Game Ads",
   ["Motion design", "Illustration"]),
- ("illustration-and-animation-gallery", "FCdDtzcuuviBweJ3hPZ31on2uk.png", "Illustration and animation gallery",
+ ("illustration-and-animation-gallery", "FCdDtzcuuviBweJ3hPZ31on2uk.png", "Illustration and Animation Gallery",
   ["Illustration", "Motion design"]),
  ("rathenau-instituut-creative-research", "6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png", "Rathenau Instituut | Motion Capture Prototype",
   ["Creative technology", "User research", "Experience design", "Process"]),
@@ -49,13 +49,23 @@ FEATURED = ["philips-telehealth-interface", "momo", "applovin-game-marketing-ani
 
 # hand-made fixes applied to the finished page body: slug -> [(find, replace), ...]
 PATCHES = {
+    "momo": [  # give the numbered steps a Process heading like the other pages
+        ('<div class="step">\n<div class="step-text">\n<h3>01 Mind mapping',
+         '</section>\n\n<section class="sec">\n<header class="sec-head">\n<p class="pill pill-label">Design process</p>\n'
+         '<h2>Process</h2>\n</header>\n\n<div class="step">\n<div class="step-text">\n<h3>01 Mind mapping'),
+    ],
+    "rathenau-instituut-creative-research": [
+        ('<div class="step">\n<div class="step-text">\n<h3>01 Aligning',
+         '</section>\n\n<section class="sec">\n<header class="sec-head">\n<p class="pill pill-label">Design process</p>\n'
+         '<h2>Process</h2>\n</header>\n\n<div class="step">\n<div class="step-text">\n<h3>01 Aligning'),
+    ],
     "applovin-game-marketing-animation": [
         ("Check out a storyboard I made to the left to convey a concept to the team.",
          "Check out this storyboard I put together to convey a new concept to the team."),
         # the small sword sits in the text column under the paragraph, as on Framer
         ('<div class="gallery">\n<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />\n</div>\n', ''),
-        ("Here is one example of an such asset and animation.</p>\n</div>",
-         "Here is one example of an such asset and animation.</p>\n"
+        ("Here is one example of such an asset and animation.</p>\n</div>",
+         "Here is one example of such an asset and animation.</p>\n"
          '<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />\n</div>'),
     ],
     "seed-studio-wireframing": [
@@ -67,6 +77,49 @@ PATCHES = {
          '<div class="embed"><iframe title="High-fidelity prototype (Figma prototype)" loading="lazy" allowfullscreen '
          'src="https://embed.figma.com/proto/pVb7oWriOTp0y9TsHh6Tns/moongallery.eu?kind=proto&amp;node-id=305-2889&amp;page-id=214%3A2286&amp;scaling=scale-down&amp;starting-point-node-id=305%3A2889&amp;type=design&amp;content-scaling=responsive&amp;embed-host=share"></iframe></div>'),
     ],
+}
+
+# ---------- site-wide consistency: sentence case for headings, labels and tags ----------
+HEADINGS = {  # <h2>/<h3> text -> new text
+    "At a Glance": "At a glance", "The Challenge": "The challenge", "Challenge": "The challenge",
+    "The Situation": "The challenge", "Examples": "Process",
+    "07 UI Focus: Prioritization": "07 UI focus: prioritization", "08 UI Focus: Communication": "08 UI focus: communication",
+    "09 Feedback Session": "09 Feedback session", "01 Meeting the Researchers": "01 Meeting the researchers",
+    "02 Co-Creation": "02 Co-creation", "03 Illustration Iteration": "03 Illustration iteration",
+    "02 Hand Sketches": "02 Hand sketches", "03 UI Design": "03 UI design", "03 Asset Illustration": "03 Asset illustration",
+    "04 Modules": "06 Modules",  # MoMo numbering went 01-05 then 04 again
+}
+LABELS = {"Design Process": "Design process", "Design Work": "Design process", "Documentation": None}  # None = drop
+TAGS = {  # tag -> replacement tag(s)
+    "UX": ["UX design"], "UI": ["UI design"], "UX/UI": ["UX design", "UI design"], "CX": ["CX design"],
+    "UX Design": ["UX design"], "UI Design": ["UI design"],
+    "Motion Graphics": ["Motion graphics"], "Motion Design": ["Motion design"], "A/B Testing": ["A/B testing"],
+    "Design systems": ["Design system"], "Design System": ["Design system"],
+    "Product Design": ["Product design"], "Sound Design": ["Sound design"], "Interaction Design": ["Interaction design"],
+    "Arduino Electronics": ["Arduino electronics"], "Design for Healthcare": ["Design for healthcare"],
+    "Service Design": ["Service design"], "Design Ethnography": ["Design ethnography"], "Co-Creation": ["Co-creation"],
+    "Inter-Disciplinary Design": ["Interdisciplinary design"], "Motion Capture": ["Motion capture"],
+    "User Testing": ["User testing"], "Political Science": ["Political science"], "Figma Prototyping": ["Figma prototyping"],
+    "Visual Design": ["Visual design"], "Type Design": ["Type design"], "Logo Design": ["Logo design"],
+    "Graphic Design": ["Graphic design"], "Speculative Design": ["Speculative design"],
+    "Customer Journey": ["Customer journey"], "User Personas": ["User personas"], "Success Metrics": ["Success metrics"],
+    "Design Hypotheses": ["Design hypotheses"],
+}
+TYPOS = {"menas": "means", "an such asset": "such an asset", "teammembers": "team members",
+         "interactions design": "interaction design"}
+EYEBROW = {"flexecharge-branding": "FLEXeCHARGE", "tripcom-design-process": "Trip.com interview task"}  # was "Umeå Institute of Design" on Framer, but it was a work project
+# the "Too long, didn't read?" row: same wording pattern on every project page, linking to the final result
+TLDR = {
+    "momo": "Keep scrolling to see the final prototype",
+    "speculative-product-design": "Keep scrolling to see how the ticketer works",
+    "snm-brand-identity": "Keep scrolling to see the final product",
+    "tripcom-design-process": "Keep scrolling to see the final product",
+    "philips-telehealth-interface": "Keep scrolling to see the final interfaces",
+    "applovin-game-marketing-animation": "Keep scrolling to see the work",
+    "rathenau-instituut-creative-research": "Keep scrolling to see the final experience",
+    "quantum-physics-comic": "Keep scrolling to read the whole comic",
+    "flexecharge-branding": "Keep scrolling to see the work",
+    "seed-studio-wireframing": "Keep scrolling to try the clickable prototypes",
 }
 
 STAR = {"situation", "problem", "action", "result", "task"}
@@ -201,7 +254,7 @@ def sequence(body):
 
 
 # ---------- step 2: turn the sequence into the page layout ----------
-def render(rest):
+def render(rest, slug=''):
     # pull out the "Too long, didn't read?" line; it is drawn once, above the At a Glance box
     hint = None
     for i, x in enumerate(rest):
@@ -210,11 +263,12 @@ def render(rest):
             hint = (plain(x["text"]), plain(nxt["text"]) if nxt else "")
             rest = [y for y in rest if y is not x and y is not nxt]
             break
+    if slug in TLDR: hint = ("Too long, didn't read?", TLDR[slug])
     hint_html = ""
     if hint:
-        hint_html = (f'<a class="tldr" href="#output"><span>{html.escape(hint[0])}</span>'
+        hint_html = (f'<div class="tldr-row"><a class="tldr" href="#output"><span>{html.escape(hint[0])}</span>'
                      f'<span class="hero-hint-line"></span>{MOUSE}<span class="hero-hint-line"></span>'
-                     f'<span>{html.escape(hint[1])}</span></a>')
+                     f'<span>{html.escape(hint[1])}</span></a></div>')
 
     blocks, cur = [], {"kind": "prelude", "items": []}
     k = 0
@@ -325,7 +379,21 @@ def render(rest):
         else:
             html_out.append(f'<section class="sec"{sid}>\n<header class="sec-head">\n' + "\n".join(head) + "\n</header>\n\n"
                             + "\n\n".join(body) + "\n</section>")
-    return "\n\n".join(html_out)
+    out = "\n\n".join(html_out)
+    if hint_html and 'id="output"' not in out:  # no Output section: the row links to the last section
+        i = out.rfind('<section class="sec">')
+        if i >= 0: out = out[:i] + '<section class="sec" id="output">' + out[i + len('<section class="sec">'):]
+    return out
+
+
+def polish(body):
+    for a, b in HEADINGS.items():
+        body = body.replace(f"<h2>{a}</h2>", f"<h2>{b}</h2>").replace(f"<h3>{a}</h3>", f"<h3>{b}</h3>")
+        body = body.replace(f'<h3 class="glance-title">{a}</h3>', f'<h3 class="glance-title">{b}</h3>')
+    for a, b in LABELS.items():
+        body = body.replace(f'<p class="pill pill-label">{a}</p>\n', "" if b is None else f'<p class="pill pill-label">{b}</p>\n')
+    for a, b in TYPOS.items(): body = body.replace(a, b)
+    return body
 
 
 def build(order, slug, cover, label, cats):
@@ -356,10 +424,13 @@ def build(order, slug, cover, label, cats):
         i += 1
     hero = None
     if i < len(items) and is_media(items[i]): hero = items[i]; i += 1
-    body = render(sequence(items[i:]))
+    body = polish(render(sequence(items[i:]), slug))
     for a, b in PATCHES.get(slug, []):
         if a not in body: print(f"  ! patch not applied on {slug}: {a[:50]}")
         body = body.replace(a, b)
+    fm["eyebrow"] = EYEBROW.get(slug, fm["eyebrow"])
+    fm["tags"] = [n for t in fm["tags"] for n in TAGS.get(t, [t])]
+    fm["summary"] = polish(fm["summary"])
     lines = ["---", f"title: {q(fm['title'])}", f"eyebrow: {q(fm['eyebrow'])}", f"summary: {q(fm['summary'])}"]
     if fm["team"]: lines.append(f"team: {q(fm['team'])}")
     lines.append("tags: [" + ", ".join(q(t) for t in fm["tags"]) + "]")

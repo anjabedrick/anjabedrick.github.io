@@ -1,8 +1,8 @@
 ---
 title: "FLEX-e-CHARGE Motion Branding"
-eyebrow: "Umeå Institute of Design"
+eyebrow: "FLEXeCHARGE"
 summary: "Creating a brand identity for a Danish EV charging software startup."
-tags: ["Motion Design", "Branding", "Illustration", "Infographics", "Visual identity", "Adobe Illustrator", "Design systems"]
+tags: ["Motion design", "Branding", "Illustration", "Infographics", "Visual identity", "Adobe Illustrator", "Design system"]
 hero: "/media/Q65cVrQY6w02VgKExQmY67Qds.png"
 heroType: img
 cover: "/media/thf5e8yDLjCiSXzOvo3q6HVNc.png"
@@ -11,6 +11,8 @@ cursorLabel: "FLEXeCHARGE | EV Motion Branding"
 order: 9
 ---
 
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the work</span></a></div>
+
 <section class="sec">
 <div class="sec-split">
 <div class="sec-side">
@@ -18,7 +20,7 @@ order: 9
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
-<h2>The Situation</h2>
+<h2>The challenge</h2>
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
@@ -33,10 +35,10 @@ order: 9
 </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">Design Work</p>
-<h2>Examples</h2>
+<p class="pill pill-label">Design process</p>
+<h2>Process</h2>
 </header>
 
 <div class="gallery">
