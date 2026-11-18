@@ -48,3 +48,10 @@ Any element with `data-cursor="Some text"` makes the cursor show that text on ho
 
 Every push to `main` on GitHub builds and publishes the site to https://anjabedrick.com
 (see `.github/workflows/deploy.yml`).
+
+## Rebuilding project pages from Framer (tools/)
+
+`tools/import_framer.py` rebuilds `src/content/projects/*.md` from measurements of the Framer pages
+saved in `tools/framer-data/`. Hand-made fixes live in its `PATCHES` list. Running it overwrites the
+project files (except the illustration gallery), so once you start editing pages by hand, stop using it.
+`tools/framer_proxy.py` + `tools/measure.js` re-measure the Framer site if needed.

@@ -11,15 +11,17 @@ cursorLabel: "Quantum Physics Comic Fellowship | Illustration"
 order: 8
 ---
 
+<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to read the whole comic</span></a>
+
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="prose-text">
-<p>An original, illustrated comic designed to engage undergraduate students with a unique educational tool via visual learning and storytelling.</p>
-</div>
-
 <div class="glance-media">
 <img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
+</div>
+
+<div class="prose-text">
+<p>An original, illustrated comic designed to engage undergraduate students with a unique educational tool via visual learning and storytelling.</p>
 </div>
 </section>
 
@@ -48,11 +50,8 @@ order: 8
 <header class="sec-head">
 <p class="pill pill-label">Design process</p>
 <h2>Process</h2>
+<p class="sec-sub">"If I can understand what you guys are doing here, anybody can." - Anja</p>
 </header>
-
-<div class="prose-text">
-<p>"If I can understand what you guys are doing here, anybody can." - Anja</p>
-</div>
 
 <div class="step">
 <div class="step-text">
@@ -74,18 +73,24 @@ order: 8
 </div>
 </div>
 
-<h3 class="sub-head">03 Illustration Iteration</h3>
+<div class="step">
+<div class="step-text">
+<h3>03 Illustration Iteration</h3>
+<p>Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
+</div>
+<div class="step-media">
+<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
+</div>
+</div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
 <h2>Output</h2>
 <p class="sec-sub">Check out the final comic below!</p>
 </header>
 
 <div class="gallery">
-<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
 <img src="/media/qrQJL5lOoIguX5AaUpJNYf557U.jpg" alt="" loading="lazy" />
 </div>
 </section>

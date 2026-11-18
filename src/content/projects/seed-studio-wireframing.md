@@ -12,20 +12,17 @@ order: 10
 featured: 3
 ---
 
+<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to try the clickable prototypes.</span></a>
+
 <section class="glance">
-<div class="prose-text">
-<p>Too Long, Didn't Read?</p>
-<p>keep scrolling to try the clickable prototypes.</p>
-</div>
-
 <h3 class="glance-title">At a Glance</h3>
-
-<div class="prose-text">
-<p>A client communicated their wishes for a new website to SEED Studio, which was then turned into a detailed UX document, which I then turned into a clickable wireframe in Figma, and finally a high-fidelity prototype of their new website.</p>
-</div>
 
 <div class="glance-media">
 <img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+</div>
+
+<div class="prose-text">
+<p>A client communicated their wishes for a new website to SEED Studio, which was then turned into a detailed UX document, which I then turned into a clickable wireframe in Figma, and finally a high-fidelity prototype of their new website.</p>
 </div>
 </section>
 
@@ -77,12 +74,19 @@ featured: 3
 </div>
 </div>
 
-<h3 class="sub-head">03 UI Design</h3>
+<div class="step">
+<div class="step-text">
+<h3>03 UI Design</h3>
+<p>Satisfied with the layout and flow, now it was time to work with the visual style. Working with Moon Gallery's visual identity and images, we designed a high-fidelity prototype that worked for the client.</p>
+</div>
+<div class="step-media">
+<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+</div>
+</div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">Satisfied with the layout and flow, now it was time to work with the visual style. Working with Moon Gallery's visual identity and images, we designed a high-fidelity prototype that worked for the client.</p>
 <h2>Output</h2>
 <p class="sec-sub">Check out the clickable wireframe and higher-fidelity prototype here:</p>
 </header>
@@ -91,7 +95,7 @@ featured: 3
 <p>[Prototypes may take longer to load.]</p>
 </div>
 
-<div class="gallery">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
-</div>
+<div class="embed"><iframe title="Clickable wireframe (Figma prototype)" loading="lazy" allowfullscreen src="https://embed.figma.com/proto/pVb7oWriOTp0y9TsHh6Tns/moongallery.eu?kind=proto&amp;node-id=38-267&amp;page-id=0%3A1&amp;scaling=scale-down&amp;starting-point-node-id=38%3A267&amp;type=design&amp;embed-host=share"></iframe></div>
+
+<div class="embed"><iframe title="High-fidelity prototype (Figma prototype)" loading="lazy" allowfullscreen src="https://embed.figma.com/proto/pVb7oWriOTp0y9TsHh6Tns/moongallery.eu?kind=proto&amp;node-id=305-2889&amp;page-id=214%3A2286&amp;scaling=scale-down&amp;starting-point-node-id=305%3A2889&amp;type=design&amp;content-scaling=responsive&amp;embed-host=share"></iframe></div>
 </section>

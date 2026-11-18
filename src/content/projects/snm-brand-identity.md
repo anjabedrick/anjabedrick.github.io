@@ -11,17 +11,17 @@ cursorLabel: "SNM Copenhagen | Museum Brand Identity"
 order: 2
 ---
 
+<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>keep scrolling to see the final product</span></a>
+
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="prose-text">
-<p>A complete visual identity for Statens Naturhistoriske Museum, the natural history museum in Copenhagen as part of an exchange design course.</p>
-<p>Too Long, Didn't Read?</p>
-<p>keep scrolling to see the final product</p>
-</div>
-
 <div class="glance-media">
 <img src="/media/3OL1ni471LGJgodG1x9pqMabeBw.gif" alt="" loading="lazy" />
+</div>
+
+<div class="prose-text">
+<p>A complete visual identity for Statens Naturhistoriske Museum, the natural history museum in Copenhagen as part of an exchange design course.</p>
 </div>
 </section>
 
@@ -73,22 +73,28 @@ order: 2
 </div>
 </div>
 
-<h3 class="sub-head">03 Mockups</h3>
+<div class="step">
+<div class="step-text">
+<h3>03 Mockups</h3>
+<p>How would this design appear in its real context?</p>
+</div>
+<div class="step-media">
+<img src="/media/kPYF83GkgVwWTPfsnSsgRo3GF9g.png" alt="" loading="lazy" />
+</div>
+</div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">How would this design appear in its real context?</p>
 <h2>Output</h2>
+<p class="sec-sub">Check out some sketches of animated posters, and the full SNM brand identity below:</p>
 </header>
 
-<div class="prose-text">
-<p>Check out some sketches of animated posters, and the full SNM brand identity below:</p>
+<div class="gallery">
+<img src="/media/e7qorC8Jit6m2G5fpEQyy1G7mA.jpg" alt="" loading="lazy" />
 </div>
 
 <div class="gallery gallery-3">
-<img src="/media/kPYF83GkgVwWTPfsnSsgRo3GF9g.png" alt="" loading="lazy" />
-<img src="/media/e7qorC8Jit6m2G5fpEQyy1G7mA.jpg" alt="" loading="lazy" />
 <img src="/media/nXa8DbAxn6waYPA2RUhBdZ69Ic.gif" alt="" loading="lazy" />
 <img src="/media/FRtu9Ct2KlNWJtp3RrfWo4Gs.gif" alt="" loading="lazy" />
 <img src="/media/1iKRThUVgYQ4Br1lkIENZ0ejc.gif" alt="" loading="lazy" />

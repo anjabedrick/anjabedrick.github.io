@@ -98,12 +98,25 @@ featured: 1
 </div>
 </div>
 
-<h3 class="sub-head">04 Modules</h3>
+<div class="step step-flip">
+<div class="step-text">
+<h3>04 Modules</h3>
+<p>The brain, wrist rotation, finger strength, and dexterity are a few modules based on real fine motor skill tuning exercises that we brought to MoMo.</p>
+</div>
+<div class="step-media">
+<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+</div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">The brain, wrist rotation, finger strength, and dexterity are a few modules based on real fine motor skill tuning exercises that we brought to MoMo.</p>
 <h2>Output</h2>
 </header>
 
@@ -112,19 +125,26 @@ featured: 1
 </div>
 
 <div class="gallery">
-<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 <video src="/media/xAJ5UVRZcZfvTTZZoKsAgu0cUQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="gallery">
 <video src="/media/DzYxT6NmXFZXVBUUVNSLpcJOQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="gallery">
 <video src="/media/NzW0Lf13YoabemtgwTlQS1gazQQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="gallery">
 <video src="/media/OqTTn2Tti9C7bef0MA6FhUAIxY.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="gallery">
 <video src="/media/KAsAAJrWhUb5XaBxUgMJhiCKP3k.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="gallery">
 <img src="/media/oG8NlHJeREGIEilKq9eMDDLy8.jpg" alt="" loading="lazy" />
-<img src="/media/uyTxtAj04Uphc1NtwR58OHs43Kk.gif" alt="" loading="lazy" />
 </div>
 </section>

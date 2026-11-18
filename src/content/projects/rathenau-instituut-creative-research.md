@@ -16,12 +16,12 @@ featured: 4
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
-<div class="prose-text">
-<p>Emerging immersive technology is evolving rapidly. Policy-making systems are not designed to accommodate the speed of this evolution. This widely accessible personal tech massively impacts the average citizen, and on a larger scale, shapes societies. How might we rethink the way we democratically shape the evolution of this technology?</p>
-</div>
-
 <div class="glance-media">
 <img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" loading="lazy" />
+</div>
+
+<div class="prose-text">
+<p>Emerging immersive technology is evolving rapidly. Policy-making systems are not designed to accommodate the speed of this evolution. This widely accessible personal tech massively impacts the average citizen, and on a larger scale, shapes societies. How might we rethink the way we democratically shape the evolution of this technology?</p>
 </div>
 </section>
 
@@ -95,12 +95,19 @@ featured: 4
 </div>
 </div>
 
-<h3 class="sub-head">06 Testing again</h3>
+<div class="step step-flip">
+<div class="step-text">
+<h3>06 Testing again</h3>
+<p>We tested our final prototype with great excitement from our partner and community members.</p>
+</div>
+<div class="step-media">
+<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" loading="lazy" />
+</div>
+</div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">We tested our final prototype with great excitement from our partner and community members.</p>
 <h2>Output</h2>
 </header>
 
@@ -109,7 +116,6 @@ featured: 4
 </div>
 
 <div class="gallery">
-<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" loading="lazy" />
 <img src="/media/NrK0d5t7Yn74wyXzSU6EnFDcxk.png" alt="" loading="lazy" />
 </div>
 </section>

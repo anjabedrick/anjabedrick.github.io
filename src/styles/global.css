@@ -331,6 +331,18 @@ strong { font-weight: 600; }
 .project-body img, .project-body video { width: 100%; border-radius: var(--radius); }
 
 /* "At a Glance" box */
+/* "Too long, didn't read?" row above At a Glance: same look as the home page hint */
+.tldr {
+  display: flex; align-items: center; justify-content: center; gap: 18px; text-decoration: none;
+  font: 400 15px/1.6 var(--sans); letter-spacing: -.02em; color: var(--orange-text);
+  margin: 0 auto 40px; width: fit-content; max-width: 100%;
+}
+.tldr:hover span:last-child { text-decoration: underline; text-underline-offset: 4px; }
+
+/* embedded Figma prototypes */
+.embed { aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(33, 28, 28, .1); background: #fff; }
+.embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
 .glance {
   border: 1px solid var(--line); border-radius: 24px; padding: clamp(28px, 5vw, 64px) clamp(20px, 8vw, 175px);
   display: flex; flex-direction: column; gap: 28px; margin-bottom: clamp(80px, 10vw, 140px);
@@ -367,7 +379,8 @@ strong { font-weight: 600; }
 .star-card p { font-size: 15px !important; line-height: 1.5 !important; }
 
 /* numbered steps: text and media side by side, alternating */
-.step { display: grid; grid-template-columns: 1fr 1fr; gap: 84px; align-items: center; }
+/* text lines up with the top of the first picture, so long image stacks don't push it far down */
+.step { display: grid; grid-template-columns: 1fr 1fr; gap: 84px; align-items: start; }
 .step-flip .step-text { order: 2; }
 .step-text { display: flex; flex-direction: column; gap: 24px; }
 .step-text p + p { margin-top: 0; }
@@ -378,6 +391,7 @@ strong { font-weight: 600; }
 
 /* a small, pixel-art style image shown near its real size so it stays crisp */
 .project-body img.media-small { width: auto; max-width: min(100%, 220px); margin: 0 auto; image-rendering: pixelated; border-radius: 0; }
+.step-text img.media-small { margin: 8px 0 0; }
 
 /* dark band inside a project page (the gallery's animation section) */
 .sec-dark {
@@ -433,7 +447,7 @@ strong { font-weight: 600; }
 }
 @media (max-width: 809px) {
   .hero { padding-top: 110px; }
-  .hero-hint { flex-direction: column; gap: 8px; }
+  .hero-hint, .tldr { flex-direction: column; gap: 8px; text-align: center; }
   .hero-hint-line { display: none; }
   .stack { --card: 220px; height: 460px; }
   .stack-clip { margin-top: 60px; }

@@ -11,12 +11,7 @@ cursorLabel: "Trip.com | CX Journey"
 order: 3
 ---
 
-<section class="glance">
-<div class="prose-text">
-<p>Too Long, Didn't Read?</p>
-<p>don't worry, the final product is right here!</p>
-</div>
-</section>
+<a class="tldr" href="#output"><span>Too Long, Didn&#x27;t Read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>don&#x27;t worry, the final product is right here!</span></a>
 
 <section class="sec">
 <div class="star">
@@ -34,14 +29,13 @@ order: 3
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-
+<p>This project page may look different than others. That's because the output of this project is intertwined with the (anticipated) result. Check out what I delivered to Trip.com below.</p>
 </div>
 </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
-<p class="pill pill-label">This project page may look different than others. That's because the output of this project is intertwined with the (anticipated) result. Check out what I delivered to Trip.com below.</p>
 <h2>Output</h2>
 <p class="sec-sub">Check out the final product below!</p>
 </header>

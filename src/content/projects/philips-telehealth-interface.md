@@ -16,16 +16,19 @@ featured: 0
 <section class="glance">
 <h3 class="glance-title">At a Glance</h3>
 
+<div class="glance-media">
+<video src="/media/HKTLjv9EsE4Xt7IbBx3Et8tzHKU.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
+<div class="glance-media">
+<video src="/media/JQh8DSrM2k911RCGkXP7z2eAA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+</div>
+
 <div class="prose-text">
 <p>A speculative <strong>telehealth specialist's monitor</strong>, designed to support bedside nurses. To the right, the user can quickly switch between a single patient, focused care group, and all patients. The main screen prioritizes patients by scale in order of criticality.</p>
 <p>UI focus: attention prioritization</p>
 <p>A speculative <strong>bedside nurse's monitor</strong>, with adaptable ways to communicate quickly and intuitively with a telehealth specialist. The user can open the right panel to pull up a communication log with <strong>several modes of communication</strong>: voice notes, prewritten quick messages, calling, and an open text field. The soft blue animation assures that a telehealth specialist is present.</p>
 <p>UI focus: efficient, adaptable communication</p>
-</div>
-
-<div class="glance-media">
-<video src="/media/HKTLjv9EsE4Xt7IbBx3Et8tzHKU.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/JQh8DSrM2k911RCGkXP7z2eAA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </section>
 
@@ -185,20 +188,23 @@ featured: 0
 <img src="/media/K5R6G0NS0Q925jusDThNuRvWTQ.png" alt="" loading="lazy" />
 </div>
 
+<div class="gallery gallery-2">
+<img src="/media/vpVUSw9RbBmMNcFeumCkbzXRGg.png" alt="" loading="lazy" />
+<img src="/media/Gwo5dikizQ1dMdru1FmYDxV3MeY.png" alt="" loading="lazy" />
+</div>
+
 <div class="step step-flip">
 <div class="step-text">
 <h3>11 Iteration</h3>
 <p>Prototype, feedback, refine, and repeat.</p>
 </div>
 <div class="step-media">
-<img src="/media/vpVUSw9RbBmMNcFeumCkbzXRGg.png" alt="" loading="lazy" />
-<img src="/media/Gwo5dikizQ1dMdru1FmYDxV3MeY.png" alt="" loading="lazy" />
 <img src="/media/9Dp97KwZLAIAGb2JBo2bFo1oY.png" alt="" loading="lazy" />
 </div>
 </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="output">
 <header class="sec-head">
 <p class="pill pill-label">Documentation</p>
 <h2>Output</h2>

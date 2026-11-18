@@ -20,6 +20,7 @@ featured: 2
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
 <h2>The Challenge</h2>
+<p class="sec-sub">Rapid ideation, animation, and iteration using A/B testing. Check out this storyboard I put together to convey a new concept to the team.</p>
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
@@ -41,9 +42,7 @@ featured: 2
 </div>
 </div>
 
-<div class="prose-text">
-<p>Rapid ideation, animation, and iteration using A/B testing. Check out this storyboard I put together to convey a new concept to the team.</p>
-</div>
+
 </section>
 
 <section class="sec">
@@ -77,10 +76,11 @@ featured: 2
 <div class="step-text">
 <h3>03 Asset Illustration</h3>
 <p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of an such asset and animation.</p>
+<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />
 </div>
 <div class="step-media">
-<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />
 <img src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo.gif" alt="" loading="lazy" />
 </div>
 </div>
+
 </section>
