@@ -118,6 +118,11 @@ TAGS = {  # tag -> replacement tag(s)
 }
 TYPOS = {"menas": "means", "an such asset": "such an asset", "teammembers": "team members",
          "interactions design": "interaction design"}
+ROLES = {  # "My role" line shown under the team
+    "momo": "My role: Interaction designer, responsible for Arduino electronics and visual identity graphic animations.",
+    "rathenau-instituut-creative-research": "My role: Tools and Instruments Master, responsible for researching, choosing, and iterating on our prototypes at different stages. In earlier stages, I created clickable Figma prototypes, while later on we settled on training Google's Teachable Machine to use visitors' body movements as input. Working together with a developer at the last stage, we were able to bring this vision to life.",
+    "philips-telehealth-interface": "My role: While this was a highly collaborative effort, with all members contributing to research, ideation, and UI work, my unique contribution was my motion graphics experience, in both the \u201cpresence\u201d UI element, and extra After Effects graphics in the video documentation.",
+}
 EYEBROW = {"flexecharge-branding": "FLEXeCHARGE", "tripcom-design-process": "Trip.com interview task"}  # was "Umeå Institute of Design" on Framer, but it was a work project
 # the "Too long, didn't read?" row: same wording pattern on every project page, linking to the final result
 TLDR = {  # only pages with an Output section get the row (AppLovin and FLEXeCHARGE have none)
@@ -499,6 +504,7 @@ def build(order, slug, cover, label, cats):
     fm["summary"] = polish(fm["summary"])
     lines = ["---", f"title: {q(fm['title'])}", f"eyebrow: {q(fm['eyebrow'])}", f"summary: {q(fm['summary'])}"]
     if fm["team"]: lines.append(f"team: {q(fm['team'])}")
+    if slug in ROLES: lines.append(f"role: {q(ROLES[slug])}")
     lines.append("tags: [" + ", ".join(q(t) for t in fm["tags"]) + "]")
     if hero and hero["t"] == "img" and gif_as_video(os.path.basename(hero["src"])):
         hero = dict(hero, t="video", src=gif_as_video(os.path.basename(hero["src"])))

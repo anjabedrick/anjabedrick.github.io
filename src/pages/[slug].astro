@@ -25,6 +25,7 @@ const d = project.data;
         <h1>{d.title}</h1>
         <p class="project-summary">{d.summary}</p>
         {d.team && <p class="project-team">{d.team}</p>}
+        {d.role && <p class="project-role">{d.role}</p>}
         {d.tags.length > 0 && <ul class="tags">{d.tags.map((t) => <li>{t}</li>)}</ul>}
       </div>
       {d.hero && (

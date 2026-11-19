@@ -3,6 +3,7 @@ title: "Hybrid Democracy: Technological Citizenship"
 eyebrow: "Rathenau Instituut x DSS"
 summary: "An interactive motion-capture story exploring the role the public has in shaping the development of emerging technology through a democratic lens."
 team: "Team: Anja Bedrick, Giulia Lenzi, Ruth Abena, Samar Jubran"
+role: "My role: Tools and Instruments Master, responsible for researching, choosing, and iterating on our prototypes at different stages. In earlier stages, I created clickable Figma prototypes, while later on we settled on training Google's Teachable Machine to use visitors' body movements as input. Working together with a developer at the last stage, we were able to bring this vision to life."
 tags: ["Motion capture", "User testing", "Political science", "Figma prototyping", "AI", "Teachable Machine"]
 hero: "/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png"
 heroType: img

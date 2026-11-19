@@ -3,6 +3,7 @@ title: "Modular Movement"
 eyebrow: "Umeå Institute of Design"
 summary: "MoMo is a modular physiotherapy tool that adapts to suit patients' needs, rather than the other way around."
 team: "Team: Anja Bedrick, Eskil Sverreson, Leonie Schüttler, Selin Bakış"
+role: "My role: Interaction designer, responsible for Arduino electronics and visual identity graphic animations."
 tags: ["Product design", "Sound design", "Interaction design", "Arduino electronics", "Design for healthcare"]
 hero: "/media/rpfb52k9yx4oRDpAK7GWBfkb3Kk.jpg"
 heroType: img

@@ -10,6 +10,7 @@ const projects = defineCollection({
     eyebrow: z.string().default(''),     // pill above the title (school / client)
     summary: z.string(),
     team: z.string().optional(),
+    role: z.string().optional(),         // "My role: ..." line under the team
     tags: z.array(z.string()).default([]),
     hero: z.string().optional(),         // main image or video at the top of the page
     heroType: z.enum(['img', 'video']).default('img'),

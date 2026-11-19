@@ -3,6 +3,7 @@ title: "Philips Telehealth Interface"
 eyebrow: "Umeå Institute of Design"
 summary: "Connecting frontline healthcare workers with telehealth specialists to ease the strain on understaffed hospitals."
 team: "Team: Anja Bedrick, Chenxi Li, Henning Birgersson, Irma Svenningsson"
+role: "My role: While this was a highly collaborative effort, with all members contributing to research, ideation, and UI work, my unique contribution was my motion graphics experience, in both the “presence” UI element, and extra After Effects graphics in the video documentation."
 tags: ["UX design", "UI design", "Service design", "Design ethnography", "Design for healthcare", "Co-creation", "UX field research"]
 hero: "/media/FHXXIoTrVZtVBkVgylMAXcF4Cs.png"
 heroType: img
