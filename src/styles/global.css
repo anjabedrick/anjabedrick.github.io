@@ -298,6 +298,7 @@ strong { font-weight: 600; }
 .grid { --gap: clamp(16px, 2.4vw, 32px); display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); align-items: start; max-width: 1280px; margin: 0 auto; }
 .grid-col { display: flex; flex-direction: column; gap: var(--gap); }
 .grid-col:nth-child(2) { margin-top: 96px; }
+.grid.is-single .grid-col:nth-child(2) { margin-top: 0; } /* a single dice pick sits level, in the middle */
 .card.is-hidden { display: none; }
 /* project name under each tile: only shown on touch screens, where there's no hover cursor */
 .card-caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

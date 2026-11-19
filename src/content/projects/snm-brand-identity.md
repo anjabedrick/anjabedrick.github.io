@@ -59,7 +59,7 @@ order: 7
 <p>Taking inspiration from existing museum identities, and the Danish context in particular.</p>
 </div>
 <div class="step-media">
-<img src="/media/snm-what-others-do-well.png" alt="" width="2746" height="1546" loading="lazy" decoding="async" />
+<img src="/media/snm-what-others-do-well.png" width="2000" height="889" alt="" loading="lazy" decoding="async" />
 </div>
 </div>
 

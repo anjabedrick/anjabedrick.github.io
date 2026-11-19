@@ -176,13 +176,16 @@ if (grid && chips.length) {
   for (let r = 0; perCol.some((c) => c[r]); r++) perCol.forEach((c) => c[r] && reading.push(c[r]));
 
   // match(card) decides which tiles stay visible
-  const apply = (match: (t: HTMLElement) => boolean) => {
+  const apply = (match: (t: HTMLElement) => boolean, centre = false) => {
     all.forEach((t) => { t.style.transform = ''; });
     const first = new Map(all.map((t) => [t, t.getBoundingClientRect()]));
     const wasHidden = new Set(all.filter((t) => t.classList.contains('is-hidden')));
     const show = reading.filter(match);
     reading.forEach((t) => t.classList.toggle('is-hidden', !show.includes(t)));
-    show.forEach((t, i) => cols[i % cols.length].appendChild(t)); // deal the matches back into the columns
+    // deal the matches back into the columns; a single dice pick goes in the middle column
+    grid.classList.toggle('is-single', centre && show.length === 1);
+    if (centre && show.length === 1 && cols.length >= 3) cols[1].appendChild(show[0]);
+    else show.forEach((t, i) => cols[i % cols.length].appendChild(t));
     // FLIP: slide cards from where they were to where they are now, with the springy transition
     for (const t of show) {
       if (wasHidden.has(t)) { t.animate([{ opacity: 0, transform: 'scale(.9)' }, { opacity: 1, transform: 'none' }], { duration: 500, easing: 'cubic-bezier(.34,1.56,.64,1)' }); continue; }
@@ -212,7 +215,7 @@ if (grid && chips.length) {
     if (chip.dataset.pick) {
       const id = draw(chip);
       chip.classList.remove('is-rolling'); void chip.offsetWidth; chip.classList.add('is-rolling');
-      apply((t) => t.dataset.id === id);
+      apply((t) => t.dataset.id === id, true);
     } else {
       const f = chip.dataset.filter || '';
       apply((t) => f === '' || (t.dataset.cats || '').split('|').includes(f));

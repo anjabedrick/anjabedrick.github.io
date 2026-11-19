@@ -377,8 +377,18 @@ def render(rest, slug=''):
                 if glance:
                     seen_title = True
                     body.append(f'<h3 class="glance-title">{title}</h3>')
-                    if run: body.append(media_block(run, "glance-media"))
-                    if ps: body.append(f'<div class="prose-text">\n{text_html(ps)}\n</div>')
+                    # media and text in the order they appear on the page (e.g. video, its caption, video, caption)
+                    group, kind = [], None
+                    def flush_group():
+                        if not group: return
+                        if kind == "media": body.append(media_block(list(group), "glance-media"))
+                        else: body.append(f'<div class="prose-text">\n{text_html(list(group))}\n</div>')
+                        group.clear()
+                    for it in sorted(ps + run, key=lambda r: r["top"]):
+                        k2 = "media" if is_media(it) else "text"
+                        if k2 != kind: flush_group(); kind = k2
+                        group.append(it)
+                    flush_group()
                     continue
                 if not ps:
                     body.append(f'{anchor}<h3 class="sub-head">{title}</h3>')

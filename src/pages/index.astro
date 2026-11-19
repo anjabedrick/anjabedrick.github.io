@@ -129,9 +129,9 @@ const dice = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"
     <h2 class="section-title">All projects</h2>
     <div class="filters" role="group" aria-label="Filter projects">
       <button type="button" class="chip" aria-pressed="true" data-filter="">All</button>
+      {filters.map((f) => <button type="button" class="chip" aria-pressed="false" data-filter={f}>{f}</button>)}
       <button type="button" class="chip chip-dice" aria-pressed="false" data-pick={PICKS.funky.join('|')}><Fragment set:html={dice} />Something funky</button>
       <button type="button" class="chip chip-dice" aria-pressed="false" data-pick={PICKS.polished.join('|')}><Fragment set:html={dice} />Something polished</button>
-      {filters.map((f) => <button type="button" class="chip" aria-pressed="false" data-filter={f}>{f}</button>)}
     </div>
     <div class="grid" aria-live="polite">
       {columns.map((col) => (
