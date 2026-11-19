@@ -8,16 +8,16 @@ heroType: img
 cover: "/media/wfYv1AHzZKAPpf17nJcTzKlO57I.png"
 categories: ["Illustration", "Visual design"]
 cursorLabel: "Quantum Physics Comic Fellowship | Illustration"
-order: 8
+order: 4
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to read the whole comic</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final comic</span></a></div>
 
 <section class="glance">
 <h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
-<img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" loading="lazy" />
+<img src="/media/zwglCxki3Lv74r3qPq4KxyiotU.png" alt="" width="2936" height="2314" loading="lazy" decoding="async" />
 </div>
 
 <div class="prose-text">
@@ -59,7 +59,7 @@ order: 8
 <p>Meet the team. I joined David weekly in the lab to learn about the researchers' work, take notes, and sketch equipment.</p>
 </div>
 <div class="step-media">
-<img src="/media/AI7ZmOwA40UPqNRm9ynYlabW7A.png" alt="" loading="lazy" />
+<img src="/media/AI7ZmOwA40UPqNRm9ynYlabW7A.png" alt="" width="3000" height="4500" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -69,7 +69,7 @@ order: 8
 <p>Because the comic would be used as educational material, scientific accuracy was of top importance. We sketched ideas together, and everything I came up with would be reviewed by the team.</p>
 </div>
 <div class="step-media">
-<img src="/media/uK7EBqtmUEmH0AmgCPVMwvG8cM.jpg" alt="" loading="lazy" />
+<img src="/media/uK7EBqtmUEmH0AmgCPVMwvG8cM.jpg" alt="" width="2000" height="1500" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -79,7 +79,7 @@ order: 8
 <p>Opening up Adobe Illustrator on my laptop in the lab, we could quickly iterate if an idea was working or not.</p>
 </div>
 <div class="step-media">
-<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" />
+<img src="/media/CUbcyWY0hmVGLw7ghEx37HuhA.webp" alt="" loading="lazy" decoding="async" />
 </div>
 </div>
 </section>
@@ -91,6 +91,6 @@ order: 8
 </header>
 
 <div class="gallery">
-<img src="/media/qrQJL5lOoIguX5AaUpJNYf557U.jpg" alt="" loading="lazy" />
+<img src="/media/qrQJL5lOoIguX5AaUpJNYf557U.jpg" alt="" width="2100" height="18900" loading="lazy" decoding="async" />
 </div>
 </section>

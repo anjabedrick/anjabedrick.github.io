@@ -3,3 +3,6 @@ dist/
 .astro/
 .tools/
 .DS_Store
+
+# temporary files from the video converter
+*.sb-*

@@ -8,16 +8,16 @@ heroType: img
 cover: "/media/KAJUbrnVx49dP47BXX8763Q83o.png"
 categories: ["UX design", "Digital product design", "Visual design", "Speculative design", "Branding", "Experience design"]
 cursorLabel: "Umeå Institute of Design | Speculative Branding"
-order: 1
+order: 6
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see how the ticketer works</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final prototype</span></a></div>
 
 <section class="glance">
 <h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
-<img src="/media/SXLKK0xY68VVJvHyuVOEqxr7JpA.png" alt="" loading="lazy" />
+<img src="/media/SXLKK0xY68VVJvHyuVOEqxr7JpA.png" alt="" width="2000" height="2000" loading="lazy" decoding="async" />
 </div>
 
 <div class="prose-text">
@@ -46,7 +46,7 @@ order: 1
 </div>
 
 <div class="gallery">
-<img src="/media/atWVWB14dLt8b4MFlEuL4mcals.jpg" alt="" loading="lazy" />
+<img src="/media/atWVWB14dLt8b4MFlEuL4mcals.jpg" alt="" width="2532" height="32768" loading="lazy" decoding="async" />
 </div>
 </section>
 
@@ -57,6 +57,6 @@ order: 1
 </header>
 
 <div class="gallery">
-<video src="/media/9IJiVMI0dXe7yjPpeMuIFcEe4G8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/9IJiVMI0dXe7yjPpeMuIFcEe4G8.mp4" width="2880" height="1800" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </section>

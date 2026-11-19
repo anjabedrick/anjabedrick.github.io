@@ -13,12 +13,12 @@ order: 0
 featured: 1
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final prototype</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final prototype</span></a></div>
 
 <section class="sec">
 <div class="sec-split">
 <div class="sec-side">
-<img src="/media/Bo8IQO1ynSeOkTAhoWSOOHuTP1Y.png" alt="" loading="lazy" />
+<img src="/media/Bo8IQO1ynSeOkTAhoWSOOHuTP1Y.png" alt="" width="1152" height="2076" loading="lazy" decoding="async" />
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
@@ -45,7 +45,7 @@ featured: 1
 </div>
 
 <div class="gallery">
-<img src="/media/Fsu9vTAUivDiDD5KGdYii0TlMg8.gif" alt="" loading="lazy" />
+<video src="/media/Fsu9vTAUivDiDD5KGdYii0TlMg8.mp4" width="1000" height="200" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 </section>
@@ -62,7 +62,7 @@ featured: 1
 <p>Our discover phase involved mapping the current problem based on desk research and user stories.</p>
 </div>
 <div class="step-media">
-<img src="/media/IHb7wyqN9bx0cT2FRvBPJVQVsDc.jpg" alt="" loading="lazy" />
+<img src="/media/IHb7wyqN9bx0cT2FRvBPJVQVsDc.jpg" alt="" width="1031" height="1185" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -72,8 +72,8 @@ featured: 1
 <p>Our concept was to take existing fine motor skill physiotherapy treatments, and make them adaptable, gamified, and portable. 3D printing multiple slightly varied options for the physical product to test practical usability.</p>
 </div>
 <div class="step-media">
-<img src="/media/tS4VMDiwePpv0KiwRq3eS1LRS8.png" alt="" loading="lazy" />
-<img src="/media/6PuRsbg9gfUGfWYlhWhWYf40.png" alt="" loading="lazy" />
+<img src="/media/tS4VMDiwePpv0KiwRq3eS1LRS8.png" alt="" width="1050" height="1214" loading="lazy" decoding="async" />
+<img src="/media/6PuRsbg9gfUGfWYlhWhWYf40.png" alt="" width="3006" height="1700" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -83,8 +83,8 @@ featured: 1
 <p>Testing the feel of the physical shells, without the addition of light and sound feedback.</p>
 </div>
 <div class="step-media">
-<img src="/media/AKS2aOwid9JmY5ISNNGgvuuIpW8.png" alt="" loading="lazy" />
-<img src="/media/W9xr6o31vBQlBfcdzqxJn2RrIo.png" alt="" loading="lazy" />
+<img src="/media/AKS2aOwid9JmY5ISNNGgvuuIpW8.png" alt="" width="3429" height="2070" loading="lazy" decoding="async" />
+<img src="/media/W9xr6o31vBQlBfcdzqxJn2RrIo.png" alt="" width="1740" height="1920" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -94,7 +94,7 @@ featured: 1
 <p>Encoding light feedback to test our gamified feedback hypothesis: can simple, positive feedback change our users' behavior?</p>
 </div>
 <div class="step-media">
-<video src="/media/aVQMgObe4so5GgYUL767vkWiVE.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/aVQMgObe4so5GgYUL767vkWiVE.mp4" width="1072" height="1920" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -104,7 +104,7 @@ featured: 1
 <p>Our concept was to take existing physiotherapy treatments, and make them adaptable, gamified, and portable. 3D printing multiple slightly varied options for the physical product to test practical usability.</p>
 </div>
 <div class="step-media">
-<img src="/media/wSIFK1n1ea5oi1fbtLzCvYBmaI.png" alt="" loading="lazy" />
+<img src="/media/wSIFK1n1ea5oi1fbtLzCvYBmaI.png" alt="" width="1920" height="1080" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -114,13 +114,13 @@ featured: 1
 <p>The brain, wrist rotation, finger strength, and dexterity are a few modules based on real fine motor skill tuning exercises that we brought to MoMo.</p>
 </div>
 <div class="step-media">
-<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/gyBWEoisStW7bx2O45SAcdRE7Q.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/ZKWJ9fxOyxMZdCMNKV7vfO4nNF8.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/IvjIYLKS3urP6VPOf1wLeZr80.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/NgRPxw8oRdmrAVPTCOL9hYKRShk.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/apSwl8UYpCTKtRwAcowLAtJjf9E.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/h2ZfrjGKrWvzHvML87mIyu3jcdc.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/qugvXyjUyrYq6qe0avi67Ku0gig.mp4" width="2048" height="1144" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 </section>
@@ -135,26 +135,26 @@ featured: 1
 </div>
 
 <div class="gallery">
-<video src="/media/xAJ5UVRZcZfvTTZZoKsAgu0cUQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/xAJ5UVRZcZfvTTZZoKsAgu0cUQ.mp4" width="1920" height="1080" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <div class="gallery">
-<video src="/media/DzYxT6NmXFZXVBUUVNSLpcJOQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/DzYxT6NmXFZXVBUUVNSLpcJOQ.mp4" width="1920" height="1080" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <div class="gallery">
-<video src="/media/NzW0Lf13YoabemtgwTlQS1gazQQ.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/NzW0Lf13YoabemtgwTlQS1gazQQ.mp4" width="1920" height="1080" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <div class="gallery">
-<video src="/media/OqTTn2Tti9C7bef0MA6FhUAIxY.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/OqTTn2Tti9C7bef0MA6FhUAIxY.mp4" width="1920" height="1250" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <div class="gallery">
-<video src="/media/KAsAAJrWhUb5XaBxUgMJhiCKP3k.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/KAsAAJrWhUb5XaBxUgMJhiCKP3k.mp4" width="1920" height="1250" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 
 <div class="gallery">
-<img src="/media/oG8NlHJeREGIEilKq9eMDDLy8.jpg" alt="" loading="lazy" />
+<img src="/media/oG8NlHJeREGIEilKq9eMDDLy8.jpg" alt="" width="1909" height="7609" loading="lazy" decoding="async" />
 </div>
 </section>

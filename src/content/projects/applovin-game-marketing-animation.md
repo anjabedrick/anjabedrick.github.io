@@ -8,16 +8,14 @@ heroType: img
 cover: "/media/Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png"
 categories: ["Motion design", "Illustration"]
 cursorLabel: "AppLovin | Animated Mobile Game Ads"
-order: 5
+order: 3
 featured: 2
 ---
-
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the work</span></a></div>
 
 <section class="sec">
 <div class="sec-split">
 <div class="sec-side">
-<img src="/media/iZQpm4BR3qZywaxCMOiB38soM8.png" alt="" loading="lazy" />
+<img src="/media/iZQpm4BR3qZywaxCMOiB38soM8.png" alt="" width="2400" height="11559" loading="lazy" decoding="async" />
 </div>
 <div class="sec-main">
 <p class="pill pill-label">Orientation</p>
@@ -47,7 +45,7 @@ featured: 2
 
 </section>
 
-<section class="sec" id="output">
+<section class="sec">
 <header class="sec-head">
 <p class="pill pill-label">Design process</p>
 <h2>Process</h2>
@@ -60,7 +58,7 @@ featured: 2
 <p>The simplest animated ads were simple looping gifs. The more eye-catching, silly, or emotionally-captivating, the better.</p>
 </div>
 <div class="step-media">
-<img src="/media/ilWud95UJAbqIXsf1bc7v9Uf98.gif" alt="" loading="lazy" />
+<video src="/media/ilWud95UJAbqIXsf1bc7v9Uf98.mp4" width="600" height="800" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -70,7 +68,7 @@ featured: 2
 <p>While some ads required little editing of screenrecorded gameplay, other concepts required more advanced editing, such as the smoke particles and explosion effects on this truck.</p>
 </div>
 <div class="step-media">
-<img src="/media/dk5mEydXvoBG9sPMANRlaKD98Hw.gif" alt="" loading="lazy" />
+<video src="/media/dk5mEydXvoBG9sPMANRlaKD98Hw.mp4" width="300" height="534" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -78,10 +76,10 @@ featured: 2
 <div class="step-text">
 <h3>03 Asset illustration</h3>
 <p>Some concepts required new assets to be illustrated to match the game's style. Here is one example of such an asset and animation.</p>
-<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />
 </div>
 <div class="step-media">
-<img src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo.gif" alt="" loading="lazy" />
+<video src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo.mp4" width="600" height="338" muted loop playsinline preload="metadata" data-autoplay></video>
+<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" width="147" height="324" alt="Illustrated sword game asset" loading="lazy" decoding="async" />
 </div>
 </div>
 

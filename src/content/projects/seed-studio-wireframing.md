@@ -12,13 +12,13 @@ order: 10
 featured: 3
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to try the clickable prototypes</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the clickable prototypes</span></a></div>
 
 <section class="glance">
 <h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+<img class="crop-tags" src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" width="1780" height="2080" loading="lazy" decoding="async" />
 </div>
 
 <div class="prose-text">
@@ -60,7 +60,7 @@ featured: 3
 <p>Going through the UX document together with the design team, and stakeholders to define the next stage.</p>
 </div>
 <div class="step-media">
-<img src="/media/Gc46HILRWtZqDECV2vcx4rXPR4.png" alt="" loading="lazy" />
+<img src="/media/Gc46HILRWtZqDECV2vcx4rXPR4.png" alt="" width="1854" height="1008" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -70,7 +70,7 @@ featured: 3
 <p>Taking the refined document into Figma to make the flow clickable, and refine the layout further.</p>
 </div>
 <div class="step-media">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+<img class="crop-tags" src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" width="1780" height="2080" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -80,7 +80,7 @@ featured: 3
 <p>Satisfied with the layout and flow, now it was time to work with the visual style. Working with Moon Gallery's visual identity and images, we designed a high-fidelity prototype that worked for the client.</p>
 </div>
 <div class="step-media">
-<img src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" loading="lazy" />
+<img class="crop-tags" src="/media/EeBfffRX7lldTPZgR5cNZDZnA70.png" alt="" width="1780" height="2080" loading="lazy" decoding="async" />
 </div>
 </div>
 </section>

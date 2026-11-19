@@ -169,6 +169,20 @@ strong { font-weight: 600; }
 .hero-name .line { display: block; }
 /* hidden until the letters are split, but shown anyway after 2s if the script never runs */
 .hero-name:not(.is-split) { opacity: 0; animation: fade 0s 2s forwards; }
+/* clicking the name jumps to "Hej, I'm Anja." */
+.hero-name-link { color: inherit; text-decoration: none; }
+/* easter egg: hover just above the J or I and it gets the dot of a lowercase j / i (mouse only) */
+.hero-name .ch-dotted { position: relative; }
+.ch-dotted .dot, .ch-dotted .dot-zone { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .ch-dotted .dot-zone { display: block; position: absolute; left: -.1em; right: -.1em; bottom: 100%; height: .5em; }
+  .ch-dotted .dot {
+    display: block; position: absolute; left: calc(50% - .25em); top: -.3em; width: .17em; height: .17em; margin-left: -.085em;
+    border-radius: 50%; background: currentColor; transform: scale(0); pointer-events: none;
+    transition: transform .9s var(--ease) .4s;
+  }
+  .ch-dotted .dot-zone:hover + .dot { transform: scale(1); transition: transform .45s var(--spring); }
+}
 .hero-name .ch { display: inline-block; opacity: 0; filter: blur(10px); transform: translateY(10px);
   animation: letter .9s var(--ease) forwards; animation-delay: calc(.25s + var(--i) * 60ms); }
 @keyframes letter { to { opacity: 1; filter: blur(0); transform: none; } }
@@ -265,6 +279,11 @@ strong { font-weight: 600; }
 
 /* filter chips */
 .filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin: 0 auto 48px; }
+/* dice chips: the die gives a little roll on every click */
+.chip-dice { display: inline-flex; align-items: center; gap: 6px; }
+.chip-dice svg { flex: none; }
+.chip-dice.is-rolling svg { animation: roll .55s var(--spring); }
+@keyframes roll { from { transform: rotate(-200deg) scale(.6); } to { transform: none; } }
 .chip {
   font: 400 15px/1.5 var(--sans); color: var(--orange-text); background: var(--cream);
   padding: 8px 14px; border: 1px solid var(--orange); border-radius: 20px; cursor: pointer;
@@ -298,13 +317,13 @@ strong { font-weight: 600; }
 }
 .card { display: block; text-decoration: none; position: relative; transition: transform .7s var(--spring); }
 .card:hover { z-index: 2; }
-.card img {
-  width: 100%; border-radius: 4px; filter: grayscale(1) sepia(.15);
+.card img, .card video {
+  width: 100%; height: auto; display: block; border-radius: 4px; filter: grayscale(1) sepia(.15);
   transition: border-radius .6s var(--ease), filter .5s;
 }
-.card:hover img, .card:focus-visible img { filter: none; border-radius: 50%; }
+.card:hover img, .card:focus-visible img, .card:hover video, .card:focus-visible video { filter: none; border-radius: 50%; }
 /* the About tile is not square, so it only softens its corners */
-.card-about:hover img, .card-about:focus-visible img { border-radius: 28px; }
+.card-about:hover img, .card-about:focus-visible img, .card-about:hover video, .card-about:focus-visible video { border-radius: 28px; }
 
 /* ---------- connect + footer ---------- */
 .connect { text-align: center; padding: clamp(100px, 14vw, 200px) var(--gutter); }
@@ -335,7 +354,7 @@ strong { font-weight: 600; }
 .tldr {
   display: flex; align-items: center; justify-content: center; gap: 18px; text-decoration: none;
   font: 400 15px/1.6 var(--sans); letter-spacing: -.02em; color: var(--orange-text);
-  margin: 0 auto 40px; width: fit-content; max-width: 100%;
+  margin: 0 auto 72px; width: fit-content; max-width: 100%;
 }
 .tldr:hover span:last-child { text-decoration: underline; text-underline-offset: 4px; }
 
@@ -344,7 +363,7 @@ strong { font-weight: 600; }
 .embed iframe { width: 100%; height: 100%; border: 0; display: block; }
 
 .glance {
-  border: 1px solid var(--line); border-radius: 24px; padding: clamp(28px, 5vw, 64px) clamp(20px, 8vw, 175px);
+  border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 4vw, 48px) clamp(20px, 4vw, 48px);
   display: flex; flex-direction: column; gap: 28px; margin-bottom: clamp(80px, 10vw, 140px);
 }
 .glance-title { text-align: center; }
@@ -390,8 +409,8 @@ strong { font-weight: 600; }
 .prose-text { max-width: 680px; }
 
 /* a small, pixel-art style image shown near its real size so it stays crisp */
-.project-body img.media-small { width: auto; max-width: min(100%, 220px); margin: 0 auto; image-rendering: pixelated; border-radius: 0; }
-.step-text img.media-small { margin: 8px 0 0; }
+/* small illustration shown below its neighbour, kept small so the low-res source stays crisp */
+.project-body img.media-small { width: 110px; height: auto; margin: 8px 0 0; border-radius: 0; }
 
 /* dark band inside a project page (the gallery's animation section) */
 .sec-dark {
@@ -478,3 +497,6 @@ strong { font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition: none !important; }
 }
+
+/* SEED's Moon Gallery image has a row of tags baked into its bottom: show it without them */
+.project-body .crop-tags { aspect-ratio: 1780 / 1745; object-fit: cover; object-position: top; }

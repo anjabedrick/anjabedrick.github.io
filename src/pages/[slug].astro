@@ -1,6 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import dims from '../data/media-dims.json';
+const DIMS = dims as Record<string, [number, number]>;
+const size = (src?: string) => { const d = src ? DIMS[src.split('/').pop()!] : undefined; return d ? { width: d[0], height: d[1] } : {}; };
 
 export async function getStaticPaths() {
   const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
@@ -27,8 +30,8 @@ const d = project.data;
       {d.hero && (
         <div class="project-hero">
           {d.heroType === 'video'
-            ? <video src={d.hero} muted loop playsinline preload="metadata" data-autoplay></video>
-            : <img src={d.hero} alt="" />}
+            ? <video src={d.hero} {...size(d.hero)} muted loop playsinline autoplay preload="auto" data-autoplay></video>
+            : <img src={d.hero} {...size(d.hero)} alt="" decoding="async" fetchpriority="high" />}
         </div>
       )}
     </header>
@@ -40,7 +43,7 @@ const d = project.data;
     <a class="next-project" href={`/${next.id}`} data-cursor={next.data.cursorLabel}>
       <span class="pill">Next project</span>
       <span class="next-title">{next.data.title}</span>
-      <img src={next.data.cover} alt="" loading="lazy" />
+      <img src={next.data.cover} {...size(next.data.cover)} alt="" loading="lazy" decoding="async" />
     </a>
   </article>
 </Base>

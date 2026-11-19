@@ -8,16 +8,16 @@ heroType: img
 cover: "/media/ObxAQt3taQcg22O2gcFIEZ9DPM.png"
 categories: ["Visual design", "Branding", "Motion design", "Process"]
 cursorLabel: "SNM Copenhagen | Museum Brand Identity"
-order: 2
+order: 7
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final product</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final product</span></a></div>
 
 <section class="glance">
 <h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
-<img src="/media/3OL1ni471LGJgodG1x9pqMabeBw.gif" alt="" loading="lazy" />
+<img src="/media/3OL1ni471LGJgodG1x9pqMabeBw.gif" alt="" width="512" height="119" loading="lazy" decoding="async" />
 </div>
 
 <div class="prose-text">
@@ -41,7 +41,7 @@ order: 2
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>A visual identity guide complete with mockups</p>
+<p>A visual identity guide complete with mockups.</p>
 </div>
 </div>
 </section>
@@ -59,7 +59,7 @@ order: 2
 <p>Taking inspiration from existing museum identities, and the Danish context in particular.</p>
 </div>
 <div class="step-media">
-<img src="/media/I2DNOZqPX4R0hXLUTtHcpbuDv0Y.png" alt="" loading="lazy" />
+<img src="/media/snm-what-others-do-well.png" alt="" width="2746" height="1546" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -69,7 +69,7 @@ order: 2
 <p>A peek at some early sketches, the signature arcs inspired by the new architecture of the renovated SNM botanical garden.</p>
 </div>
 <div class="step-media">
-<img src="/media/y30d6YCbG0cANvomVInOwvteI.png" alt="" loading="lazy" />
+<img src="/media/y30d6YCbG0cANvomVInOwvteI.png" alt="" width="1430" height="1026" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -79,7 +79,7 @@ order: 2
 <p>How would this design appear in its real context?</p>
 </div>
 <div class="step-media">
-<img src="/media/kPYF83GkgVwWTPfsnSsgRo3GF9g.png" alt="" loading="lazy" />
+<img src="/media/kPYF83GkgVwWTPfsnSsgRo3GF9g.png" alt="" width="1000" height="558" loading="lazy" decoding="async" />
 </div>
 </div>
 </section>
@@ -91,12 +91,12 @@ order: 2
 </header>
 
 <div class="gallery">
-<img src="/media/e7qorC8Jit6m2G5fpEQyy1G7mA.jpg" alt="" loading="lazy" />
+<img src="/media/e7qorC8Jit6m2G5fpEQyy1G7mA.jpg" alt="" width="2000" height="12371" loading="lazy" decoding="async" />
 </div>
 
 <div class="gallery gallery-3">
-<img src="/media/nXa8DbAxn6waYPA2RUhBdZ69Ic.gif" alt="" loading="lazy" />
-<img src="/media/FRtu9Ct2KlNWJtp3RrfWo4Gs.gif" alt="" loading="lazy" />
-<img src="/media/1iKRThUVgYQ4Br1lkIENZ0ejc.gif" alt="" loading="lazy" />
+<video src="/media/nXa8DbAxn6waYPA2RUhBdZ69Ic.mp4" width="300" height="550" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/FRtu9Ct2KlNWJtp3RrfWo4Gs.mp4" width="300" height="550" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/1iKRThUVgYQ4Br1lkIENZ0ejc.mp4" width="300" height="546" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </section>

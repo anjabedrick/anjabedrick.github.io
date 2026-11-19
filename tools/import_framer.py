@@ -20,25 +20,26 @@ REMOVE = {
 }
 
 # slug, grid cover, cursor label, filter categories
+# grid order: first row MoMo, Philips, gallery; second row AppLovin, comic, Rathenau
 CARDS = [
  ("momo", "momo-if-award.jpg", "Modular Physical Therapy | Arduino Coding",
   ["Creative technology", "Experience design", "Process"]),
+ ("philips-telehealth-interface", "Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png", "Philips Telehealth Interface | UX+UI",
+  ["UX design", "Digital product design", "User research", "Experience design", "Process", "Speculative design"]),
+ ("illustration-and-animation-gallery", "FCdDtzcuuviBweJ3hPZ31on2uk.png", "Illustration and Animation Gallery",
+  ["Illustration", "Motion design"]),
+ ("applovin-game-marketing-animation", "Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png", "AppLovin | Animated Mobile Game Ads",
+  ["Motion design", "Illustration"]),
+ ("quantum-physics-comic", "wfYv1AHzZKAPpf17nJcTzKlO57I.png", "Quantum Physics Comic Fellowship | Illustration",
+  ["Illustration", "Visual design"]),
+ ("rathenau-instituut-creative-research", "6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png", "Rathenau Instituut | Motion Capture Prototype",
+  ["Creative technology", "User research", "Experience design", "Process"]),
  ("speculative-product-design", "KAJUbrnVx49dP47BXX8763Q83o.png", "Umeå Institute of Design | Speculative Branding",
   ["UX design", "Digital product design", "Visual design", "Speculative design", "Branding", "Experience design"]),
  ("snm-brand-identity", "ObxAQt3taQcg22O2gcFIEZ9DPM.png", "SNM Copenhagen | Museum Brand Identity",
   ["Visual design", "Branding", "Motion design", "Process"]),
  ("tripcom-design-process", "O3Hv6ku6diOv3bqNOKXid6Ta5rM.png", "Trip.com | CX Journey",
   ["UX design", "Digital product design", "Visual design", "Experience design", "Motion design", "Process"]),
- ("philips-telehealth-interface", "Owi6GMmTQcBiWnNSdmvU9Ug4fj0.png", "Philips Telehealth Interface | UX+UI",
-  ["UX design", "Digital product design", "User research", "Experience design", "Process", "Speculative design"]),
- ("applovin-game-marketing-animation", "Bvk2MAxP3ffLzDh9LRXlaZDNeS4.png", "AppLovin | Animated Mobile Game Ads",
-  ["Motion design", "Illustration"]),
- ("illustration-and-animation-gallery", "FCdDtzcuuviBweJ3hPZ31on2uk.png", "Illustration and Animation Gallery",
-  ["Illustration", "Motion design"]),
- ("rathenau-instituut-creative-research", "6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png", "Rathenau Instituut | Motion Capture Prototype",
-  ["Creative technology", "User research", "Experience design", "Process"]),
- ("quantum-physics-comic", "wfYv1AHzZKAPpf17nJcTzKlO57I.png", "Quantum Physics Comic Fellowship | Illustration",
-  ["Illustration", "Visual design"]),
  ("flexecharge-branding", "thf5e8yDLjCiSXzOvo3q6HVNc.png", "FLEXeCHARGE | EV Motion Branding",
   ["Visual design", "Motion design", "Branding"]),
  ("seed-studio-wireframing", "k1IswG1laMMkthqP9yoHnISj0.png", "SEED Design Studio | Clickable Wireframing",
@@ -62,13 +63,23 @@ PATCHES = {
     "applovin-game-marketing-animation": [
         ("Check out a storyboard I made to the left to convey a concept to the team.",
          "Check out this storyboard I put together to convey a new concept to the team."),
-        # the small sword sits in the text column under the paragraph, as on Framer
-        ('<div class="gallery">\n<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="" loading="lazy" />\n</div>\n', ''),
-        ("Here is one example of such an asset and animation.</p>\n</div>",
-         "Here is one example of such an asset and animation.</p>\n"
-         '<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />\n</div>'),
+        # the small sword sits under the game animation, at a size that keeps it crisp
+        (re.compile(r'<div class="gallery">\n<img src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA\.png"[^>]*/>\n</div>\n'), ''),
+        (re.compile(r'(<video src="/media/OrtXsyh9N1vTU1IGu9fP9dyhOo\.mp4"[^>]*></video>)'),
+         r'\1\n<img class="media-small" src="/media/8jZKKw7w1jnRSaFljsjwUaQnqoA.png" alt="Illustrated sword game asset" loading="lazy" />'),
+    ],
+    "flexecharge-branding": [  # the logo animation sits beside "01 Motion design", like the other steps
+        (re.compile(r'<div class="gallery">\n(<video src="/media/aBxbxpUKrnwQSkMBT0AMhXsh7I\.mp4"[^>]*></video>)\n</div>\n\n'
+                    r'<div class="step step-solo">\n<div class="step-text">\n(<h3>01 Motion design</h3>\n.*?)\n</div>\n</div>', re.S),
+         '<div class="step step-flip">\n<div class="step-text">\n\\2\n</div>\n<div class="step-media">\n\\1\n</div>\n</div>'),
+    ],
+    "snm-brand-identity": [
+        ("A visual identity guide complete with mockups</p>", "A visual identity guide complete with mockups.</p>"),
+        ("/media/I2DNOZqPX4R0hXLUTtHcpbuDv0Y.png", "/media/snm-what-others-do-well.png"),
     ],
     "seed-studio-wireframing": [
+        # hide the tag row baked into the bottom of the Moon Gallery image
+        (re.compile(r'<(img|video) (src="/media/EeBf[^"]*")'), r'<\1 class="crop-tags" \2'),
         # the two clickable Figma prototypes embedded on the Framer page
         ("<p>[Prototypes may take longer to load.]</p>\n</div>",
          "<p>[Prototypes may take longer to load.]</p>\n</div>\n\n"
@@ -109,17 +120,15 @@ TYPOS = {"menas": "means", "an such asset": "such an asset", "teammembers": "tea
          "interactions design": "interaction design"}
 EYEBROW = {"flexecharge-branding": "FLEXeCHARGE", "tripcom-design-process": "Trip.com interview task"}  # was "Umeå Institute of Design" on Framer, but it was a work project
 # the "Too long, didn't read?" row: same wording pattern on every project page, linking to the final result
-TLDR = {
-    "momo": "Keep scrolling to see the final prototype",
-    "speculative-product-design": "Keep scrolling to see how the ticketer works",
-    "snm-brand-identity": "Keep scrolling to see the final product",
-    "tripcom-design-process": "Keep scrolling to see the final product",
-    "philips-telehealth-interface": "Keep scrolling to see the final interfaces",
-    "applovin-game-marketing-animation": "Keep scrolling to see the work",
-    "rathenau-instituut-creative-research": "Keep scrolling to see the final experience",
-    "quantum-physics-comic": "Keep scrolling to read the whole comic",
-    "flexecharge-branding": "Keep scrolling to see the work",
-    "seed-studio-wireframing": "Keep scrolling to try the clickable prototypes",
+TLDR = {  # only pages with an Output section get the row (AppLovin and FLEXeCHARGE have none)
+    "momo": "Click here to jump to the final prototype",
+    "speculative-product-design": "Click here to jump to the final prototype",
+    "snm-brand-identity": "Click here to jump to the final product",
+    "tripcom-design-process": "Click here to jump to the final product",
+    "philips-telehealth-interface": "Click here to jump to the final interfaces",
+    "rathenau-instituut-creative-research": "Click here to jump to the final experience",
+    "quantum-physics-comic": "Click here to jump to the final comic",
+    "seed-studio-wireframing": "Click here to jump to the clickable prototypes",
 }
 
 STAR = {"situation", "problem", "action", "result", "task"}
@@ -136,11 +145,54 @@ def q(t): return json.dumps(t, ensure_ascii=False)
 def is_media(x): return x["t"] in ("img", "video")
 
 
+DIMS = json.load(open(os.path.join(ROOT, "src", "data", "media-dims.json")))
+MEDIA_DIR = os.path.join(ROOT, "public", "media")
+
+
+def gif_as_video(name):
+    """The MP4 made from a GIF by optimize_media.sh, if it exists and is smaller."""
+    mp4 = name[:-4] + ".mp4"
+    g, v = os.path.join(MEDIA_DIR, name), os.path.join(MEDIA_DIR, mp4)
+    if name.endswith(".gif") and os.path.exists(v) and (not os.path.exists(g) or os.path.getsize(v) < os.path.getsize(g)):
+        return mp4
+    return None
+
+
+def size_attrs(name):
+    d = DIMS.get(name)
+    return f' width="{d[0]}" height="{d[1]}"' if d else ""
+
+
 def media_html(x):
+    name = os.path.basename(x["src"])
+    if x["t"] == "img" and gif_as_video(name):
+        x = dict(x, t="video", src=gif_as_video(name), gif=True)
+        name = x["src"]
     if x["t"] == "img":
         alt = "" if x.get("alt") in GENERIC_ALT or not x.get("alt") else html.escape(x["alt"])
-        return f'<img src="{m(x["src"])}" alt="{alt}" loading="lazy" />'
-    return f'<video src="{m(x["src"])}" muted loop playsinline preload="metadata" data-autoplay></video>'
+        return f'<img src="/media/{name}" alt="{alt}"{size_attrs(name)} loading="lazy" decoding="async" />'
+    return f'<video src="/media/{name}"{size_attrs(name)} muted loop playsinline preload="metadata" data-autoplay></video>'
+
+
+def enhance(body):
+    """Same treatment for media written by hand (patches, the gallery page): GIF to video, sizes added."""
+    def fix_img(mt):
+        tag = mt.group(0); src = re.search(r'src="/media/([^"]+)"', tag)
+        if not src: return tag
+        name = src.group(1); v = gif_as_video(name)
+        if v:
+            cls = re.search(r'class="([^"]+)"', tag)
+            c = f' class="{cls.group(1)}"' if cls else ""
+            return f'<video{c} src="/media/{v}"{size_attrs(v)} muted loop playsinline preload="metadata" data-autoplay></video>'
+        if "width=" not in tag: tag = tag.replace(f'src="/media/{name}"', f'src="/media/{name}"{size_attrs(name)}', 1)
+        if "decoding=" not in tag: tag = tag.replace(" />", ' decoding="async" />')
+        return tag
+    body = re.sub(r"<img\b[^>]*/>", fix_img, body)
+    def fix_vid(mt):
+        tag = mt.group(0); src = re.search(r'src="/media/([^"]+)"', tag)
+        if src and "width=" not in tag: tag = tag.replace(f'src="/media/{src.group(1)}"', f'src="/media/{src.group(1)}"{size_attrs(src.group(1))}', 1)
+        return tag
+    return re.sub(r"<video\b[^>]*>", fix_vid, body)
 
 
 def media_block(run, cls):
@@ -263,7 +315,7 @@ def render(rest, slug=''):
             hint = (plain(x["text"]), plain(nxt["text"]) if nxt else "")
             rest = [y for y in rest if y is not x and y is not nxt]
             break
-    if slug in TLDR: hint = ("Too long, didn't read?", TLDR[slug])
+    hint = ("Too long, didn't read?", TLDR[slug]) if slug in TLDR else None
     hint_html = ""
     if hint:
         hint_html = (f'<div class="tldr-row"><a class="tldr" href="#output"><span>{html.escape(hint[0])}</span>'
@@ -380,9 +432,8 @@ def render(rest, slug=''):
             html_out.append(f'<section class="sec"{sid}>\n<header class="sec-head">\n' + "\n".join(head) + "\n</header>\n\n"
                             + "\n\n".join(body) + "\n</section>")
     out = "\n\n".join(html_out)
-    if hint_html and 'id="output"' not in out:  # no Output section: the row links to the last section
-        i = out.rfind('<section class="sec">')
-        if i >= 0: out = out[:i] + '<section class="sec" id="output">' + out[i + len('<section class="sec">'):]
+    if hint_html and 'id="output"' not in out:  # no Output section to jump to: no TL;DR row
+        out = out.replace(hint_html + "\n\n", "").replace(hint_html, "")
     return out
 
 
@@ -426,14 +477,21 @@ def build(order, slug, cover, label, cats):
     if i < len(items) and is_media(items[i]): hero = items[i]; i += 1
     body = polish(render(sequence(items[i:]), slug))
     for a, b in PATCHES.get(slug, []):
-        if a not in body: print(f"  ! patch not applied on {slug}: {a[:50]}")
-        body = body.replace(a, b)
+        if isinstance(a, re.Pattern):
+            body, n = a.subn(b, body)
+            if not n: print(f"  ! patch not applied on {slug}: {a.pattern[:50]}")
+        else:
+            if a not in body: print(f"  ! patch not applied on {slug}: {a[:50]}")
+            body = body.replace(a, b)
+    body = enhance(body)
     fm["eyebrow"] = EYEBROW.get(slug, fm["eyebrow"])
     fm["tags"] = [n for t in fm["tags"] for n in TAGS.get(t, [t])]
     fm["summary"] = polish(fm["summary"])
     lines = ["---", f"title: {q(fm['title'])}", f"eyebrow: {q(fm['eyebrow'])}", f"summary: {q(fm['summary'])}"]
     if fm["team"]: lines.append(f"team: {q(fm['team'])}")
     lines.append("tags: [" + ", ".join(q(t) for t in fm["tags"]) + "]")
+    if hero and hero["t"] == "img" and gif_as_video(os.path.basename(hero["src"])):
+        hero = dict(hero, t="video", src=gif_as_video(os.path.basename(hero["src"])))
     if hero: lines += [f"hero: {q(m(hero['src']))}", f"heroType: {hero['t']}"]
     lines += [f"cover: {q('/media/' + cover)}", f"categories: {json.dumps(cats, ensure_ascii=False)}",
               f"cursorLabel: {q(label)}", f"order: {order}"]
@@ -451,3 +509,11 @@ if __name__ == "__main__":
             continue  # hand-edited page (dark animation section); run with ONLY=... to rebuild it
         if only and slug != only: continue
         build(order, slug, cover, label, cats)
+    # the hand-edited gallery page: keep its content, update its grid position and media
+    g = os.path.join(OUT, "illustration-and-animation-gallery.md")
+    gtxt = open(g).read()
+    gorder = [c[0] for c in CARDS].index("illustration-and-animation-gallery")
+    gtxt = re.sub(r"^order: \d+$", f"order: {gorder}", gtxt, flags=re.M)
+    head, body = gtxt.split("---\n", 2)[1], gtxt.split("---\n", 2)[2]
+    open(g, "w").write("---\n" + head + "---\n" + enhance(body))
+    print("illustration-and-animation-gallery: media updated, order", gorder)

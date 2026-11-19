@@ -175,11 +175,12 @@ if (grid && chips.length) {
   const perCol = cols.map((c) => [...c.querySelectorAll<HTMLElement>('.card')]);
   for (let r = 0; perCol.some((c) => c[r]); r++) perCol.forEach((c) => c[r] && reading.push(c[r]));
 
-  const apply = (filter: string) => {
+  // match(card) decides which tiles stay visible
+  const apply = (match: (t: HTMLElement) => boolean) => {
     all.forEach((t) => { t.style.transform = ''; });
     const first = new Map(all.map((t) => [t, t.getBoundingClientRect()]));
     const wasHidden = new Set(all.filter((t) => t.classList.contains('is-hidden')));
-    const show = reading.filter((t) => filter === '' ? true : (t.dataset.cats || '').split('|').includes(filter));
+    const show = reading.filter(match);
     reading.forEach((t) => t.classList.toggle('is-hidden', !show.includes(t)));
     show.forEach((t, i) => cols[i % cols.length].appendChild(t)); // deal the matches back into the columns
     // FLIP: slide cards from where they were to where they are now, with the springy transition
@@ -191,9 +192,31 @@ if (grid && chips.length) {
       t.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }], { duration: 700, easing: 'cubic-bezier(.34,1.56,.64,1)' });
     }
   };
+  // dice chips: every click shows one project from the set, never the same one twice in a row,
+  // and each one comes up before any repeats
+  const bags = new Map<HTMLElement, string[]>();
+  const lastPick = new Map<HTMLElement, string>();
+  const draw = (chip: HTMLElement) => {
+    const set = (chip.dataset.pick || '').split('|');
+    let bag = bags.get(chip) || [];
+    if (!bag.length) {
+      bag = [...set].sort(() => Math.random() - 0.5);
+      if (bag.length > 1 && bag[0] === lastPick.get(chip)) bag.push(bag.shift()!);
+    }
+    const id = bag.shift()!;
+    bags.set(chip, bag); lastPick.set(chip, id);
+    return id;
+  };
   chips.forEach((chip) => chip.addEventListener('click', () => {
     chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
-    apply(chip.dataset.filter || '');
+    if (chip.dataset.pick) {
+      const id = draw(chip);
+      chip.classList.remove('is-rolling'); void chip.offsetWidth; chip.classList.add('is-rolling');
+      apply((t) => t.dataset.id === id);
+    } else {
+      const f = chip.dataset.filter || '';
+      apply((t) => f === '' || (t.dataset.cats || '').split('|').includes(f));
+    }
   }));
 }
 
@@ -268,6 +291,27 @@ document.querySelectorAll<HTMLElement>('[data-drag-scroll]').forEach((el) => {
   el.addEventListener('pointercancel', end);
 });
 
+/* ---------------- "Too long, didn't read?" rows: jump exactly to the Output section ---------------- */
+document.querySelectorAll<HTMLAnchorElement>('a.tldr').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector<HTMLElement>(a.getAttribute('href') || '');
+    if (!target) return;
+    e.preventDefault(); e.stopPropagation();
+    const OFFSET = 100; // clear the navbar
+    const land = () => {
+      const y = target.getBoundingClientRect().top + window.scrollY - OFFSET;
+      if (lenis) lenis.scrollTo(y, { immediate: true, force: true }); else window.scrollTo(0, y);
+    };
+    if (lenis) {
+      lenis.scrollTo(target, { offset: -OFFSET, duration: 1.1, force: true, onComplete: () => {
+        // pictures that finished loading on the way can shift the page; correct for it
+        requestAnimationFrame(() => { if (Math.abs(target.getBoundingClientRect().top - OFFSET) > 4) land(); });
+      } });
+    } else land();
+    history.replaceState(null, '', a.getAttribute('href'));
+  }, { capture: true });
+});
+
 /* ---------------- letters of the hero name blur in one by one ---------------- */
 let letterIndex = 0;
 document.querySelectorAll<HTMLElement>('[data-split] .line').forEach((line) => {
@@ -279,6 +323,11 @@ document.querySelectorAll<HTMLElement>('[data-split] .line').forEach((line) => {
     s.style.setProperty('--i', String(letterIndex++));
     s.textContent = ch;
     s.setAttribute('aria-hidden', 'true');
+    if (ch.toLowerCase() === 'j' || ch.toLowerCase() === 'i') {
+      // easter egg: hovering just above the letter gives it the dot of a lowercase j / i
+      s.classList.add('ch-dotted');
+      s.insertAdjacentHTML('beforeend', '<span class="dot-zone"></span><span class="dot"></span>');
+    }
     line.appendChild(s);
   }
 });

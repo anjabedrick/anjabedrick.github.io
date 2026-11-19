@@ -9,17 +9,17 @@ heroType: img
 cover: "/media/6Ic5M3GNZx7jHCUu0gMwpZ1LiOk.png"
 categories: ["Creative technology", "User research", "Experience design", "Process"]
 cursorLabel: "Rathenau Instituut | Motion Capture Prototype"
-order: 7
+order: 5
 featured: 4
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final experience</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final experience</span></a></div>
 
 <section class="glance">
 <h3 class="glance-title">At a glance</h3>
 
 <div class="glance-media">
-<img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" loading="lazy" />
+<img src="/media/KHSsRP2C01gMUwSQrnNWw0c6e8.png" alt="" width="1920" height="1080" loading="lazy" decoding="async" />
 </div>
 
 <div class="prose-text">
@@ -61,7 +61,7 @@ featured: 4
 <p>Aligning with our major stakeholders via a discovery workshop, including: the Rathenau Instituut thinktank, the library in which the prototype would be stationed, and DSS as the bridge between our team and these stakeholders.</p>
 </div>
 <div class="step-media">
-<img src="/media/rJD25thcdkTsiotGnEpUZrnXfUQ.png" alt="" loading="lazy" />
+<img src="/media/rJD25thcdkTsiotGnEpUZrnXfUQ.png" alt="" width="1424" height="1394" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -71,7 +71,7 @@ featured: 4
 <p>Meeting with a local nonprofit, Cybersoek, which specializes in engaging community members in learning about technology.</p>
 </div>
 <div class="step-media">
-<img src="/media/lS6RhpHDzC6ojQQr7qe9FBqhO0I.png" alt="" loading="lazy" />
+<img src="/media/lS6RhpHDzC6ojQQr7qe9FBqhO0I.png" alt="" width="2466" height="1470" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -81,7 +81,7 @@ featured: 4
 <p>Testing our interactive Figma prototype in the public library, taking notes, and iterating.</p>
 </div>
 <div class="step-media">
-<img src="/media/dVCIjVML1QgLbNOGzGK2WcfKKfw.png" alt="" loading="lazy" />
+<img src="/media/dVCIjVML1QgLbNOGzGK2WcfKKfw.png" alt="" width="996" height="1510" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -91,7 +91,7 @@ featured: 4
 <p>From storyboard to Figma prototype to Google's Teachable Machine.</p>
 </div>
 <div class="step-media">
-<img src="/media/xqJ0Uaq7ypVkzOFbEJSWR5oh4.png" alt="" loading="lazy" />
+<img src="/media/xqJ0Uaq7ypVkzOFbEJSWR5oh4.png" alt="" width="2746" height="1356" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -101,7 +101,7 @@ featured: 4
 <p>As the "tools and instruments master" on the team, I explored different possibilities for implementing our concept, settling on Teachable Machine. We worked closely with a developer for the final implementation.</p>
 </div>
 <div class="step-media">
-<img src="/media/0mgbNittTqXF3yr5EPzLWF59g.png" alt="" loading="lazy" />
+<img src="/media/0mgbNittTqXF3yr5EPzLWF59g.png" alt="" width="790" height="705" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -111,7 +111,7 @@ featured: 4
 <p>We tested our final prototype with great excitement from our partner and community members.</p>
 </div>
 <div class="step-media">
-<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" loading="lazy" />
+<img src="/media/sQfzzLxw4zDNgmgONay9IyeFhRQ.png" alt="" width="1806" height="1250" loading="lazy" decoding="async" />
 </div>
 </div>
 </section>
@@ -126,6 +126,6 @@ featured: 4
 </div>
 
 <div class="gallery">
-<img src="/media/NrK0d5t7Yn74wyXzSU6EnFDcxk.png" alt="" loading="lazy" />
+<img src="/media/NrK0d5t7Yn74wyXzSU6EnFDcxk.png" alt="" width="1420" height="1404" loading="lazy" decoding="async" />
 </div>
 </section>

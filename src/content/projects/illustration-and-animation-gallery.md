@@ -8,7 +8,7 @@ heroType: img
 cover: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 categories: ["Illustration", "Motion design"]
 cursorLabel: "Illustration and Animation Gallery"
-order: 6
+order: 2
 ---
 
 <section class="sec">
@@ -20,9 +20,9 @@ order: 6
 <p>A deck of playing cards illustrated and designed for the well known game, mafia.</p>
 </div>
 <div class="step-media">
-<img src="/media/ReadHHazXDSI0GRcFkui7BDlIuQ.png" alt="" loading="lazy" />
-<img src="/media/9iCnZ59Q340XVLoYUKRR97ehg50.png" alt="" loading="lazy" />
-<img src="/media/ZrS2xt5jlmfP0b1Vd43zvrnE.png" alt="" loading="lazy" />
+<img src="/media/ReadHHazXDSI0GRcFkui7BDlIuQ.png" width="3000" height="2250" alt="" loading="lazy" decoding="async" />
+<img src="/media/9iCnZ59Q340XVLoYUKRR97ehg50.png" width="3000" height="2250" alt="" loading="lazy" decoding="async" />
+<img src="/media/ZrS2xt5jlmfP0b1Vd43zvrnE.png" width="750" height="563" alt="" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -32,9 +32,9 @@ order: 6
 <p>A series of character designs painted in Photoshop for a short animation.</p>
 </div>
 <div class="step-media">
-<img src="/media/3TGDWQBXlbGCHX6LVAmSF8hkTkk.png" alt="" loading="lazy" />
-<img src="/media/ZUG3cItLuJCa60aJZgnmKFiDyqc.png" alt="" loading="lazy" />
-<img src="/media/5IgiR3UbczO6D0w4a099iUu1C0Y.png" alt="" loading="lazy" />
+<img src="/media/3TGDWQBXlbGCHX6LVAmSF8hkTkk.png" width="1000" height="1000" alt="" loading="lazy" decoding="async" />
+<img src="/media/ZUG3cItLuJCa60aJZgnmKFiDyqc.png" width="1000" height="1000" alt="" loading="lazy" decoding="async" />
+<img src="/media/5IgiR3UbczO6D0w4a099iUu1C0Y.png" width="1584" height="1584" alt="" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -44,8 +44,8 @@ order: 6
 <p>Where it all started: traditional sketching as the foundation for a career in digital design.</p>
 </div>
 <div class="step-media">
-<img src="/media/RFl7ermpwrLd8PQMQWRlD6V8.jpg" alt="" loading="lazy" />
-<img src="/media/WPw1RYOKG2S4hzpvkbIPsA07jm4.jpg" alt="" loading="lazy" />
+<img src="/media/RFl7ermpwrLd8PQMQWRlD6V8.jpg" width="2387" height="2566" alt="" loading="lazy" decoding="async" />
+<img src="/media/WPw1RYOKG2S4hzpvkbIPsA07jm4.jpg" width="1443" height="1845" alt="" loading="lazy" decoding="async" />
 </div>
 </div>
 
@@ -60,7 +60,7 @@ order: 6
 <p>A series of animated posters.</p>
 </div>
 <div class="step-media">
-<video src="/media/dTkA8wtCA2CnDTFJyd0B1Hit8.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/dTkA8wtCA2CnDTFJyd0B1Hit8.mp4" width="1920" height="1080" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -72,8 +72,8 @@ order: 6
 <p>Next, a more cinematic recreation of a scene from the short film <em>Pear Cider and Cigarettes</em> that I illustrated in Figma, and animated in Rive.</p>
 </div>
 <div class="step-media">
-<img src="/media/8MRa9qcCvzqV5TeriZ6tsa4NXI.gif" alt="" loading="lazy" />
-<img src="/media/LRTrohxNw0ueo4ZYtFYFKhBv7io.gif" alt="" loading="lazy" />
+<video src="/media/8MRa9qcCvzqV5TeriZ6tsa4NXI.mp4" width="616" height="616" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/LRTrohxNw0ueo4ZYtFYFKhBv7io.mp4" width="884" height="614" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -83,9 +83,9 @@ order: 6
 <p>Concepts designed in Adobe Illustrator, and brought to life in After Effects</p>
 </div>
 <div class="step-media">
-<video src="/media/CuOoE0UtHJQ5EEFx2nGVlZBhwo.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<video src="/media/xeL6m1bQEjjFvGC82HRtdEoQjA.mp4" muted loop playsinline preload="metadata" data-autoplay></video>
-<img src="/media/qSgdobQZoKXEIblLe4CZCGqq6g.gif" alt="" loading="lazy" />
+<video src="/media/CuOoE0UtHJQ5EEFx2nGVlZBhwo.mp4" width="1080" height="1920" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/xeL6m1bQEjjFvGC82HRtdEoQjA.mp4" width="1080" height="1920" muted loop playsinline preload="metadata" data-autoplay></video>
+<video src="/media/qSgdobQZoKXEIblLe4CZCGqq6g.mp4" width="1080" height="1920" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 
@@ -95,7 +95,7 @@ order: 6
 <p>A concept animatic drawn in Photoshop and animated in After Effects.</p>
 </div>
 <div class="step-media">
-<img src="/media/D67RBdjLQvJiw6BdSb8eCJDwHxo.gif" alt="" loading="lazy" />
+<video src="/media/D67RBdjLQvJiw6BdSb8eCJDwHxo.mp4" width="600" height="338" muted loop playsinline preload="metadata" data-autoplay></video>
 </div>
 </div>
 </section>

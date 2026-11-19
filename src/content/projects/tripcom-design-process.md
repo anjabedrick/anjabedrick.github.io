@@ -3,15 +3,15 @@ title: "Trip.com CX Design Process"
 eyebrow: "Trip.com interview task"
 summary: "To what extent can a UX refresh influence customer actions?"
 tags: ["CX design", "Motion graphics", "UX design", "UI design", "Customer journey", "User personas", "Success metrics", "Design hypotheses"]
-hero: "/media/haU4l95SvLKFS29MUCem3LPQYo.gif"
-heroType: img
+hero: "/media/haU4l95SvLKFS29MUCem3LPQYo.mp4"
+heroType: video
 cover: "/media/O3Hv6ku6diOv3bqNOKXid6Ta5rM.png"
 categories: ["UX design", "Digital product design", "Visual design", "Experience design", "Motion design", "Process"]
 cursorLabel: "Trip.com | CX Journey"
-order: 3
+order: 8
 ---
 
-<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Keep scrolling to see the final product</span></a></div>
+<div class="tldr-row"><a class="tldr" href="#output"><span>Too long, didn&#x27;t read?</span><span class="hero-hint-line"></span><svg class="hero-mouse" viewBox="0 0 28 42" width="28" height="42" aria-hidden="true"><rect x="7" y="9" width="14" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.5" /><line class="wheel" x1="14" y1="14" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg><span class="hero-hint-line"></span><span>Click here to jump to the final product</span></a></div>
 
 <section class="sec">
 <div class="star">
@@ -41,6 +41,6 @@ order: 3
 </header>
 
 <div class="gallery">
-<img src="/media/SC4hDtliW3dPuKADtXjL7Zo7G70.jpg" alt="" loading="lazy" />
+<img src="/media/SC4hDtliW3dPuKADtXjL7Zo7G70.jpg" alt="" width="2000" height="31446" loading="lazy" decoding="async" />
 </div>
 </section>
