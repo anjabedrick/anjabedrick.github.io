@@ -102,7 +102,7 @@ featured: 1
 <div class="step">
 <div class="step-text">
 <h3>05 Sound design</h3>
-<p>Our concept was to take existing physiotherapy treatments, and make them adaptable, gamified, and portable. 3D printing multiple slightly varied options for the physical product to test practical usability.</p>
+<p>Mentored by Andreas Estensen, a professional sound designer in Umeå, we followed a professional sound design process, moving from vocal audio sketches, to creating digital tracks in Ableton to achieve the reassuring sound profile of MoMo.</p>
 </div>
 <div class="step-media">
 <img src="/media/wSIFK1n1ea5oi1fbtLzCvYBmaI.png" alt="" width="1920" height="1080" loading="lazy" decoding="async" />

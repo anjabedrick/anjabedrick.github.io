@@ -50,7 +50,11 @@ FEATURED = ["philips-telehealth-interface", "momo", "applovin-game-marketing-ani
 
 # hand-made fixes applied to the finished page body: slug -> [(find, replace), ...]
 PATCHES = {
-    "momo": [  # give the numbered steps a Process heading like the other pages
+    "momo": [
+        # 05 Sound design had step 02's text copied into it on Framer
+        ("<h3>05 Sound design</h3>\n<p>Our concept was to take existing physiotherapy treatments, and make them adaptable, gamified, and portable. 3D printing multiple slightly varied options for the physical product to test practical usability.</p>",
+         "<h3>05 Sound design</h3>\n<p>Mentored by Andreas Estensen, a professional sound designer in Umeå, we followed a professional sound design process, moving from vocal audio sketches, to creating digital tracks in Ableton to achieve the reassuring sound profile of MoMo.</p>"),
+        # give the numbered steps a Process heading like the other pages
         ('<div class="step">\n<div class="step-text">\n<h3>01 Mind mapping',
          '</section>\n\n<section class="sec">\n<header class="sec-head">\n<p class="pill pill-label">Design process</p>\n'
          '<h2>Process</h2>\n</header>\n\n<div class="step">\n<div class="step-text">\n<h3>01 Mind mapping'),
