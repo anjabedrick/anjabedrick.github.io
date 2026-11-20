@@ -1,7 +1,7 @@
 ---
 title: "AppLovin: Animation for Game Marketing"
 eyebrow: "AppLovin"
-summary: "Data driven animated mobile game advertisements. Animating one to two ads per week for two years = an eye for successful concepts."
+summary: "Data-driven animated mobile game advertisements. Animating one to two ads per week for two years = an eye for successful concepts."
 tags: ["Motion graphics", "A/B testing", "Adobe Creative Suite", "After Effects", "Storyboarding", "Illustration"]
 hero: "/media/UVWAYGDFHxjecpgn18yB2jUZiY.png"
 heroType: img
@@ -32,11 +32,11 @@ featured: 2
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>AppLovin's specialty is understanding and quickly adapting to data. If one month, hypercasual word gamers click, install, and keep games that have been marketed as relaxing, the next month, they might respond to games marketed as mentally stimulating. We adapt ads to these signals as fast as they change.</p>
+<p>AppLovin's specialty is understanding and quickly adapting to data. If one month, hyper-casual word gamers click, install, and keep games that have been marketed as relaxing, the next month, they might respond to games marketed as mentally stimulating. We adapt ads to these signals as fast as they change.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>Years of refining this process means that AppLovin is one of the top game advertising platforms in the world. I am still impressed by the efficiency in which we had to, and were able to implement new data in real time. This efficient data-driven workflow is something I've brought with me into each new chapter.</p>
+<p>Years of refining this process means that AppLovin is one of the top game advertising platforms in the world. I am still impressed by the efficiency with which we had to, and were able to, implement new data in real time. This efficient data-driven workflow is something I've brought with me into each new chapter.</p>
 </div>
 </div>
 </div>
@@ -55,7 +55,7 @@ featured: 2
 <div class="step">
 <div class="step-text">
 <h3>01 Looping GIFs</h3>
-<p>The simplest animated ads were simple looping gifs. The more eye-catching, silly, or emotionally-captivating, the better.</p>
+<p>The simplest animated ads were simple looping GIFs. The more eye-catching, silly, or emotionally captivating, the better.</p>
 </div>
 <div class="step-media">
 <video src="/media/ilWud95UJAbqIXsf1bc7v9Uf98.mp4" width="600" height="800" muted loop playsinline preload="metadata" data-autoplay></video>
@@ -65,7 +65,7 @@ featured: 2
 <div class="step step-flip">
 <div class="step-text">
 <h3>02 Advanced After Effects</h3>
-<p>While some ads required little editing of screenrecorded gameplay, other concepts required more advanced editing, such as the smoke particles and explosion effects on this truck.</p>
+<p>While some ads required little editing of screen-recorded gameplay, other concepts required more advanced editing, such as the smoke particles and explosion effects on this truck.</p>
 </div>
 <div class="step-media">
 <video src="/media/dk5mEydXvoBG9sPMANRlaKD98Hw.mp4" width="300" height="534" muted loop playsinline preload="metadata" data-autoplay></video>

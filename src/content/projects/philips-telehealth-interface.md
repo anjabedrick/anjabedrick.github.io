@@ -50,11 +50,11 @@ featured: 0
 <div class="star star-stack">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
-<p>This group project was a collaboration between Philips Healthcare and our master's program in Interaction Design. Philips approached us with the following real world problem, and the emerging telehealth technology they have been researching as a potential solution. Telehealth, broadly, is a method of connecting patients with healthcare expertise remotely..</p>
+<p>This group project was a collaboration between Philips Healthcare and our master's program in Interaction Design. Philips approached us with the following real-world problem, and the emerging telehealth technology they have been researching as a potential solution. Telehealth, broadly, is a method of connecting patients with healthcare expertise remotely.</p>
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
-<p>Hospital populations across Europe are increasing due to aging citizens and breakthroughs in medicine. Frontline healthcare workers, particularly nurses, are feeling the strain. This vicious cycle leads to burn-out, and even greater short-staffing. How might we ease this strain, supporting nurses with the emerging technology of telehealth-care?</p>
+<p>Hospital populations across Europe are increasing due to aging citizens and breakthroughs in medicine. Frontline healthcare workers, particularly nurses, are feeling the strain. This vicious cycle leads to burnout, and even greater short-staffing. How might we ease this strain, supporting nurses with the emerging technology of telehealth care?</p>
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
@@ -90,7 +90,7 @@ featured: 0
 <div class="step step-flip">
 <div class="step-text">
 <h3>02 Processing qualitative data</h3>
-<p>We then distilled these qualitative stories into story cards, organized into themes: Alarms, years of experience, communication, and work environment.</p>
+<p>We then distilled these qualitative stories into story cards, organized into themes: alarms, years of experience, communication, and work environment.</p>
 <p>We worked to understand the heart of these themes, and how they could relate to our project.</p>
 <ul>
 <li>Alarms = better prioritization of criticality</li>

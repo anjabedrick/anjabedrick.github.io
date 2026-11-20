@@ -17,7 +17,7 @@ order: 8
 <div class="star">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
-<p>A third-round interview design task for a Visual Designer role at Trip.com. The company provided the problem based on real-life situations in a short design brief for a 24 hour sprint.</p>
+<p>A third-round interview design task for a Visual Designer role at Trip.com. The company provided the problem based on real-life situations in a short design brief for a 24-hour sprint.</p>
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
@@ -25,11 +25,11 @@ order: 8
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>Spent one 24 hour sprint understanding Trip.com, getting to know the brand identity, empathising with the problem, conducting competitive analysis, sketching, designing a customer journey map with a user persona, and brainstorming metrics to measure impact.</p>
+<p>Spent one 24-hour sprint understanding Trip.com, getting to know the brand identity, empathizing with the problem, conducting competitive analysis, sketching, designing a customer journey map with a user persona, and brainstorming metrics to measure impact.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>This project page may look different than others. That's because the output of this project is intertwined with the (anticipated) result. Check out what I delivered to Trip.com below.</p>
+<p>This project page may look different from others. That's because the output of this project is intertwined with the (anticipated) result. Check out what I delivered to Trip.com below.</p>
 </div>
 </div>
 </section>

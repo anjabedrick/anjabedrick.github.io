@@ -21,7 +21,7 @@ order: 6
 </div>
 
 <div class="prose-text">
-<p>This project has been imagined in a speculative future in which decentralization is the norm. Drawing on the system of BitTorrent, a peer-to-peer digital sharing protocol designed in the early 00s Web 2.0 Era, “MODUS” functions much in the same way, but brought into the physical world. Following the exponentially rising trajectory of modern computing, we can track weak signals of social isolation, post-industrialization alienation from our work, and longing for community. Could a physical peer-to-peer sharing service address these issues? A return to artisan-craftsmanship through grassroots community sharing may see a rebirth in our near future.</p>
+<p>This project has been imagined in a speculative future in which decentralization is the norm. Drawing on the system of BitTorrent, a peer-to-peer digital sharing protocol designed in the early-2000s Web 2.0 era, “MODUS” functions much in the same way, but brought into the physical world. Following the exponentially rising trajectory of modern computing, we can track weak signals of social isolation, post-industrialization alienation from our work, and longing for community. Could a physical peer-to-peer sharing service address these issues? A return to artisan craftsmanship through grassroots community sharing may see a rebirth in our near future.</p>
 </div>
 </section>
 

@@ -1,7 +1,7 @@
 ---
 title: "Illustration and Animation Gallery"
 eyebrow: ""
-summary: "A collection of fun visual projects that don't quite fit in any other page."
+summary: "A collection of fun visual projects that don't quite fit on any other page."
 tags: []
 hero: "/media/FCdDtzcuuviBweJ3hPZ31on2uk.png"
 heroType: img
@@ -17,7 +17,7 @@ order: 2
 <div class="step step-flip">
 <div class="step-text">
 <h3>01 Crime noir playing cards</h3>
-<p>A deck of playing cards illustrated and designed for the well known game, mafia.</p>
+<p>A deck of playing cards illustrated and designed for the well-known game Mafia.</p>
 </div>
 <div class="step-media">
 <img src="/media/ReadHHazXDSI0GRcFkui7BDlIuQ.png" width="3000" height="2250" alt="" loading="lazy" decoding="async" />
@@ -67,7 +67,7 @@ order: 2
 <div class="step">
 <div class="step-text">
 <h3>02 Rive vector animations</h3>
-<p>Looping animations rigged, and animated in Rive using simple, tiny-file-size shapes.</p>
+<p>Looping animations rigged and animated in Rive using simple, tiny-file-size shapes.</p>
 <p>First, a simple loading screen animation completely illustrated and animated in Rive.</p>
 <p>Next, a more cinematic recreation of a scene from the short film <em>Pear Cider and Cigarettes</em> that I illustrated in Figma, and animated in Rive.</p>
 </div>
@@ -80,7 +80,7 @@ order: 2
 <div class="step step-flip">
 <div class="step-text">
 <h3>03 Adobe After Effects + Illustrator animations</h3>
-<p>Concepts designed in Adobe Illustrator, and brought to life in After Effects</p>
+<p>Concepts designed in Adobe Illustrator, and brought to life in After Effects.</p>
 </div>
 <div class="step-media">
 <video src="/media/CuOoE0UtHJQ5EEFx2nGVlZBhwo.mp4" width="1080" height="1920" muted loop playsinline preload="metadata" data-autoplay></video>

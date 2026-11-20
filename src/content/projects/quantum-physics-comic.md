@@ -29,7 +29,7 @@ order: 4
 <div class="star">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
-<p>A fellowship between the science and comics departments at University of Oregon. Two design students per year pair up with a research team.</p>
+<p>A fellowship between the science and comics departments at the University of Oregon. Two design students per year pair up with a research team.</p>
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
@@ -41,7 +41,7 @@ order: 4
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
-<p>A 10 page comic designed to explain the researchers' work with ion-trapping to undergraduate students in an engaging, accessible way.</p>
+<p>A 10-page comic designed to explain the researchers' work with ion trapping to undergraduate students in an engaging, accessible way.</p>
 </div>
 </div>
 </section>
@@ -50,7 +50,7 @@ order: 4
 <header class="sec-head">
 <p class="pill pill-label">Design process</p>
 <h2>Process</h2>
-<p class="sec-sub">"If I can understand what you guys are doing here, anybody can." - Anja</p>
+<p class="sec-sub">"If I can understand what you guys are doing here, anybody can." — Anja</p>
 </header>
 
 <div class="step">

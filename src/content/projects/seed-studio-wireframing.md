@@ -34,11 +34,11 @@ featured: 3
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
-<p>How might a design undergraduate student co-create a comic about an ion trap experiment that is engaging, accessible, and educational?</p>
+<p>Bringing a client's detailed UX document from text to wireframes to a high-fidelity clickable prototype.</p>
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>First combing through UX document and taking note of unknowns and design opportunities. Sketching, wireframing, and iterating with the design team.</p>
+<p>First combing through the UX document and taking note of unknowns and design opportunities. Sketching, wireframing, and iterating with the design team.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
@@ -57,7 +57,7 @@ featured: 3
 <div class="step">
 <div class="step-text">
 <h3>01 Understanding the project</h3>
-<p>Going through the UX document together with the design team, and stakeholders to define the next stage.</p>
+<p>Going through the UX document together with the design team and stakeholders to define the next stage.</p>
 </div>
 <div class="step-media">
 <img src="/media/Gc46HILRWtZqDECV2vcx4rXPR4.png" alt="" width="1854" height="1008" loading="lazy" decoding="async" />

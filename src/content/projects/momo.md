@@ -31,11 +31,11 @@ featured: 1
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
-<p>The need for accessible, quality fine-motor skill training physiotherapy is increasing globally. However, 70% of patients struggle to keep up with their practice at home. How might we design a home-based practice that patients want to engage with?</p>
+<p>The need for accessible, quality fine-motor-skill training physiotherapy is increasing globally. However, 70% of patients struggle to keep up with their practice at home. How might we design a home-based practice that patients want to engage with?</p>
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>Building on the experience of our two team members who are engaged in long-term physiotherapy, we prototyped quickly using 3D printed shells and Arduino electronics to iterate rapidly.</p>
+<p>Building on the experience of our two team members who are engaged in long-term physiotherapy, we prototyped quickly using 3D-printed shells and Arduino electronics to iterate rapidly.</p>
 </div>
 <div class="star-card" data-k="result">
 <h4>Result</h4>
@@ -60,7 +60,7 @@ featured: 1
 <div class="step">
 <div class="step-text">
 <h3>01 Mind mapping</h3>
-<p>Our discover phase involved mapping the current problem based on desk research and user stories.</p>
+<p>Our discovery phase involved mapping the current problem based on desk research and user stories.</p>
 </div>
 <div class="step-media">
 <img src="/media/IHb7wyqN9bx0cT2FRvBPJVQVsDc.jpg" alt="" width="1031" height="1185" loading="lazy" decoding="async" />
@@ -132,7 +132,7 @@ featured: 1
 </header>
 
 <div class="prose-text">
-<p>MoMo is a modular physiotherapy tool that adjusts to suit patients' needs, rather than the other way around. Built on real tools and research, this prototype employs gamified light and sound feedback to address low treatment-adherence.</p>
+<p>MoMo is a modular physiotherapy tool that adjusts to suit patients' needs, rather than the other way around. Built on real tools and research, this prototype employs gamified light and sound feedback to address low treatment adherence.</p>
 </div>
 
 <div class="gallery">

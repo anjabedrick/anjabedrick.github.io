@@ -32,7 +32,7 @@ featured: 4
 <div class="star">
 <div class="star-card" data-k="situation">
 <h4>Situation</h4>
-<p>The Rathenau Instituut is an EU-founded political science thinktank in the Netherland to conduct research into the way technology impacts society. They approached Digital Society School with this problem. DSS was founded to bring design talent to the Netherlands to address complex problems, parntnered with Dutch organizations. Myself, together with a team of 3 other researchers, spent 5 months working with this problem.</p>
+<p>The Rathenau Instituut is an EU-founded political science think tank in the Netherlands that conducts research into the way technology impacts society. They approached Digital Society School with this problem. DSS was founded to bring design talent to the Netherlands to address complex problems, partnered with Dutch organizations. Together with a team of three other researchers, I spent five months working on this problem.</p>
 </div>
 <div class="star-card" data-k="problem">
 <h4>Problem</h4>
@@ -44,7 +44,7 @@ featured: 4
 </div>
 <div class="star-card" data-k="action">
 <h4>Action</h4>
-<p>We began by understanding the problem proposed by our partner by conducting a workshop together to define the problem statement and scope of the project. We then visited Cybersoek, a non-profit set up to support adults to become technologically fluent, and conducted interviews with the experts there, both teachers and learners. From this understanding, we prototyped, tested, and iterated until our final result.</p>
+<p>We began by understanding the problem proposed by our partner by conducting a workshop together to define the problem statement and scope of the project. We then visited Cybersoek, a nonprofit set up to support adults to become technologically fluent, and conducted interviews with the experts there, both teachers and learners. From this understanding, we prototyped, tested, and iterated until our final result.</p>
 </div>
 </div>
 
@@ -59,7 +59,7 @@ featured: 4
 <div class="step">
 <div class="step-text">
 <h3>01 Aligning with stakeholders</h3>
-<p>Aligning with our major stakeholders via a discovery workshop, including: the Rathenau Instituut thinktank, the library in which the prototype would be stationed, and DSS as the bridge between our team and these stakeholders.</p>
+<p>Aligning with our major stakeholders via a discovery workshop, including: the Rathenau Instituut think tank, the library in which the prototype would be stationed, and DSS as the bridge between our team and these stakeholders.</p>
 </div>
 <div class="step-media">
 <img src="/media/rJD25thcdkTsiotGnEpUZrnXfUQ.png" alt="" width="1424" height="1394" loading="lazy" decoding="async" />

@@ -78,6 +78,9 @@ PATCHES = {
         ("/media/I2DNOZqPX4R0hXLUTtHcpbuDv0Y.png", "/media/snm-what-others-do-well.png"),
     ],
     "seed-studio-wireframing": [
+        # the Problem text was copied over from the comic project on Framer
+        ("How might a design undergraduate student co-create a comic about an ion trap experiment that is engaging, accessible, and educational?",
+         "Bringing a client's detailed UX document from text to wireframes to a high-fidelity clickable prototype."),
         # hide the tag row baked into the bottom of the Moon Gallery image
         (re.compile(r'<(img|video) (src="/media/EeBf[^"]*")'), r'<\1 class="crop-tags" \2'),
         # the two clickable Figma prototypes embedded on the Framer page
@@ -117,7 +120,36 @@ TAGS = {  # tag -> replacement tag(s)
     "Design Hypotheses": ["Design hypotheses"],
 }
 TYPOS = {"menas": "means", "an such asset": "such an asset", "teammembers": "team members",
-         "interactions design": "interaction design"}
+         "interactions design": "interaction design",
+    # proofreading pass (Nov 2026)
+    "parntnered": "partnered", "thinktank": "think tank", "in the Netherland to conduct research": "in the Netherlands that conducts research",
+    "Myself, together with a team of 3 other researchers, spent 5 months working with this problem.":
+        "Together with a team of three other researchers, I spent five months working on this problem.",
+    "a non-profit set up": "a nonprofit set up",
+    "Data driven animated": "Data-driven animated", "hypercasual": "hyper-casual",
+    "the efficiency in which we had to, and were able to implement": "the efficiency with which we had to, and were able to, implement",
+    "simple looping gifs": "simple looping GIFs", "emotionally-captivating": "emotionally captivating",
+    "screenrecorded": "screen-recorded",
+    "24 hour sprint": "24-hour sprint", "empathising": "empathizing", "look different than others": "look different from others",
+    "expertise remotely..": "expertise remotely.", "real world problem": "real-world problem",
+    "technology of telehealth-care?": "technology of telehealth care?", "leads to burn-out": "leads to burnout",
+    "organized into themes: Alarms, years": "organized into themes: alarms, years",
+    "Our discover phase": "Our discovery phase", "using 3D printed shells": "using 3D-printed shells",
+    "quality fine-motor skill training physiotherapy": "quality fine-motor-skill training physiotherapy",
+    "address low treatment-adherence": "address low treatment adherence",
+    "in the early 00s Web 2.0 Era": "in the early-2000s Web 2.0 era", "A return to artisan-craftsmanship": "A return to artisan craftsmanship",
+    "the natural history museum in Copenhagen as part of": "the natural history museum in Copenhagen, as part of",
+    "A peek at some early sketches, the signature arcs inspired by": "A peek at some early sketches: the signature arcs, inspired by",
+    "comics departments at University of Oregon": "comics departments at the University of Oregon",
+    "A 10 page comic": "A 10-page comic", "work with ion-trapping": "work with ion trapping",
+    "anybody can.\" - Anja": "anybody can.\" — Anja",
+    "to a high fidelity clickable prototype": "to a high-fidelity clickable prototype",
+    "First combing through UX document": "First combing through the UX document",
+    "together with the design team, and stakeholders": "together with the design team and stakeholders",
+    "for the well known game, mafia.": "for the well-known game Mafia.", "rigged, and animated in Rive": "rigged and animated in Rive",
+    "don't quite fit in any other page": "don't quite fit on any other page",
+    "and brought to life in After Effects</p>": "and brought to life in After Effects.</p>",
+}
 ROLES = {  # "My role" line shown under the team
     "momo": "My role: Interaction designer, responsible for Arduino electronics and visual identity graphic animations.",
     "rathenau-instituut-creative-research": "My role: Tools and Instruments Master, responsible for researching, choosing, and iterating on our prototypes at different stages. In earlier stages, I created clickable Figma prototypes, while later on we settled on training Google's Teachable Machine to use visitors' body movements as input. Working together with a developer at the last stage, we were able to bring this vision to life.",
@@ -531,5 +563,6 @@ if __name__ == "__main__":
     gorder = [c[0] for c in CARDS].index("illustration-and-animation-gallery")
     gtxt = re.sub(r"^order: \d+$", f"order: {gorder}", gtxt, flags=re.M)
     head, body = gtxt.split("---\n", 2)[1], gtxt.split("---\n", 2)[2]
+    for a, b in TYPOS.items(): head = head.replace(a, b); body = body.replace(a, b)
     open(g, "w").write("---\n" + head + "---\n" + enhance(body))
     print("illustration-and-animation-gallery: media updated, order", gorder)

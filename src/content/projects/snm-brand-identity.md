@@ -21,7 +21,7 @@ order: 7
 </div>
 
 <div class="prose-text">
-<p>A complete visual identity for Statens Naturhistoriske Museum, the natural history museum in Copenhagen as part of an exchange design course.</p>
+<p>A complete visual identity for Statens Naturhistoriske Museum, the natural history museum in Copenhagen, as part of an exchange design course.</p>
 </div>
 </section>
 
@@ -66,7 +66,7 @@ order: 7
 <div class="step step-flip">
 <div class="step-text">
 <h3>02 Hand sketches</h3>
-<p>A peek at some early sketches, the signature arcs inspired by the new architecture of the renovated SNM botanical garden.</p>
+<p>A peek at some early sketches: the signature arcs, inspired by the new architecture of the renovated SNM botanical garden.</p>
 </div>
 <div class="step-media">
 <img src="/media/y30d6YCbG0cANvomVInOwvteI.png" alt="" width="1430" height="1026" loading="lazy" decoding="async" />
