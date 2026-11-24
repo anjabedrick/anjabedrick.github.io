@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'Anja Bedrick',
   role: 'Interaction designer',
-  description: 'Anja Bedrick – interaction designer with a background in motion graphics and UX design.',
+  description: 'Anja Bedrick – interaction designer with a background in creative technology, motion graphics, and UX design.',
   cv: '/anja-bedrick-cv.pdf',
   linkedin: 'https://www.linkedin.com/in/anjabedrick/',
 };

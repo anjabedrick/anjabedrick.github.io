@@ -267,16 +267,25 @@ if (nav && darkBands.length) {
 }
 
 /* ---------------- about page timeline: slides sideways as you scroll down ---------------- */
+// It starts with the first entry just in from the left (the bare line before it is cut off) and,
+// at the bottom of the page, ends with the last entry just inside the right edge.
+// data-start-x / data-end-x are positions in the SVG's own units; data-svg-width is its full width.
 document.querySelectorAll<HTMLElement>('[data-scroll-x]').forEach((box) => {
   const track = box.firstElementChild as HTMLElement;
-  let x = 0;
+  const svgW = Number(box.dataset.svgWidth) || 1;
+  const startX = Number(box.dataset.startX) || 0, endX = Number(box.dataset.endX) || svgW;
+  let x: number | null = null;
   frameCallbacks.push(() => {
+    const k = track.clientWidth / svgW; // SVG units -> pixels
+    const boxW = box.clientWidth;
+    const edge = Math.min(90, boxW * 0.08); // keep entries clear of the faded edges
+    const from = startX * k - edge;                 // first entry `edge` px from the left
+    const to = Math.max(from, endX * k + edge * 0.35 - boxW); // last entry just inside the right edge
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const travel = Math.max(0, track.scrollWidth - box.clientWidth);
-    if (maxScroll < 40) { box.classList.add('is-manual'); return; } // page too short to scroll: let people swipe it
-    const progress = Math.min(1, Math.max(0, scrollY / maxScroll));
-    x += (progress * travel - x) * 0.15;
-    track.style.transform = `translate3d(${-x.toFixed(1)}px, 0, 0)`;
+    const progress = maxScroll < 40 ? 0 : Math.min(1, Math.max(0, scrollY / maxScroll));
+    const target = from + progress * (to - from);
+    x = x === null ? target : x + (target - x) * 0.15;
+    track.style.transform = `translate3d(${(-x).toFixed(1)}px, 0, 0)`;
   });
 });
 

@@ -1,0 +1,54 @@
+# Plain, ATS-friendly CV (one column, real text). Build the PDF with:
+#   swift tools/ats_cv.swift cv/cv-ats.txt "cv/Anja Bedrick - CV (ATS).pdf"
+# Line types:  NAME:  TITLE:  CONTACT:  == Section  ## Role — Organisation  @ details line  - bullet  plain text
+NAME: Anja Bedrick
+TITLE: Interaction Designer
+CONTACT: anjabedrick.com | linkedin.com/in/anjabedrick | anjabedrick@gmail.com | +46 76 442 7345
+
+== Experience
+
+## UX Design Intern — Laerdal Medical
+@ Stavanger, Norway | Full-time, on-site | Sept 2025 – Aug 2026
+- Working closely with developers, end users, and lead designers, I designed UI components built on Laerdal's design system for a new native iOS app to run medical simulations.
+- Prepared A/B Figma prototypes to lead testing sessions with real end users, documented the results in Dovetail, and communicated suggested next steps to the team.
+
+## Design Intern — UNDP (United Nations)
+@ New York, NY, USA | Part-time, remote | May 2025 – Jul 2025
+- Supported the visual design and video development for the Sustainable Energy Academy, a new e-learning platform from the UNDP's Sustainable Energy Hub.
+- Selected and led a team of online volunteers to support migration of photo assets to a new photo bank system, working both administrative organization and design muscles in this role.
+
+## Creative Researcher — Rathenau Instituut | Digital Society School (DSS)
+@ Amsterdam, Netherlands | Full-time, on-site | Sept 2022 – Jan 2023
+- The Rathenau Instituut think tank seeks to engage democratic participation in the development of emerging technologies.
+- Using Scrum methodology, I was responsible for using Figma to prototype, and for executing the final motion-capture design using Teachable Machine.
+- We partnered with the public libraries to test while managing stakeholder feedback.
+
+## Brand Designer — FLEXeCHARGE
+@ Copenhagen, Denmark | Part-time, remote | May 2021 – March 2022
+- At FeC, I created and compiled a design system from scratch based on stakeholder feedback.
+- Designed and animated original website graphics using Illustrator and After Effects, delivered as JSON-based Lottie files.
+- Using the new brand identity, I overhauled their LinkedIn presence, designing banner, profile pictures, and visual content.
+
+## Motion Designer — AppLovin
+@ San Francisco, CA, USA | Part-time, remote | June 2020 – Aug 2022
+- Saw weekly animated advertisements through the design process from concept to A/B testing to delivery using the Adobe Suite.
+- Communicated effectively with cross-functional teams, incorporating dev, data, and design perspectives into the product flow by taking ownership of storyboarding, Asana task management, and voice actor scripting projects.
+
+== Education
+
+## MFA in Interaction Design — Umeå Institute of Design
+@ Umeå, Sweden | Sept 2024 – June 2027
+
+## Dual BA in Art & Technology and Political Science — University of Oregon
+@ Eugene, OR, USA | Sept 2018 – June 2022
+
+== Awards
+
+## iF Design Student Award — Winner (MoMo), 2026
+
+## Design by Umeå Scholarship — Umeå Institute of Design, 2024
+
+== Skills
+
+UX design, UI design, interaction design, user testing, A/B testing, prototyping, design systems, native iOS UI, motion design, animation, storyboarding, visual design, branding, Scrum
+Tools: Figma, Dovetail, Adobe After Effects, Adobe Illustrator, Adobe Creative Suite, Lottie, Asana, Teachable Machine
