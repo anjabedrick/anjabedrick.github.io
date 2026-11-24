@@ -447,8 +447,13 @@ strong { font-weight: 600; }
   max-width: 1280px; margin: 0 auto; padding: 0 var(--gutter);
   display: grid; grid-template-columns: 1fr minmax(0, 600px); gap: 40px; align-items: center;
 }
-.about-head h1 { font: 400 clamp(48px, 6vw, 88px)/1.1 var(--serif); margin-top: 28px; }
+.about-head h1 { font: 400 clamp(40px, 10vw, 88px)/1.1 var(--serif); margin-top: 28px; }
+.about-head > * { min-width: 0; }
+.about-head .pill { max-width: 100%; white-space: normal; }
 .about-illustration { width: 100%; max-height: 350px; object-fit: contain; }
+/* the pin is as tall as the sideways travel; the timeline sticks in the middle of the screen meanwhile */
+.timeline-pin { position: relative; margin-top: 44px; }
+.timeline-pin .timeline { position: sticky; top: max(96px, calc(50vh - 176px)); margin: 0; }
 .timeline {
   margin: 44px 0 0; overflow: hidden;
   scrollbar-width: none;
@@ -457,7 +462,7 @@ strong { font-weight: 600; }
 }
 .timeline::-webkit-scrollbar { display: none; }
 .timeline.is-manual { overflow-x: auto; }
-.timeline img { height: 353px; width: auto; max-width: none; user-select: none; will-change: transform; }
+.timeline img { height: 353px; width: auto; max-width: none; user-select: none; will-change: transform; display: block; }
 .about-star { max-width: 1280px; margin: 44px auto 0; padding: 0 var(--gutter); }
 .about-star p { font-size: 15px; line-height: 1.5; }
 
@@ -483,7 +488,8 @@ strong { font-weight: 600; }
   .grid-col { display: contents; }
   .glance-media-3, .gallery-3 { grid-template-columns: repeat(2, 1fr); }
   .next-project { grid-template-columns: 1fr 120px; }
-  .timeline img { height: 260px; }
+  .timeline img { height: 300px; } /* big enough to read the small caps on a phone */
+  .timeline-pin .timeline { top: max(90px, calc(50vh - 150px)); }
 }
 @media (max-width: 520px) {
   body { font-size: 16px; }
